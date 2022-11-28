@@ -11,7 +11,7 @@ const NavBar = () => {
           <div className='flex items-center justify-between py-3 md:py-5 md:block'>
             <Link href='#' class='flex items-center mb-4 sm:mb-0'>
               <Image src={Logo} width={50} alt='Bergen Armwrestling Logo' />
-              <span className='ml-2.5 self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
+              <span className='ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white'>
                 Bergen Armwrestling
               </span>
             </Link>

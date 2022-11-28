@@ -6,7 +6,10 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <NavBar />
-      <Component {...pageProps} />
+      <div className='wrapper ba-bg-dark'>
+        <Component {...pageProps} />
+      </div>
+
       <Footer />
     </>
   );

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer class='p-4 shadow md:px-6 md:py-8 bg-gray-900'>
+    <footer class='p-4 shadow md:px-6 md:py-8 bg-zinc-900'>
       <div class='sm:flex sm:items-center sm:justify-between'>
         <Link
           href='https://flowbite.com/'

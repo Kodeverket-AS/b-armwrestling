@@ -42,11 +42,7 @@ const Footer = () => {
       </div>
       <hr class='my-6 sm:mx-auto border-gray-700 lg:my-8' />
       <span class='block text-sm sm:text-center text-gray-400'>
-        © 2022{' '}
-        <Link href='https://flowbite.com/' class='hover:underline'>
-          Flowbite™
-        </Link>
-        . All Rights Reserved.
+        © 2022 Kodeverket Bergen | All Rights Reserved.
       </span>
     </footer>
   );

@@ -61,7 +61,7 @@ const NavBar = () => {
                 <Link href='/'>Hjem</Link>
               </li>
               <li className='text-white'>
-                <Link href='/treningstider'>Trengingstider</Link>
+                <Link href='/treningstider'>Treningstider</Link>
               </li>
               <li className='text-white'>
                 <Link href='/terminliste'>Terminliste</Link>

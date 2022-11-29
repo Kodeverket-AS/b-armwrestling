@@ -103,6 +103,7 @@ const Faq = () => {
                                 <li>
                                     På facebookgruppen, &nbsp;
                                     <Link
+                                        className='underline hover:text-ba-color-gold'
                                         href="https://www.facebook.com/groups/702890543475643"
                                     >
                                         “Bergen Armwrestling Club”
@@ -322,7 +323,8 @@ const Faq = () => {
                                     For mer detaljer omkring regler, spør oss i klubben, evt les
                                     også på &nbsp;
                                     <Link
-                                        href="/drakt"
+                                        className='underline hover:text-ba-color-gold'
+                                        href="http://www.waf-armwrestling.com/armwrestling-rules/"
                                     >
                                         World Armwrestling Federation (WAF)
                                     </Link>
@@ -386,7 +388,8 @@ const Faq = () => {
                                 <li>
                                     Det finnes mye på nettet, særlig Youtube. Kanalen &nbsp;
                                     <Link
-                                        href="/drakt"
+                                        className='underline hover:text-ba-color-gold'
+                                        href="/https://www.youtube.com/c/voiceofarmwrestling"
                                     >
                                         “Voice of Armwrestling”
                                     </Link>
@@ -450,7 +453,8 @@ const Faq = () => {
                                     skjorten dekker klubben 200kr av kostnaden. Ved nye
                                     bestillinger, legges det ut informasjon om dette på vår &nbsp;
                                     <Link
-                                        href="/drakt"
+                                        className='underline hover:text-ba-color-gold'
+                                        href="/https://www.facebook.com/groups/702890543475643"
                                     >
                                         facebookgruppe.
                                     </Link>
@@ -466,7 +470,8 @@ const Faq = () => {
                                         <li>
                                             Lisens er via &nbsp;
                                             <Link
-                                                href="/drak"
+                                                className='underline hover:text-ba-color-gold'
+                                                href="/https://bryting.no/praktisk-info/lisens-og-forsikring/"
                                             >
                                                 Bryteforbundet
                                             </Link>
@@ -478,7 +483,8 @@ const Faq = () => {
                                             aktiverer muligheten for utøver til å betale lisens via
                                             &nbsp;
                                             <Link
-                                                href="/drakt"
+                                                className='underline hover:text-ba-color-gold'
+                                                href="/https://www.minidrett.no/"
                                             >
                                                 MinIdrett.no.
                                             </Link>
@@ -514,7 +520,8 @@ const Faq = () => {
                                     oppsøkes utøvere utenfor treningslokaler. Det er nulltoleranse
                                     for doping. Liste over forbudte stoffer finner man på &nbsp;
                                     <Link
-                                        href="/#"
+                                        className='underline hover:text-ba-color-gold'
+                                        href="/https://www.antidoping.no/medisinsk/dopinglisten"
                                     >
                                         dopinglitsen
                                     </Link>

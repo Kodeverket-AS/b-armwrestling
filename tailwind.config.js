@@ -16,6 +16,9 @@ module.exports = {
         'ba-color-dark-blue' : '#1f1f5f',
         'ba-color-navy' : '#100f3c',
       },
+      width: {
+        'ba-width-large' : '560px'
+      }
     },
   },
 };

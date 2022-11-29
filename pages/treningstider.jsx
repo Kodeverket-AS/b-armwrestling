@@ -55,7 +55,7 @@ const Treningstider = () => {
                     className="grid grid-cols-1 my-8 text-center"
                 >
                     <iframe
-                        className="mx-auto my-6 md:w-80 md:h-64 md:ml-0 lg:w-96"
+                        className="mx-auto my-6 md:w-80 md:h-64 md:ml-0 lg:w-ba-width-large"
                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-eLtEdtB-XioubLC_9yUcxUja3xYrukI&q=Gnisten_Aktivitetssenter,Bergen"
                     />
                 </div>

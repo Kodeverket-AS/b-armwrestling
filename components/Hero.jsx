@@ -32,7 +32,7 @@ const Hero = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className='mx-auto lg:max-w-5xl'>
+    <div className='mx-auto text-white lg:max-w-5xl'>
       <div>
       <Image
         className='w-full '
@@ -40,13 +40,15 @@ const Hero = () => {
         width={1300}
       />
       <h1
-        className='relative text-xs text-center bottom-5 text-ba-color-gold md:text-3xl md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5'
+        className='relative text-xl text-center bottom-5 text-ba-color-gold md:text-3xl md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5'
       >
         Bergen Armwrestling
       </h1>
       </div>
       <div>
-        <h2>
+        <h2
+          className='text-lg text-center text-ba-color-gold'
+        >
           Samaribeidspartnere
         </h2>
         <div>
@@ -61,12 +63,19 @@ const Hero = () => {
       </div>
       <div>
         {/* <Image /> */}
-        <p>
+        <div
+          className='w-4/5 mx-auto text-sm'
+        >
+        <p
+          className='font-bold '
+        >
         Håndbak eller armbrytning strekker seg helt tilbake til de olympiske leker i Athen. I det siste har vi sett endringer i regler, stil og omfang.
         </p>
+        <br/>
         <p>
         Håndbak er en sosial og interessant sport, og en kamp varer som oftest mellom 1 - 2 sekunder. Mye avhenger av utøvers teknikk, muskelstyrke og hurtighet. I 1998 ble Norges Håndbak Forbund tatt opp som en del av Norges Bryteforbund.
         </p>
+        </div>
         <div>
           {/* Goldline */}
         </div>

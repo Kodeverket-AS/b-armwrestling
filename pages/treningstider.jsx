@@ -30,8 +30,6 @@ const Treningstider = () => {
                         </p>
                     </div>
                     <div
-                        // className="grid grid-rows-2 gap-16 mx-8 w-96"
-                        // className="grid h-64 grid-rows-2"
                         className="mx-10"
                     >
                         <p>

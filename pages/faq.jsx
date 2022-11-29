@@ -6,7 +6,7 @@ const Faq = () => {
     return (
         <>
             <h1
-                className='mb-8 text-5xl text-center text-yellow-500'
+                className='mb-8 text-5xl text-center ba-text-orange'
             >
                 Spørsmål og svar
             </h1>
@@ -34,6 +34,7 @@ const Faq = () => {
                                 <li>
                                     Ofte legges det ut et innlegg på facebookgruppen vår, &nbsp;
                                     <Link
+                                        className='underline hover:text-ba-color-gold'
                                         href="https://www.facebook.com/profile.php?id=100063867946394"
                                     >
                                         “Bergen Armwrestling Club”

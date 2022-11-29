@@ -21,67 +21,88 @@ export default function VariousLinks() {
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 Diverse Linker
             </h1>
-            <section className='max-w-md mx-auto'>
-                <div id='linksAndPics' className='text-white '>
-                    <div id='left__side' className='flex flex-col py-10 mt-6'>
-                        <Link
-                            className='flex flex-row justify-between mt-4'
-                            href='https://bryting.no/brytegrener/handbak/'
-                            target='_blank'
-                        >
-                            Norges Bryteforbund
-                            <Image src={NBF} alt='ba shield' width={40} />
-                        </Link>
-                        <Link
-                            className='flex flex-row justify-between mt-4'
-                            href='https://www.antidoping.no/'
-                            target='_blank'
-                        >
-                            Antidoping Norge
-                            <Image src={rentil} alt='ba shield' width={40} />
-                        </Link>
-                        <Link
-                            className='flex flex-row justify-between mt-4'
-                            href='https://www.deltager.no/deltagerforside.aspx'
-                            target='_blank'
-                        >
-                            Deltaker.no
-                            <Image
-                                src={deltakerlogo}
-                                alt='ba shield'
-                                width={40}
-                            />
-                        </Link>
-                    </div>
-                    <div id='right__side' className='py-12 mt-6 '>
-                        <Link
-                            className='flex flex-row justify-between mt-4'
-                            href='https://www.norsk-tipping.no/grasrotandelen/din-mottaker/825211012'
-                            target='_blank'
-                        >
-                            Støtt oss med din grasrot
-                            <BiLink />
-                        </Link>
-                        <Link
-                            className='flex flex-row justify-between mt-4'
-                            href='https://www.youtube.com/channel/UClhMrYai_XGlBW_mRPhfQJQ'
-                            target='_blank'
-                        >
-                            NBF Bryte-TV på YouTube
-                            <BiLink />
-                        </Link>
-                        <Link
-                            className='flex flex-row justify-between mt-4'
-                            href='https://www.youtube.com/@WORLDARMWRESTLINGFEDERATION/featured'
-                            target='_blank'
-                        >
-                            World Armwrestling Federation
-                            <br /> på YouTube
-                            <BiLink />
-                        </Link>
+            <section className='max-w-md mx-auto '>
+                <div
+                    id='linksAndPics'
+                    className='text-white md:flex-auto md:content-around '
+                >
+                    <div className='md:border-2 md:border-yellow-300 md:w-auto'>
+                        <div className='md:gap-10 md:flex md:flex-row '>
+                            <div
+                                id='left__side'
+                                className='flex flex-col py-10 mt-6 md:border-red-500 md:border-2'
+                            >
+                                <Link
+                                    className='flex flex-row justify-between mt-4'
+                                    href='https://bryting.no/brytegrener/handbak/'
+                                    target='_blank'
+                                >
+                                    Norges Bryteforbund
+                                    <Image
+                                        src={NBF}
+                                        alt='ba shield'
+                                        width={40}
+                                    />
+                                </Link>
+                                <Link
+                                    className='flex flex-row justify-between mt-4'
+                                    href='https://www.antidoping.no/'
+                                    target='_blank'
+                                >
+                                    Antidoping Norge
+                                    <Image
+                                        src={rentil}
+                                        alt='ba shield'
+                                        width={40}
+                                    />
+                                </Link>
+                                <Link
+                                    className='flex flex-row justify-between mt-4'
+                                    href='https://www.deltager.no/deltagerforside.aspx'
+                                    target='_blank'
+                                >
+                                    Deltaker.no
+                                    <Image
+                                        src={deltakerlogo}
+                                        alt='ba shield'
+                                        width={40}
+                                    />
+                                </Link>
+                            </div>
+                            <div
+                                id='right__side'
+                                className='flex flex-col py-10 mt-6 md:border-blue-500 md:border-2'
+                            >
+                                <Link
+                                    className='flex flex-row justify-between mt-4'
+                                    href='https://www.norsk-tipping.no/grasrotandelen/din-mottaker/825211012'
+                                    target='_blank'
+                                >
+                                    Støtt oss med din grasrot
+                                    <BiLink />
+                                </Link>
+                                <Link
+                                    className='flex flex-row justify-between mt-4'
+                                    href='https://www.youtube.com/channel/UClhMrYai_XGlBW_mRPhfQJQ'
+                                    target='_blank'
+                                >
+                                    NBF Bryte-TV på YouTube
+                                    <BiLink />
+                                </Link>
+                                <Link
+                                    className='flex flex-row justify-between mt-4'
+                                    href='https://www.youtube.com/@WORLDARMWRESTLINGFEDERATION/featured'
+                                    target='_blank'
+                                >
+                                    World Armwrestling Federation
+                                    <br /> på YouTube
+                                    <BiLink />
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                     <div className='py-12 mt-6 '>
-                        <p className='pb-4 text-lg text-center text-ba-color-gold'>
+                        <p className='pb-6 text-2xl text-center text-ba-color-gold'>
                             Andre Håndbakklubber i Norge
                         </p>
                         <div>

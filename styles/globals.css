@@ -32,3 +32,25 @@
   position: relative !important;
   height: unset !important;
 }
+
+/* FAQ CSS */
+
+.listing > ul {
+  margin-bottom: 2rem;
+  margin-left: .5rem;
+  list-style: disc;
+  }
+  
+  .listing > ul > li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .listing > ul > li > ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+  
+  .listing > ul > li > ul > li {
+    margin: .5rem;
+  }

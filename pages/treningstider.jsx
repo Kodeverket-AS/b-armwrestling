@@ -29,13 +29,8 @@ const Treningstider = () => {
                             19.00-21.00
                         </p>
                     </div>
-                    <div
-                        // className="grid justify-center w-4/5 grid-cols-1 my-8 text-center"
-                        // className="flex justify-center w-4/5 text-center"
-                        // className="w-2/3"
-                    >
+                    <div>
                         <p
-                            // className="justify-end "
                             className="text-center w-96"
                         >
                             Følg oss på

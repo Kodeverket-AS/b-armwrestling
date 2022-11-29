@@ -6,14 +6,14 @@ const Faq = () => {
     return (
         <>
             <h1
-                className='text-5xl text-center text-yellow-500 '
+                className='mb-8 text-5xl text-center text-yellow-500'
             >
                 Spørsmål og svar
             </h1>
             <div
                 className='flex justify-center'>
                 <Accordion
-                    className='w-3/4 text-white md:w-2/3'
+                    className='w-3/4 text-white md:w-2/3 lg:w-1/2'
                 >
                     <Accordion.Panel>
                         <Accordion.Title>

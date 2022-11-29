@@ -21,16 +21,16 @@ export default function VariousLinks() {
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 Diverse Linker
             </h1>
-            <section className='max-w-md mx-auto '>
+            <section className='mx-4'>
                 <div
                     id='linksAndPics'
                     className='text-white md:flex-auto md:content-around '
                 >
-                    <div className='md:border-2 md:border-yellow-300 md:w-auto'>
-                        <div className='md:gap-10 md:flex md:flex-row '>
+                    <div className='md:border-2 md:border-yellow-300 md:w-auto md:mx-4'>
+                        <div className=' md:flex md:flex-row md:justify-between'>
                             <div
                                 id='left__side'
-                                className='flex flex-col py-10 mt-6 md:border-red-500 md:border-2'
+                                className='flex flex-col py-10 md:border-red-500 md:border-2 md:px-5'
                             >
                                 <Link
                                     className='flex flex-row justify-between mt-4'
@@ -71,7 +71,7 @@ export default function VariousLinks() {
                             </div>
                             <div
                                 id='right__side'
-                                className='flex flex-col py-10 mt-6 md:border-blue-500 md:border-2'
+                                className='flex flex-col py-10 md:border-blue-500 md:border-2 md:px-5'
                             >
                                 <Link
                                     className='flex flex-row justify-between mt-4'
@@ -101,16 +101,23 @@ export default function VariousLinks() {
                             </div>
                         </div>
                     </div>
-                    <div className='py-12 mt-6 '>
+
+                    <div className='py-12 mt-6 md:border-2 md:mx-4 '>
                         <p className='pb-6 text-2xl text-center text-ba-color-gold'>
                             Andre Håndbakklubber i Norge
                         </p>
                         <div>
-                            <ul id='klub__list'>
-                                <div id='left__side'>
+                            <ul
+                                id='klub__list'
+                                className='md:flex md:flex-row md:justify-between md:px-20 md:text-[20px]'
+                            >
+                                <div
+                                    id='left__side'
+                                    className='md:flex md:flex-col'
+                                >
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Bergen Armwrestling
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://jobbjakt.no/'
                                                 target='_blank'
@@ -136,7 +143,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Christiania Håndbak Klubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='http://www.christianiaak.no/'
                                                 target='_blank'
@@ -150,7 +157,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Fredrikstad Håndbak-klubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://thomasas88.wixsite.com/fredrikstadhk?fbclid=IwAR30esLtuhXzdxCA0EYxOSlNPDFXcQoc0oolj-zD3VCPlQOJlbfOZxI9KI0'
                                                 target='_blank'
@@ -170,7 +177,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Gjerdrum Håndbakklubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/groups/1124104771091647/'
                                                 target='_blank'
@@ -182,7 +189,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Hardanger Handbak Klubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/groups/1855217708058225/'
                                                 target='_blank'
@@ -194,7 +201,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Jølster Handbakklubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='http://jolsterhandbak.no/?fbclid=IwAR0zZw9XEP8mlcFyrIcYF5tnCJ4g5bFHRUcOVYA5fq8Ig-FQcFtv89xluc0'
                                                 target='_blank'
@@ -214,7 +221,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Kristiansand Håndbakklubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/krs.haandbak/'
                                                 target='_blank'
@@ -229,7 +236,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Lindesnes Håndbakklubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <BsDot className='text-transparent ' />
                                             <Link
                                                 href='https://www.instagram.com/lindesneshk/?igshid=sps52mx6bj8r&fbclid=IwAR3IJ4pcov4QVhJJGQKGr3vXuVX-x9pvyzmVx_X2zhwEoSH-qUeZa1T5olM'
@@ -249,7 +256,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Lærdal Handbakklubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/groups/1025447257487345/'
                                                 target='_blank'
@@ -263,10 +270,14 @@ export default function VariousLinks() {
                                         Masfjorden Håndbak klubb
                                     </li>
                                 </div>
-                                <div id='right__side'>
+
+                                <div
+                                    id='right__side'
+                                    className='md:flex md:flex-col'
+                                >
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Nidarø Håndbakklubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/nidarohandbak/'
                                                 target='_blank'
@@ -278,7 +289,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Notodden Håndbakklubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/groups/1283951821979096/'
                                                 target='_blank'
@@ -290,7 +301,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Os Håndbak Klubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/groups/465887663538930/'
                                                 target='_blank'
@@ -302,7 +313,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Sandefjord Håndbak
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.sandefjord.kommune.no/globalassets/kultur-idrett-og-fritid/kif-dokumenter/lag-og-foreninger/sandefjord-handbak-flyer.pdf'
                                                 target='_blank'
@@ -328,7 +339,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Skien Håndbak Klubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/Skienhk/'
                                                 target='_blank'
@@ -340,7 +351,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Sportsklubben 1909
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.sportsklubben1909.no/p/62612/handbak'
                                                 target='_blank'
@@ -360,7 +371,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Stavanger håndbakklubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='https://www.facebook.com/stavangerhaandbakklubb/'
                                                 target='_blank'
@@ -375,7 +386,7 @@ export default function VariousLinks() {
                                     </li>
                                     <li className='flex flex-row justify-between my-2 border-b-2 '>
                                         Stord Handbak Klubb
-                                        <div className='flex flex-row gap-4'>
+                                        <div className='flex flex-row gap-4 ml-10'>
                                             <Link
                                                 href='http://lindasgym.no/handbak/'
                                                 target='_blank'

@@ -4,12 +4,12 @@ const Treningstider = () => {
     return (
         <>
             <h1
-                className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'            
+                className='pt-8 mb-8 text-5xl text-center text-ba-color-gold '           
             >
                 Treningstider
             </h1>
             <div
-                className="grid justify-center grid-cols-1 text-white md:grid-cols-2 md:gap-12"
+                className="grid justify-center grid-cols-1 text-white md:max-w-5xl md:grid-cols-2 md:gap-12 md:mx-auto"
             >
                 <div
                     className="grid md:grid-rows-2 md:justify-end md:h-48"
@@ -18,12 +18,12 @@ const Treningstider = () => {
                         className="grid grid-cols-2 gap-4 text-2xl"
                     >
                         <p
-                            className="grid justify-center h-0 md:mt-14 md:justify-start md:ml-6"
+                            className="grid justify-center h-0 md:mt-14 md:justify-start md:ml-10"
                         >
                             Tirsdag
                         </p>
                         <p
-                            className="grid justify-center md:mt-14"
+                            className="grid justify-center md:mt-14 "
 
                         >
                             19.00-21.00
@@ -33,7 +33,8 @@ const Treningstider = () => {
                         className="mx-10"
                     >
                         <p>
-                            Fortløpende oppdatert informasjon om trening, arrangementer med mer legges ut på vår lukkete
+                            Fortløpende oppdatert informasjon om trening, arrangementer med mer legges ut på 
+                            vår lukkete
                             {' '}
                             <Link
                                 className='underline hover:text-ba-color-gold'
@@ -46,7 +47,9 @@ const Treningstider = () => {
                         </p>
                         <br/>
                         <p>
-                        Vi trener fast hver tirsdag på Gnisten Aktivitetssenter. Vi låner dette lokalet av Bergen Kommune og ønsker et tett sammarbeid med dem for å fremme klubben og idretten vår.
+                        Vi trener fast hver tirsdag på Gnisten Aktivitetssenter. Vi låner dette lokalet av 
+                        Bergen Kommune og ønsker et tett sammarbeid med dem for å fremme klubben og idretten 
+                        vår.
                         </p>
                     </div>
                 </div>

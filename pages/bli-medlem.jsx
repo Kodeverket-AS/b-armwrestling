@@ -15,7 +15,7 @@ const BliMedlem = () => {
           className="grid md:grid-rows-2"
         >
           <div
-            className=" h-44 md:order-2"
+            className=" md:h-44 md:order-2"
           >
             <Image
               src={GroupPic}

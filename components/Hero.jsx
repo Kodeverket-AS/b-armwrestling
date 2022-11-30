@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import FrontPic from '../images/index/frontpic.png'
 
@@ -47,7 +48,7 @@ const Hero = () => {
       </div>
       <div>
         <h2
-          className='text-lg text-center text-ba-color-gold'
+          className='mb-3 text-base text-center text-ba-color-gold md:text-2xl lg:text-3xl'
         >
           Samaribeidspartnere
         </h2>
@@ -84,14 +85,22 @@ const Hero = () => {
         {/* <Image /> */}
         <div class='flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6'>
           <div class='mt-3 rounded-lg sm:mt-0'>
-            <button class='px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform ba-bg-orange lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'>
+            <Link
+            href='/bli-medlem'
+            >
+            <button class='px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'>
               Bli medlem
             </button>
+            </Link>
           </div>
           <div class='mt-3 rounded-lg sm:mt-0 sm:ml-3'>
+            <Link
+            href='/treningstider'
+            >
             <button class='items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-white transition duration-500 ease-in-out transform border-2 border-white hover:bg-white hover:text-black shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500'>
               Se treningstider
             </button>
+            </Link>
           </div>
         </div>
       </div>

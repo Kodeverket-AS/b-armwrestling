@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../images/logov2.png';
+import { BsFacebook } from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -16,9 +17,7 @@ const Footer = () => {
           </Link>
           <ul className='flex flex-wrap items-center mb-6 text-sm sm:mb-0 text-gray-400'>
             <li>
-              <Link href='#' className='mr-4 hover:underline md:mr-6 '>
-                About
-              </Link>
+              <BsFacebook />
             </li>
             <li>
               <Link href='#' className='mr-4 hover:underline md:mr-6'>

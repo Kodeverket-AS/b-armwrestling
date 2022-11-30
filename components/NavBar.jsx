@@ -9,7 +9,7 @@ const NavBar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="#" className="flex items-center mb-4 sm:mb-0">
+            <Link href="/" className="flex items-center mb-4 sm:mb-0">
               <Image src={Logo} width={50} alt="Bergen Armwrestling Logo" />
               <span className="invisible md:visible ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
                 Bergen Armwrestling

@@ -6,7 +6,7 @@ const Faq = () => {
     return (
         <>
             <h1
-                className='mb-8 text-5xl text-center ba-text-orange'
+                className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'
             >
                 Spørsmål og svar
             </h1>

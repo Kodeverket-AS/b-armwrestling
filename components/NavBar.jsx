@@ -1,7 +1,8 @@
-import { useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import Logo from "../images/logov2.png"
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import Logo from "../images/logov2.png";
+import { MdArrowDropDown } from "react-icons/md";
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false)
   return (
@@ -9,7 +10,8 @@ const NavBar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="/" className="flex items-center mb-4 sm:mb-0">
+            <Link href="#" class="flex items-center mb-4 sm:mb-0">
+
               <Image src={Logo} width={50} alt="Bergen Armwrestling Logo" />
               <span className="invisible md:visible ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
                 Bergen Armwrestling
@@ -59,7 +61,8 @@ const NavBar = () => {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul className="relative items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+
               <li className="text-white">
                 <Link href="/">Hjem</Link>
               </li>
@@ -67,17 +70,36 @@ const NavBar = () => {
                 <Link href="/treningstider">Treningstider</Link>
               </li>
               <li className="text-white">
-                <Link href="/terminliste">Terminliste</Link>
-              </li>
-              <li className="text-white">
-                <Link href="/kontakt">Kontakt</Link>
-              </li>
-              <li className="text-white">
                 <Link href="/faq">FAQ</Link>
+
               </li>
-              <li className="text-white">
-                <Link href="/galleri">Galleri</Link>
-              </li>
+              <button className="items-center px-5 py-2 text-white peer hover:bg-ba-color-gold md:flex">
+                Mer <MdArrowDropDown className="ml-2" />
+              </button>
+              <ul
+                className="hidden peer-hover:flex hover:flex
+         w-[200px]
+         flex-col drop-shadow-lg absolute bg-zinc-900 top-10 pt-7"
+              >
+                <li className="text-white hover:bg-ba-color-gold">
+                  <Link href="/diverse-linker" className="px-5 py-3 md:block">
+                    Diverse Linker
+                  </Link>
+                </li>
+                <li className="text-white hover:bg-ba-color-gold">
+                  <Link href="/terminliste" className="px-5 py-3 md:block">
+                    Terminliste
+                  </Link>
+                </li>
+                <li className="text-white hover:bg-ba-color-gold">
+                  <Link href="/galleri" className="px-5 py-3 md:block">
+                    Galleri
+                  </Link>
+                </li>
+              </ul>
+              <button className="px-3 py-1.5 text-center text-white transition duration-500 ease-in-out transform border border-ba-color-gold lg:px-10 rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                Meld Deg Inn
+              </button>
             </ul>
           </div>
         </div>

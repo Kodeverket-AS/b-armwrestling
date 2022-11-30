@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Logo from "../images/logov2.png"
 import { BsFacebook } from "react-icons/bs"
+import { BsFacebook } from "react-icons/bs"
 
 const Footer = () => {
   return (

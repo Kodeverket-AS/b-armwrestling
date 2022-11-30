@@ -18,7 +18,11 @@ module.exports = {
       },
       width: {
         'ba-width-large' : '560px'
-      }
+      },
+      screens: {
+        'xxs': '375px',
+        'xs' : '425px',
+      },
     },
   },
 };

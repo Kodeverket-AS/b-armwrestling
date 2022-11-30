@@ -22,18 +22,15 @@ export default function VariousLinks() {
                 Diverse Linker
             </h1>
             <section className='mx-4'>
-                <div
-                    id='linksAndPics'
-                    className='text-white md:flex-auto md:content-around '
-                >
-                    <div className='md:border-2 md:border-yellow-300 md:w-auto md:mx-4'>
-                        <div className=' md:flex md:flex-row md:justify-between'>
+                <div id='linksAndPics' className='text-white '>
+                    <div className=' md:w-auto md:mx-4'>
+                        <div className='md:flex md:flex-row md:justify-evenly  md:text-[18px]'>
                             <div
                                 id='left__side'
-                                className='flex flex-col py-10 md:border-red-500 md:border-2 md:px-5'
+                                className='flex flex-col content-center py-10 '
                             >
                                 <Link
-                                    className='flex flex-row justify-between mt-4'
+                                    className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://bryting.no/brytegrener/handbak/'
                                     target='_blank'
                                 >
@@ -41,11 +38,11 @@ export default function VariousLinks() {
                                     <Image
                                         src={NBF}
                                         alt='ba shield'
-                                        width={40}
+                                        width={50}
                                     />
                                 </Link>
                                 <Link
-                                    className='flex flex-row justify-between mt-4'
+                                    className='flex flex-row items-center justify-between mt-4'
                                     href='https://www.antidoping.no/'
                                     target='_blank'
                                 >
@@ -53,11 +50,11 @@ export default function VariousLinks() {
                                     <Image
                                         src={rentil}
                                         alt='ba shield'
-                                        width={40}
+                                        width={50}
                                     />
                                 </Link>
                                 <Link
-                                    className='flex flex-row justify-between mt-4'
+                                    className='flex flex-row items-center justify-between mt-4'
                                     href='https://www.deltager.no/deltagerforside.aspx'
                                     target='_blank'
                                 >
@@ -65,16 +62,16 @@ export default function VariousLinks() {
                                     <Image
                                         src={deltakerlogo}
                                         alt='ba shield'
-                                        width={40}
+                                        width={50}
                                     />
                                 </Link>
                             </div>
                             <div
                                 id='right__side'
-                                className='flex flex-col py-10 md:border-blue-500 md:border-2 md:px-5'
+                                className='flex flex-col py-10 md:px-5'
                             >
                                 <Link
-                                    className='flex flex-row justify-between mt-4'
+                                    className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.norsk-tipping.no/grasrotandelen/din-mottaker/825211012'
                                     target='_blank'
                                 >
@@ -82,7 +79,7 @@ export default function VariousLinks() {
                                     <BiLink />
                                 </Link>
                                 <Link
-                                    className='flex flex-row justify-between mt-4'
+                                    className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.youtube.com/channel/UClhMrYai_XGlBW_mRPhfQJQ'
                                     target='_blank'
                                 >
@@ -90,7 +87,7 @@ export default function VariousLinks() {
                                     <BiLink />
                                 </Link>
                                 <Link
-                                    className='flex flex-row justify-between mt-4'
+                                    className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.youtube.com/@WORLDARMWRESTLINGFEDERATION/featured'
                                     target='_blank'
                                 >
@@ -102,14 +99,14 @@ export default function VariousLinks() {
                         </div>
                     </div>
 
-                    <div className='py-12 mt-6 md:border-2 md:mx-4 '>
-                        <p className='pb-6 text-2xl text-center text-ba-color-gold'>
+                    <div className='py-12 mt-6 md:mx-4 '>
+                        <p className='pb-6 mb-6 text-2xl text-center text-ba-color-gold'>
                             Andre Håndbakklubber i Norge
                         </p>
                         <div>
                             <ul
                                 id='klub__list'
-                                className='md:flex md:flex-row md:justify-between md:px-20 md:text-[20px]'
+                                className='md:flex md:flex-row md:justify-evenly  md:text-[18px]'
                             >
                                 <div
                                     id='left__side'

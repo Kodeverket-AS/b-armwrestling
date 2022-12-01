@@ -76,7 +76,7 @@ const NavBar = () => {
               <ul
                 className="hidden peer-hover:flex hover:flex
          w-[200px]
-         flex-col drop-shadow-lg absolute bg-zinc-900 top-10 pt-7"
+         flex-col drop-shadow-lg absolute bg-zinc-900 top-10 pt-7 z-10"
               >
                 <li className="text-white hover:bg-ba-color-gold">
                   <Link href="/diverse-linker" className="px-5 py-3 md:block">
@@ -94,7 +94,7 @@ const NavBar = () => {
                   </Link>
                 </li>
               </ul>
-              <button className="px-4 py-4 text-center text-white transition duration-500 ease-in-out transform border lg:w-full w-36 border-ba-color-gold rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              <button className="z-20 px-4 py-4 text-center text-white transition duration-500 ease-in-out transform border lg:w-full w-36 border-ba-color-gold rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 Meld Deg Inn
               </button>
             </ul>

@@ -41,7 +41,15 @@ const BliMedlem = () => {
               du ønsker å melde deg inn.
             </p>
             <br />
-            <p>Innmelding gjør du enkelther!</p>
+            <p>Innmelding gjør du enkelt
+              {' '}
+              <Link
+              className="underline hover:text-ba-color-gold"
+              href="/"
+              >
+                her!
+              </Link>
+            </p>
             <br />
             <ul>
               Medlemskontigent pr 2022
@@ -82,7 +90,7 @@ const BliMedlem = () => {
             </p>
             <br />
           </div>
-        
+
           <h2
             className="font-bold"
           >

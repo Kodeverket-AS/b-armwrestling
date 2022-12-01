@@ -35,7 +35,12 @@ const Hero = () => {
     // </div>
     <div className="mx-auto text-white lg:max-w-5xl">
       <div>
-        <Image className="w-full " src={FrontPic} width={1300} />
+        <Image
+          className="w-full "
+          src={FrontPic}
+          width={1300}
+          alt="club members flexing muscles"
+        />
         <h1 className="relative text-center xxs:bottom-7 text-l bottom-6 text-ba-color-gold md:text-3xl md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5">
           Bergen Armwrestling
         </h1>

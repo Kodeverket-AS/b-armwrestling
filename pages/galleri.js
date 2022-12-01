@@ -1,7 +1,9 @@
 import React from "react"
 import Image from "next/image"
 import data from "./galleri/images.json"
-import { Carousel } from "flowbite-react"
+import { Carousel, Modal, Button } from "flowbite-react"
+import Overlay from "../components/Overlay"
+import { useState } from "react"
 
 import image_01 from "../public/group_01.jpeg"
 import image_02 from "../public/group_02.jpeg"
@@ -9,6 +11,53 @@ import image_03 from "../public/group_03.jpg"
 import image_04 from "../public/group_04.jpg"
 
 const Gallery = () => {
+  const [clickedImg, setClickedImg] = useState(null)
+  const [currentIndex, setCurrentIndex] = useState(null)
+
+  const handleClick = (item, index) => {
+    console.log(item, index)
+    setCurrentIndex(index)
+    setClickedImg(item.link)
+  }
+
+  const handleRotationRight = () => {
+    const totalLength = data.data.length
+
+    if (currentIndex + 1 >= totalLength) {
+      setCurrentIndex(0)
+      const newUrl = data.data[0].link
+      setClickedImg(newUrl)
+      return
+    }
+    const newIndex = currentIndex + 1
+    const newUrl = data.data.filter((item) => {
+      return data.data.indexOf(item) === newIndex
+    })
+    const newItem = newUrl[0].link
+
+    setClickedImg(newItem)
+    setCurrentIndex(newIndex)
+  }
+
+  const handleRotationLeft = () => {
+    const totalLength = data.data.length
+
+    if (currentIndex === 0) {
+      setCurrentIndex(totalLength)
+      const newUrl = data.data[totalLength - 1].link
+      setClickedImg(newUrl)
+      return
+    }
+    const newIndex = currentIndex - 1
+    const newUrl = data.data.filter((item) => {
+      return data.data.indexOf(item) === newIndex
+    })
+    const newItem = newUrl[0].link
+
+    setClickedImg(newItem)
+    setCurrentIndex(newIndex)
+  }
+
   return (
     <>
       <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">
@@ -26,16 +75,24 @@ const Gallery = () => {
         <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-6 mx-auto md:flex-row">
           {data.data.map((item, index) => (
             <Image
-              className="rounded-md w-[90%] max-w-[425px]  md:w-[300px] md:h-[200px] h-[auto] object-cover"
+              className="rounded-md w-[90%] max-w-[425px]  md:w-[300px] md:h-[200px] h-[auto] object-cover hover:cursor-pointer"
               key={index}
               src={`/${item.link}`}
               width={400}
               height={300}
               alt={item.text}
-              // onClick={() => handleClick(item, index)}
+              onClick={() => handleClick(item, index)}
             />
           ))}
         </div>
+        {clickedImg && (
+          <Overlay
+            clickedImg={clickedImg}
+            setClickedImg={setClickedImg}
+            handleRotationRight={handleRotationRight}
+            handleRotationLeft={handleRotationLeft}
+          />
+        )}
       </div>
     </>
   )

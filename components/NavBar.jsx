@@ -13,7 +13,7 @@ const NavBar = () => {
             <Link href="#" class="flex items-center mb-4 sm:mb-0">
 
               <Image src={Logo} width={50} alt="Bergen Armwrestling Logo" />
-              <span className="invisible md:visible ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
+              <span className="invisible lg:visible ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
                 Bergen Armwrestling
               </span>
             </Link>
@@ -97,7 +97,7 @@ const NavBar = () => {
                   </Link>
                 </li>
               </ul>
-              <button className="px-3 py-1.5 text-center text-white transition duration-500 ease-in-out transform border border-ba-color-gold lg:px-10 rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              <button className="px-4 py-4 text-center text-white transition duration-500 ease-in-out transform border lg:w-full w-36 border-ba-color-gold rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 Meld Deg Inn
               </button>
             </ul>

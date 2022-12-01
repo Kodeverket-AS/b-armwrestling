@@ -16,7 +16,7 @@ const Overlay = ({
   return (
     <div
       id="openModal"
-      className="fixed top-0 left-0 right-0 items-center justify-center hidden w-full h-full py-10 md:block bg-ba-modal"
+      className="fixed top-0 left-0 right-0 items-center justify-center hidden w-full h-full md:flex bg-ba-modal"
       onClick={(e) => {
         if (e.target === e.currentTarget) {
           closeModal()

@@ -66,7 +66,14 @@ const Gallery = () => {
       <div className="mx-auto lg:max-w-5xl">
         <div className="h-[400px] mb-4 sm:h-64 w-[90%]  mx-auto  md:w-[615px] md:h-[400px] ">
           <Carousel slideInterval={5000} className="rounded-md">
-            <Image src={image_01} alt="..." width={400} height={400} priority />
+            <Image
+              src={image_01}
+              alt="..."
+              width={400}
+              height={400}
+              priority
+              className="rounded-md"
+            />
             <Image src={image_02} alt="..." width={400} priority />
             <Image src={image_03} alt="..." width={400} priority />
             <Image src={image_04} alt="..." width={400} priority />

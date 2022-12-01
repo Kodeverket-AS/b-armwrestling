@@ -3,10 +3,10 @@ import Image from "next/image"
 import data from "./galleri/images.json"
 import { Carousel } from "flowbite-react"
 
-import image_01 from "../public/wrestling_1.jpg"
-import image_02 from "../public/wrestling_2.jpg"
-import image_03 from "../public/wrestling_3.jpg"
-import image_04 from "../public/wrestling_4.jpg"
+import image_01 from "../public/group_01.jpeg"
+import image_02 from "../public/group_02.jpeg"
+import image_03 from "../public/group_04.jpg"
+import image_04 from "../public/wrestling_2.jpg"
 
 const Gallery = () => {
   return (
@@ -25,6 +25,7 @@ const Gallery = () => {
               width={400}
               height={300}
               alt={item.text}
+              priority
               // onClick={() => handleClick(item, index)}
             />
           ))}
@@ -42,9 +43,9 @@ const SlideShow = () => {
     <div className="h-[400px] mb-4 sm:h-64 w-[90%]  mx-auto  md:w-[615px] md:h-[400px] lg:w-[930px]">
       <Carousel slideInterval={5000} className="rounded-md">
         <Image src={image_01} alt="..." width={400} height={400} priority />
-        <Image src={image_02} alt="..." width={400} priority />
-        <Image src={image_03} alt="..." width={400} priority />
-        <Image src={image_04} alt="..." width={400} priority />
+        <Image src={image_02} alt="..." width={400} />
+        <Image src={image_03} alt="..." width={400} className="object-fill" />
+        <Image src={image_04} alt="..." width={400} />
       </Carousel>
     </div>
   )

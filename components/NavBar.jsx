@@ -78,13 +78,13 @@ const NavBar = () => {
                                 <Link href='/faq'>FAQ</Link>
                             </li>
                             <li className='text-white md:hidden'>
-                                <Link href='/faq'>Diverse Linker</Link>
+                                <Link href='/diverse-linker'>Diverse Linker</Link>
                             </li>
                             <li className='text-white md:hidden'>
-                                <Link href='/faq'>Terminliste</Link>
+                                <Link href='/terminliste'>Terminliste</Link>
                             </li>
                             <li className='text-white md:hidden'>
-                                <Link href='/faq'>Galleri</Link>
+                                <Link href='/galleri'>Galleri</Link>
                             </li>
                             <button className='items-center hidden px-5 py-2 text-white peer hover:bg-ba-color-gold md:flex'>
                                 Mer <MdArrowDropDown className='ml-2' />

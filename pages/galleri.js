@@ -64,19 +64,19 @@ const Gallery = () => {
         Galleri
       </h1>
       <div className="mx-auto lg:max-w-5xl">
-        <div className="h-[400px] mb-4 sm:h-64 w-[90%]  mx-auto  md:w-[615px] md:h-[400px] ">
+        <div className="h-[400px] mb-4 sm:h-64 w-[90%]  mx-auto  md:w-[615px] md:h-[400px] lg:w-[930px]">
           <Carousel slideInterval={5000} className="rounded-md">
             <Image
               src={image_01}
               alt="..."
-              width={400}
+              width={930}
               height={400}
               priority
               className="rounded-md"
             />
-            <Image src={image_02} alt="..." width={400} priority />
-            <Image src={image_03} alt="..." width={400} priority />
-            <Image src={image_04} alt="..." width={400} priority />
+            <Image src={image_02} alt="..." width={930} priority />
+            <Image src={image_03} alt="..." width={930} priority />
+            <Image src={image_04} alt="..." width={930} priority />
           </Carousel>
         </div>
         <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-6 mx-auto md:flex-row">

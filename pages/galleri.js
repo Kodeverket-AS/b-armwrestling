@@ -3,10 +3,10 @@ import Image from "next/image"
 import data from "./galleri/images.json"
 import { Carousel } from "flowbite-react"
 
-import image_01 from "../public/group_01.jpeg"
-import image_02 from "../public/group_02.jpeg"
-import image_03 from "../public/group_04.jpg"
-import image_04 from "../public/wrestling_2.jpg"
+import image_01 from "../public/wrestling_1.jpg"
+import image_02 from "../public/wrestling_2.jpg"
+import image_03 from "../public/wrestling_3.jpg"
+import image_04 from "../public/wrestling_4.jpg"
 
 const Gallery = () => {
   return (
@@ -25,7 +25,6 @@ const Gallery = () => {
               width={400}
               height={300}
               alt={item.text}
-              priority
               // onClick={() => handleClick(item, index)}
             />
           ))}

@@ -10,7 +10,7 @@ const NavBar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="#" className="flex items-center mb-4 sm:mb-0">
+            <Link href="/" className="flex items-center mb-4 sm:mb-0">
               <Image src={Logo} width={50} alt="Bergen Armwrestling Logo" />
               <span className="invisible lg:visible ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
                 Bergen Armwrestling
@@ -94,9 +94,13 @@ const NavBar = () => {
                   </Link>
                 </li>
               </ul>
+              <Link
+                href="/bli-medlem"
+              >
               <button className="px-4 py-4 text-center text-white transition duration-500 ease-in-out transform border lg:w-full w-36 border-ba-color-gold rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 Meld Deg Inn
               </button>
+              </Link>
             </ul>
           </div>
         </div>

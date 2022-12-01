@@ -37,7 +37,7 @@ const Overlay = ({
           alt="bigger picture"
           className="h-auto mx-auto mt-4 rounded-md w-[500px]"
         ></Image>
-        <h2 className="mt-0 text-4xl text-white">{clickedImg}</h2>
+        {/* <h2 className="mt-0 text-4xl text-white">{clickedImg}</h2> */}
       </div>
 
       <AiFillCloseCircle

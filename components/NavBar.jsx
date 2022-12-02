@@ -88,7 +88,7 @@ const NavBar = () => {
                             <li className='text-white md:hidden'>
                                 <Link href='/galleri'>Galleri</Link>
                             </li>
-                            <button className='items-center hidden px-5 py-1 text-white peer hover:bg-ba-color-gold md:flex '>
+                            <button className='items-center hidden px-5 py-2 text-white peer hover:bg-ba-color-gold md:flex '>
                                 Mer <MdArrowDropDown className='ml-2 ' />
                             </button>
                             <ul

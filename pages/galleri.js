@@ -1,6 +1,6 @@
 import React from "react"
-import Image from "next/image"
 import Head from "next/head"
+import Image from "next/image"
 import data from "./galleri/images.json"
 import { Carousel } from "flowbite-react"
 import Overlay from "../components/Overlay"

@@ -1,4 +1,5 @@
 import React from "react"
+import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import logo_wrestling from "../images/logo_wrestling.png"
@@ -6,6 +7,13 @@ import logo_wrestling from "../images/logo_wrestling.png"
 const TermList = () => {
   return (
     <>
+      <Head>
+        <title>Terminliste</title>
+        <meta
+          name="description"
+          content="Termlist Bergen Armwrestling, lists arm wrestling competitions. "
+        ></meta>
+      </Head>
       <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">
         Terminliste
       </h1>
@@ -85,7 +93,7 @@ const Event = ({ date, eventName, location }) => {
     <div className="flex items-center max-w-xs gap-2 px-4 py-2 text-black bg-white border rounded-md justify-center w-[300px] mx-auto">
       <Image
         src={logo_wrestling}
-        alt="logo"
+        alt="armsport logo"
         width={75}
         className="rounded-md"
       />

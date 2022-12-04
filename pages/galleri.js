@@ -1,21 +1,19 @@
 import React from "react"
 import Image from "next/image"
 import data from "./galleri/images.json"
-import { Carousel, Modal, Button } from "flowbite-react"
+import { Carousel } from "flowbite-react"
 import Overlay from "../components/Overlay"
 import { useState } from "react"
 
-import image_01 from "../public/group_01.jpeg"
-import image_02 from "../public/group_02.jpeg"
-import image_03 from "../public/group_03.jpg"
-import image_04 from "../public/group_04.jpg"
+import image_01 from "../public/group_01.webp"
+import image_02 from "../public/group_02.webp"
+import image_03 from "../public/group_03.webp"
 
 const Gallery = () => {
   const [clickedImg, setClickedImg] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(null)
 
   const handleClick = (item, index) => {
-    console.log(item, index)
     setCurrentIndex(index)
     setClickedImg(item.link)
   }
@@ -74,9 +72,8 @@ const Gallery = () => {
               priority
               className="rounded-md"
             />
-            <Image src={image_02} alt="..." width={930} priority />
-            <Image src={image_03} alt="..." width={930} priority />
-            <Image src={image_04} alt="..." width={930} priority />
+            <Image src={image_02} alt="..." width={930} />
+            <Image src={image_03} alt="..." width={930} />
           </Carousel>
         </div>
         <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-6 mx-auto md:flex-row">

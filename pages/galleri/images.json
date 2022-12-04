@@ -2,47 +2,39 @@
   "data": [
     {
       "text": "Description of image is here image1",
-      "link": "group_01.jpeg"
+      "link": "group_01.webp"
     },
     {
       "text": "Description of image is here image1",
-      "link": "group_02.jpeg"
+      "link": "group_02.webp"
     },
     {
       "text": "Description of image is here image1",
-      "link": "group_03.jpg"
+      "link": "group_03.webp"
     },
     {
       "text": "Description of image is here image1",
-      "link": "group_04.jpg"
+      "link": "group_04.webp"
     },
     {
       "text": "Description of image is here image1",
-      "link": "group_05.jpg"
+      "link": "group_05.webp"
     },
     {
       "text": "Description of image is here image1",
-      "link": "match_01.jpg"
+      "link": "match_01.webp"
     },
     {
       "text": "Description of image is here image1",
-      "link": "match_02.jpg"
+      "link": "match_02.webp"
     },
     {
       "text": "Description of image is here image1",
-      "link": "match_03.jpeg"
+      "link": "match_03.webp"
     },
     {
       "text": "Description of image is here image1",
-      "link": "FB_image.jpg"
-    },
-    {
-      "text": "Description of image is here image1",
-      "link": "jacket_back.jpg"
-    },
-    {
-      "text": "Description of image is here image1",
-      "link": "jacket_front.jpg"
+      "link": "FB_image.webp"
     }
   ]
 }

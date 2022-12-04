@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Head from "next/head"
 import data from "./galleri/images.json"
 import { Carousel } from "flowbite-react"
 import Overlay from "../components/Overlay"
@@ -58,6 +59,13 @@ const Gallery = () => {
 
   return (
     <>
+      <Head>
+        <title>Galleri</title>
+        <meta
+          name="description"
+          content="Photo gallery Bergen Armwrestling"
+        ></meta>
+      </Head>
       <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">
         Galleri
       </h1>

@@ -11,10 +11,11 @@ const Faq = () => {
             <div className='flex justify-center'>
                 <Accordion
                     alwaysOpen={true}
+                    flush={true}
                     className='w-3/4 text-white md:w-2/3 lg:w-1/2'
                 >
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Når og hvor trener vi?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -44,7 +45,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Er det parkeringsplass ved treningslokalet?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -61,7 +62,9 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>Er det garderobe?</Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
+                            Er det garderobe?
+                        </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
@@ -73,7 +76,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hvordan er bussforbindelsen til treningslokalet?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -87,7 +90,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hvor får jeg “siste nytt” fra klubben?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -115,7 +118,9 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>Hvem trener hos oss?</Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
+                            Hvem trener hos oss?
+                        </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
@@ -131,7 +136,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Kan barn trene med oss?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -151,7 +156,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Må man konkurrere for å trene med oss?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -165,7 +170,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Er det trenere som leder treningene?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -194,7 +199,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hva gjør jeg første treningen?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -212,7 +217,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Må jeg har noe spesielt treningstøy eller utstyr på
                             treningene?
                         </Accordion.Title>
@@ -237,7 +242,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hva koster det å være medlem?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -256,7 +261,9 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>Hvem styrer klubben?</Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
+                            Hvem styrer klubben?
+                        </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
@@ -274,7 +281,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hva er reglene i håndbak?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -330,7 +337,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Kan man sitte og bryte håndbak?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -345,7 +352,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hvilke teknikker brukes?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -374,7 +381,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hvor kan jeg finne mer informasjon om teknikker og
                             øvelser?
                         </Accordion.Title>
@@ -397,7 +404,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Er det mye skader i håndbak?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -418,7 +425,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Er det ulike klasser man konkurrerer i?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -438,7 +445,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hva hvis jeg vil konkurrere - hva trenger jeg?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -507,7 +514,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Er det dopingkontroller i håndbak?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
@@ -533,7 +540,7 @@ const Faq = () => {
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
-                        <Accordion.Title>
+                        <Accordion.Title className=" text-ba-color-gold">
                             Hvordan er håndbakmiljøet nasjonalt?
                         </Accordion.Title>
                         <Accordion.Content className='listing'>

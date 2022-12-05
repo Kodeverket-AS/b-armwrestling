@@ -1,10 +1,18 @@
 // import '../styles/Faq.module.css';
 import { Accordion } from "flowbite-react";
+import Head from "next/head";
 import Link from "next/link";
 
 const Faq = () => {
     return (
         <>
+        <Head>
+            <title>Spørsmål og svar</title>
+            <meta
+                name="desciption"
+                content='Når og hvor trener vi? · Hvor får jeg "siste nytt" fra klubben? · Kan barn trene med oss?'
+            />
+        </Head>
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 Spørsmål og svar
             </h1>

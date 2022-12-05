@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 /*Pics from folder*/
-import deltakerlogo from "../images/diverseLinker/Deltaker green only logo.png";
-import NBF from "../images/diverseLinker/NBF-logo.png";
-import rentil from "../images/diverseLinker/rent-il.png";
+import deltakerlogo from "../../images/diverseLinker/Deltaker green only logo.png";
+import NBF from "../../images/diverseLinker/NBF-logo.png";
+import rentil from "../../images/diverseLinker/rent-il.png";
 
 /*Icons from React Icon*/
 import { BsFacebook } from "react-icons/bs";
@@ -30,40 +30,40 @@ export default function VariousLinks() {
                                 className='flex flex-col content-center py-10 '
                             >
                                 <Link
-                                    className='flex flex-row items-center justify-between gap-10 mt-4'
+                                    className='flex flex-row items-start justify-between gap-10 mt-4'
                                     href='https://bryting.no/brytegrener/handbak/'
                                     target='_blank'
                                 >
-                                    Norges Bryteforbund
                                     <Image
                                         src={NBF}
                                         alt='ba shield'
                                         width={50}
                                     />
+                                    Norges Bryteforbund
                                 </Link>
                                 <Link
-                                    className='flex flex-row items-center justify-between mt-4'
+                                    className='flex flex-row items-start justify-between mt-4'
                                     href='https://www.antidoping.no/'
                                     target='_blank'
                                 >
-                                    Antidoping Norge
                                     <Image
                                         src={rentil}
                                         alt='ba shield'
                                         width={50}
                                     />
+                                    Antidoping Norge
                                 </Link>
                                 <Link
-                                    className='flex flex-row items-center justify-between mt-4'
+                                    className='flex flex-row items-start justify-between mt-4'
                                     href='https://www.deltager.no/deltagerforside.aspx'
                                     target='_blank'
                                 >
-                                    Deltaker.no
                                     <Image
                                         src={deltakerlogo}
                                         alt='ba shield'
                                         width={50}
                                     />
+                                    Deltaker.no
                                 </Link>
                             </div>
                             <div

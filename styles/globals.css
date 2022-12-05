@@ -3,53 +3,67 @@
 @tailwind utilities;
 
 .wrapper {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .ba-text-orange {
-  color: #ca9d3d;
+    color: #ca9d3d;
 }
 
 .ba-bg-dark {
-  background-color: #1e1e1e;
+    /* background-image: radial-gradient(
+        #c9b1ff,
+        #ffcaf2,
+        #ffb2b1,
+        #fff3ad,
+        #bcffbc,
+        #a2edff
+    ); */
+
+    background-color: #1e1e1e;
+
+    background-image: url("../images/smalstar.png");
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  */
 }
 
 .ba-bg-orange {
-  background-color: #ca9d3d;
+    background-color: #ca9d3d;
 }
 
 .image-container {
-  width: 100%;
+    width: 100%;
 }
 
 .image-container > div {
-  position: unset !important;
+    position: unset !important;
 }
 
 .image-container > div > .image {
-  object-fit: contain;
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
 }
 
 /* FAQ CSS */
 
 .listing > ul {
-  margin-bottom: 2rem;
-  list-style: disc;
-  }
-  
-  .listing > ul > li {
+    margin-bottom: 2rem;
+    list-style: disc;
+}
+
+.listing > ul > li {
     font-size: 1rem;
     margin-bottom: 1rem;
-  }
-  
-  .listing > ul > li > ul {
+}
+
+.listing > ul > li > ul {
     padding-left: 1.5rem;
     list-style: disc;
-  }
-  
-  .listing > ul > li > ul > li {
-    margin: .5rem;
-  }
+}
+
+.listing > ul > li > ul > li {
+    margin: 0.5rem;
+}

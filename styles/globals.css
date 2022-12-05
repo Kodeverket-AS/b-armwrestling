@@ -53,3 +53,14 @@
   .listing > ul > li > ul > li {
     margin: .5rem;
   }
+
+  @media (min-width: 768px) {
+
+    .listing > ul > li {
+      margin-left: 1.5rem;
+    }
+
+    .listing > ul > li > ul > li {
+      margin-left: 1rem;
+    }
+  }

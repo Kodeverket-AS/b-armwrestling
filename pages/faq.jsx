@@ -16,7 +16,7 @@ const Faq = () => {
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 Spørsmål og svar
             </h1>
-            <div className='flex justify-center'>
+            <div className='flex justify-center pb-20'>
                 <Accordion
                     alwaysOpen={true}
                     flush={true}

@@ -28,8 +28,8 @@ const Hero = () => {
           Samaribeidspartnere
         </h2>
         <div>
-          <div className="flex flex-wrap items-center justify-center gap-4 w-4/5 max-w-[1024px] mx-auto mb-4 text-lg text-white">
-            <div className="flex flex-col items-center justify-center mx-auto gap-2 w-[75px]">
+          <div className="flex flex-wrap items-center justify-between gap-4 w-4/6 max-w-[1024px] mx-auto mb-4 text-lg text-white">
+            <div className="flex flex-col items-center justify-center gap-2 w-[75px]">
               <Image src={logo_jobbjakt} alt="Logoen til jobbjakt"/>
               <h2>Jobbjakt</h2>
             </div>

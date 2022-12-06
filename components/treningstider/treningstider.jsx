@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Treningstider = () => {
     return (
-        <>
+        <section>
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold '>
                 Treningstider
             </h1>
@@ -45,7 +45,7 @@ const Treningstider = () => {
                     />
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

@@ -33,7 +33,7 @@ const Hero = () => {
         //     </div>
         //   </div>
         // </div>
-        <div className='mx-auto text-white lg:max-w-5xl'>
+        <section className='mx-auto text-white lg:max-w-5xl'>
             <div>
                 <Image
                     className='w-full '
@@ -44,18 +44,6 @@ const Hero = () => {
                 <h1 className='relative text-center xxs:bottom-7 text-l bottom-6 text-ba-color-gold md:text-3xl md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5'>
                     Bergen Armwrestling
                 </h1>
-            </div>
-            <div>
-                <h2 className='mb-3 text-base text-center text-ba-color-gold md:text-2xl lg:text-3xl'>
-                    Samaribeidspartnere
-                </h2>
-                <div>
-                    {/* <Image /> */}
-                    {/* <Image /> */}
-                    {/* <Image /> */}
-                    {/* <Image /> */}
-                </div>
-                <div>{/* Goldline */}</div>
             </div>
             <div>
                 {/* <Image /> */}
@@ -74,28 +62,8 @@ const Hero = () => {
                         Bryteforbund.
                     </p>
                 </div>
-                <div>{/* Goldline */}</div>
             </div>
-            <div>
-                {/* <Image /> */}
-                <div className='flex justify-center w-full max-w-2xl gap-2 pb-4 mx-auto mt-6 '>
-                    <div className='mt-3 rounded-lg sm:mt-0'>
-                        <Link href='/bli-medlem'>
-                            <button className='px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'>
-                                Bli medlem
-                            </button>
-                        </Link>
-                    </div>
-                    <div className='mt-3 rounded-lg sm:mt-0 sm:ml-3'>
-                        <Link href='/treningstider'>
-                            <button className='items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-white transition duration-500 ease-in-out transform border-2 border-white hover:bg-white hover:text-black shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500'>
-                                Se treningstider
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     );
 };
 

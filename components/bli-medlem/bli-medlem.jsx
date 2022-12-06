@@ -4,18 +4,19 @@ import GroupPic from "../../images/bli-medlem/grouppic.jpg";
 
 const BliMedlem = () => {
     return (
-        <>
+        <section className="bg-gray-300 ">
+
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 Bli medlem
             </h1>
-            <div className='grid w-5/6 grid-cols-1 mx-auto text-white md:grid-cols-2 md:gap-8'>
+            <div className='grid w-5/6 grid-cols-1 mx-auto text-black md:grid-cols-2 md:gap-8'>
                 <div className='grid md:grid-rows-2'>
                     <div className=' md:h-44 md:order-2'>
                         <Image
                             src={GroupPic}
                             alt='Gruppebilde av Bergen Armwrestling'
                             width={800}
-                        />
+                            />
                     </div>
                     <div className='mt-0 h-96'>
                         <h2 className='font-bold'>
@@ -34,7 +35,7 @@ const BliMedlem = () => {
                             <Link
                                 className='underline hover:text-ba-color-gold'
                                 href='/'
-                            >
+                                >
                                 her!
                             </Link>
                         </p>
@@ -114,7 +115,7 @@ const BliMedlem = () => {
                     </p>
                 </div>
             </div>
-        </>
+                                </section>
     );
 };
 

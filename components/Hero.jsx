@@ -10,7 +10,7 @@ import logo_deltaker_blue from "../public/logo_deltaker_blue.png"
 
 const Hero = () => {
   return (
-    <div className="mx-auto text-white lg:max-w-5xl">
+    <div className="pb-20 mx-auto text-white lg:max-w-5xl">
       <div>
         <Image
           className="w-full "

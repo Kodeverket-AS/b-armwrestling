@@ -17,7 +17,7 @@ const Home = () => {
             <TermList /> {/* black */}
             <VariousLinks /> {/* white */}
             <Faq /> {/* black */}
-            {/* <Samarbeidspatnerer /> black */}
+            {/* <Samarbeidspatnerer /> white */}
         </>
     );
 };

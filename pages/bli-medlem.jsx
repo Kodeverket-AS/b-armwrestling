@@ -4,7 +4,7 @@ import GroupPic from "../images/bli-medlem/grouppic.jpg"
 
 const BliMedlem = () => {
   return (
-    <>
+    <div className="mx-auto text-white lg:max-w-5xl">
       <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">
         Bli medlem
       </h1>
@@ -20,7 +20,8 @@ const BliMedlem = () => {
             <Image
               src={GroupPic}
               alt='Gruppebilde av Bergen Armwrestling'
-              width={800}
+              width={410}
+              priority
             />
           </div>
           <div
@@ -136,7 +137,7 @@ const BliMedlem = () => {
           </p>
         </div>
       </div>
-    </>
+    </ div>
   );
 };
 

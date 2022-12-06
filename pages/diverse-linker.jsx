@@ -39,7 +39,7 @@ export default function VariousLinks() {
                                     Norges Bryteforbund
                                     <Image
                                         src={NBF}
-                                        alt='ba shield'
+                                        alt='Logo til Norges Bryteforbund'
                                         width={50}
                                     />
                                 </Link>
@@ -51,7 +51,7 @@ export default function VariousLinks() {
                                     Antidoping Norge
                                     <Image
                                         src={rentil}
-                                        alt='ba shield'
+                                        alt='Logo til Antdoping Norge'
                                         width={50}
                                     />
                                 </Link>
@@ -63,7 +63,7 @@ export default function VariousLinks() {
                                     Deltaker.no
                                     <Image
                                         src={deltakerlogo}
-                                        alt='ba shield'
+                                        alt='Logo til deltaker.no'
                                         width={50}
                                     />
                                 </Link>

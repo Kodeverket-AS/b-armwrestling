@@ -10,13 +10,14 @@ import logo_deltaker_blue from "../public/logo_deltaker_blue.png"
 
 const Hero = () => {
   return (
-    <div className="mx-auto text-white lg:max-w-5xl">
+    <div className="pb-20 mx-auto text-white lg:max-w-5xl">
       <div>
         <Image
           className="w-full "
           src={FrontPic}
           width={1300}
-          alt="club members flexing muscles"
+          alt="Gruppebilde av klubbens medlemmer"
+          priority
         />
         <h1 className="relative text-center xxs:bottom-7 text-l bottom-6 text-ba-color-gold md:text-3xl md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5">
           Bergen Armwrestling
@@ -29,24 +30,23 @@ const Hero = () => {
         <div>
           <div className="flex flex-wrap items-center justify-center gap-4 w-4/5 max-w-[1024px] mx-auto mb-4 text-lg text-white">
             <div className="flex flex-col items-center justify-center mx-auto gap-2 w-[75px]">
-              <Image src={logo_jobbjakt} alt="..."></Image>
+              <Image src={logo_jobbjakt} alt="Logoen til jobbjakt"/>
               <h2>Jobbjakt</h2>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
               <Image
                 src={logo_antidoping}
-                alt="..."
+                alt="Logoen til Antidoping Norge"
                 className=" w-[75px]"
-              ></Image>
+              />
               <h2>Antidoping Norge</h2>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
-              <Image src={logo_nbf} alt="..." className=" w-[75px]"></Image>
+              <Image src={logo_nbf} alt="Logoen til Norges Bryteforbund" className=" w-[75px]" />
               <h2>Norges Bryteforbund</h2>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
               <svg
-                class="logo"
                 width="131"
                 height="24"
                 viewBox="0 0 131 24"
@@ -59,11 +59,11 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-2">
-              <Image src={logo_deltaker_blue} className="max-w-[250px]"></Image>
+              <Image src={logo_deltaker_blue} className="max-w-[250px]" alt='Logoen til deltager.no'/>
               <h2>Deltaker.no</h2>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
-              <Image src={logo_anthrax}></Image>
+              <Image src={logo_anthrax} alt="Logoen til Anthrax Sportswear" />
               <h2>Anthrax Sportswear</h2>
             </div>
 

@@ -1,3 +1,4 @@
+import BliMedlem from "../components/bli-medlem/bli-medlem";
 import VariousLinks from "../components/diverse-linker/diverse-linker";
 import Faq from "../components/faq/faq";
 import Gallery from "../components/galleri/galleri";
@@ -9,12 +10,14 @@ import Treningstider from "../components/treningstider/treningstider";
 const Home = () => {
     return (
         <>
-            <Hero />
-            <Treningstider />
-            <Gallery />
-            <VariousLinks />
-            <TermList />
-            <Faq />
+            <Hero /> {/* black */}
+            <BliMedlem /> {/* white */}
+            <Treningstider />{/* black */}
+            <Gallery /> {/* white */}
+            <TermList /> {/* black */}
+            <VariousLinks /> {/* white */}
+            <Faq /> {/* black */}
+            {/* <Samarbeidspatnerer /> black */}
         </>
     );
 };

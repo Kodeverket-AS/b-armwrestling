@@ -6,6 +6,8 @@ import Image from "next/image";
 import deltakerlogo from "../images/diverseLinker/Deltaker green only logo.png";
 import NBF from "../images/diverseLinker/NBF-logo.png";
 import rentil from "../images/diverseLinker/rent-il.png";
+import WAF from '../images/diverseLinker/WAF2.png'
+import Grasrot from '../images/diverseLinker/grasrotandelen.png'
 
 /*Icons from React Icon*/
 import { BsFacebook } from "react-icons/bs";
@@ -76,7 +78,13 @@ export default function VariousLinks() {
                                     target='_blank'
                                 >
                                     Støtt oss med din grasrot
-                                    <BiLink />
+                                    {/* <BiLink /> */}
+                                    <Image
+                                        src={Grasrot}
+                                        alt='ba shield'
+                                        width={50}
+                                    />
+
                                 </Link>
                                 <Link
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
@@ -84,7 +92,12 @@ export default function VariousLinks() {
                                     target='_blank'
                                 >
                                     NBF Bryte-TV på YouTube
-                                    <BiLink />
+                                    {/* <BiLink /> */}
+                                    <Image
+                                        src={NBF}
+                                        alt='ba shield'
+                                        width={50}
+                                    />
                                 </Link>
                                 <Link
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
@@ -93,7 +106,12 @@ export default function VariousLinks() {
                                 >
                                     World Armwrestling Federation
                                     <br /> på YouTube
-                                    <BiLink />
+                                    {/* <BiLink /> */}
+                                    <Image
+                                        src={WAF}
+                                        alt='ba shield'
+                                        width={50}
+                                    />
                                 </Link>
                             </div>
                         </div>

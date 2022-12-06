@@ -16,13 +16,13 @@ import { BiLink } from "react-icons/bi";
 
 export default function VariousLinks() {
     return (
-        <>
+        <section className="bg-gray-300 ">
             <Head>Diverse Linker</Head>
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 Diverse Linker
             </h1>
-            <section className='mx-4'>
-                <div id='linksAndPics' className='text-white '>
+            <div className='mx-4'>
+                <div id='linksAndPics' className='text-black '>
                     <div className=' md:w-auto md:mx-4'>
                         <div className='md:flex md:flex-row md:justify-evenly  md:text-[18px]'>
                             <div
@@ -409,7 +409,7 @@ export default function VariousLinks() {
                         </div>
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </ section>
     );
 }

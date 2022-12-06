@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Faq = () => {
     return (
-        <>
+        <section>
         <Head>
             <title>Spørsmål og svar</title>
             <meta
@@ -569,7 +569,7 @@ const Faq = () => {
                     </Accordion.Panel>
                 </Accordion>
             </div>
-        </>
+        </ section>
     );
 };
 

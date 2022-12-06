@@ -76,7 +76,6 @@ const Gallery = () => {
               src={image_01}
               alt="Gruppebilde etter seier"
               width={930}
-              height={400}
               priority
               className="rounded-md"
             />

@@ -20,7 +20,8 @@ const BliMedlem = () => {
             <Image
               src={GroupPic}
               alt='Gruppebilde av Bergen Armwrestling'
-              width={800}
+              width={410}
+              priority
             />
           </div>
           <div

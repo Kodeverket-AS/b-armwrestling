@@ -74,14 +74,13 @@ const Gallery = () => {
           <Carousel slideInterval={5000} className="rounded-md">
             <Image
               src={image_01}
-              alt="..."
+              alt="Gruppebilde etter seier"
               width={930}
-              height={400}
               priority
               className="rounded-md"
             />
-            <Image src={image_02} alt="..." width={930} />
-            <Image src={image_03} alt="..." width={930} />
+            <Image src={image_02} alt="Gruppebilde med medaljer rundt halsen" width={930} />
+            <Image src={image_03} alt="Bilde tatt fra en håndbakkamp" width={930} />
           </Carousel>
         </div>
         <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-6 mx-auto md:flex-row">

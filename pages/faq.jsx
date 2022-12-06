@@ -400,7 +400,7 @@ const Faq = () => {
                                     Kanalen &nbsp;
                                     <Link
                                         className='underline hover:text-ba-color-gold'
-                                        href='/https://www.youtube.com/c/voiceofarmwrestling'
+                                        href='https://www.youtube.com/c/voiceofarmwrestling'
                                     >
                                         “Voice of Armwrestling”
                                     </Link>
@@ -467,7 +467,7 @@ const Faq = () => {
                                     informasjon om dette på vår &nbsp;
                                     <Link
                                         className='underline hover:text-ba-color-gold'
-                                        href='/https://www.facebook.com/groups/702890543475643'
+                                        href='https://www.facebook.com/groups/702890543475643'
                                     >
                                         facebookgruppe.
                                     </Link>
@@ -485,7 +485,7 @@ const Faq = () => {
                                             Lisens er via &nbsp;
                                             <Link
                                                 className='underline hover:text-ba-color-gold'
-                                                href='/https://bryting.no/praktisk-info/lisens-og-forsikring/'
+                                                href='https://bryting.no/praktisk-info/lisens-og-forsikring/'
                                             >
                                                 Bryteforbundet
                                             </Link>
@@ -500,7 +500,7 @@ const Faq = () => {
                                             lisens via &nbsp;
                                             <Link
                                                 className='underline hover:text-ba-color-gold'
-                                                href='/https://www.minidrett.no/'
+                                                href='https://www.minidrett.no/'
                                             >
                                                 MinIdrett.no.
                                             </Link>
@@ -539,7 +539,7 @@ const Faq = () => {
                                     forbudte stoffer finner man på &nbsp;
                                     <Link
                                         className='underline hover:text-ba-color-gold'
-                                        href='/https://www.antidoping.no/medisinsk/dopinglisten'
+                                        href='https://www.antidoping.no/medisinsk/dopinglisten'
                                     >
                                         dopinglitsen
                                     </Link>

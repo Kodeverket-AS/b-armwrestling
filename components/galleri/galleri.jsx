@@ -58,7 +58,7 @@ const Gallery = () => {
     };
 
     return (
-        <>
+        <section className="bg-gray-300 ">
             <Head>
                 <title>Galleri</title>
                 <meta
@@ -106,7 +106,7 @@ const Gallery = () => {
                     />
                 )}
             </div>
-        </>
+        </ section>
     );
 };
 

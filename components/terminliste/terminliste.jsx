@@ -6,7 +6,7 @@ import logo_wrestling from "../../images/logo_wrestling.png";
 
 const TermList = () => {
     return (
-        <>
+        <section>
             <Head>
                 <title>Terminliste</title>
                 <meta
@@ -81,7 +81,7 @@ const TermList = () => {
                 arrengementet nærmer seg. For mer info rundt turneringer ber vi
                 deg kontakte deltaker.no
             </p>
-        </>
+        </ section>
     );
 };
 

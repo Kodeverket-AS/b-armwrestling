@@ -3,7 +3,11 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import logo_wrestling from "../images/logo_wrestling.png"
+import { Timeline, HiCalendar, Button } from "flowbite-react"
 
+import { BsFillCalendarCheckFill } from "react-icons/bs"
+
+import { AiOutlineArrowRight } from "react-icons/ai"
 const TermList = () => {
   return (
     <>
@@ -19,6 +23,113 @@ const TermList = () => {
       </h1>
       {/* Events container  */}
 
+      <div className="flex justify-center items-center mx-auto w-[80%] max-w-[650px]">
+        <Timeline>
+          <Timeline.Item>
+            <Timeline.Point icon={BsFillCalendarCheckFill} />
+            <Timeline.Content className="text-white">
+              <Timeline.Time>18 - 19 Mars 2022</Timeline.Time>
+              <Timeline.Title className="font-bold text-white">
+                Hardanger Open, Norway
+              </Timeline.Title>
+              <Timeline.Body className="">
+                All Norwegian athletes must be a member of the Norges
+                Bryteforbund. The athletes must have a license in the Norwegian
+                Wrestling Federation before the start of the event. Contact your
+                local club for more information. All foreign athletes (WAF
+                members) must be a member of their national armwrestling
+                federation, and bring a statement that confirms the membership.
+              </Timeline.Body>
+              <Button color="gray">
+                <Link href="#" target="_blank">
+                  Learn More
+                </Link>
+                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
+              </Button>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={BsFillCalendarCheckFill} />
+            <Timeline.Content className="text-white">
+              <Timeline.Time>6 - 15 Mai 2022</Timeline.Time>
+              <Timeline.Title className="font-bold text-white">
+                Europa Mesterskap, Romania
+              </Timeline.Title>
+              <Timeline.Body className="">Description</Timeline.Body>
+              <Button color="gray">
+                <Link href="#" target="_blank">
+                  Learn More
+                </Link>
+                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
+              </Button>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={BsFillCalendarCheckFill} />
+            <Timeline.Content className="text-white">
+              <Timeline.Time>Uke 25 2022</Timeline.Time>
+              <Timeline.Title className="font-bold text-white">
+                NM-veka, Skien
+              </Timeline.Title>
+              <Timeline.Body className="">Description</Timeline.Body>
+              <Button color="gray">
+                <Link href="#" target="_blank">
+                  Learn More
+                </Link>
+                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
+              </Button>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={BsFillCalendarCheckFill} />
+            <Timeline.Content className="text-white">
+              <Timeline.Time>16 - 17 September 2022</Timeline.Time>
+              <Timeline.Title className="font-bold text-white">
+                FjordFight, Sandefjord
+              </Timeline.Title>
+              <Timeline.Body className="">Description</Timeline.Body>
+              <Button color="gray">
+                <Link href="#" target="_blank">
+                  Learn More
+                </Link>
+                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
+              </Button>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={BsFillCalendarCheckFill} />
+            <Timeline.Content className="text-white">
+              <Timeline.Time>14 - 23 Oktober 2022</Timeline.Time>
+              <Timeline.Title className="font-bold text-white">
+                Verdens Mesterskap, Analaya, Tyrkia
+              </Timeline.Title>
+              <Timeline.Body className="">Description</Timeline.Body>
+              <Button color="gray">
+                <Link href="#" target="_blank">
+                  Learn More
+                </Link>
+                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
+              </Button>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={BsFillCalendarCheckFill} />
+            <Timeline.Content className="text-white">
+              <Timeline.Time>25 - 26 November 2022</Timeline.Time>
+              <Timeline.Title className="font-bold text-white">
+                Arms In Hell, Trondheim
+              </Timeline.Title>
+              <Timeline.Body className="">Description</Timeline.Body>
+              <Button color="gray">
+                <Link href="#" target="_blank">
+                  Learn More
+                </Link>
+                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
+              </Button>
+            </Timeline.Content>
+          </Timeline.Item>
+        </Timeline>
+      </div>
       <h1>Testing</h1>
       {/* Disclaimer */}
       <p className="px-4 py-4 mx-auto text-white w-[95%] max-w-[650px]">

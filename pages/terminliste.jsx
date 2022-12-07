@@ -18,6 +18,44 @@ const TermList = () => {
         Terminliste
       </h1>
       {/* Events container  */}
+
+      <h1>Testing</h1>
+      {/* Disclaimer */}
+      <p className="px-4 py-4 mx-auto text-white w-[95%] max-w-[650px]">
+        På{" "}
+        <Link
+          href="https://www.deltaker.no"
+          target="_blank"
+          className="underline text-ba-color-gold hover:text-purple-600"
+        >
+          deltaker.no
+        </Link>{" "}
+        finner man alt av informasjon om kommende arrangementer hvor du enkelt
+        kan melde deg på ønsket arrengement. Vi gjør oppmerksom på at mer
+        utfyllende informasjon først vil være tilgjengelig når arrengementet
+        nærmer seg. For mer info rundt turneringer ber vi deg kontakte
+        deltaker.no
+      </p>
+    </>
+  )
+}
+
+export default TermList
+
+const TermList_old = () => {
+  return (
+    <>
+      <Head>
+        <title>Terminliste</title>
+        <meta
+          name="description"
+          content="Termlist Bergen Armwrestling, lists arm wrestling competitions. "
+        ></meta>
+      </Head>
+      <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">
+        Terminliste
+      </h1>
+      {/* Events container  */}
       <div className="grid grid-cols-1 md:grid-cols-2  w-[95%]  max-w-[768px] gap-4 justify-items-center mx-auto  content-center ">
         {/* Column 1  */}
         <div className="flex flex-col gap-4 w-[300px] md:justify-self-end">
@@ -84,8 +122,6 @@ const TermList = () => {
     </>
   )
 }
-
-export default TermList
 
 // Event takes date, eventName and Location as props
 const Event = ({ date, eventName, location }) => {

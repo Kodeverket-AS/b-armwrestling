@@ -19,8 +19,8 @@ const Hero = () => {
           alt="Gruppebilde av klubbens medlemmer"
           priority
         />
-        <h1 className="relative text-center xxs:bottom-7 text-l bottom-6 text-ba-color-gold md:text-3xl md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5">
-          Bergen Armwrestling
+        <h1 className="relative pt-2 mb-4 text-2xl font-bold text-center md:pt-0 text-ba-color-gold md:text-3xl md:mb-0 md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5">
+          Bergen Armwrestling Club
         </h1>
       </div>
       <div>

@@ -43,7 +43,7 @@ const Treningstider = () => {
         </div>
 
         {/* block 2  */}
-        <div className="grid order-last grid-cols-1 my-4 md:my-8 md:order-none w-[90%] mx-auto ">
+        <div className="grid order-last grid-cols-1 my-4 md:my-4 md:order-none w-[90%] mx-auto ">
           {/* className="mx-auto my-6 md:h-64 md:ml-0 md:max-w-lg md:w-[90%] md:mr-2"  */}
           <iframe
             // xl:w-ba-width-large
@@ -56,7 +56,7 @@ const Treningstider = () => {
         {/* className="mx-auto max-w-[800px] w-[90%] mb-4  justify-center items-center" */}
         <div className="col-span-2">
           <div className="mx-auto max-w-[1024px] w-[90%] mb-4 items-center flex justify-center flex-col md:mb-8">
-            <h3 className="my-4 text-xl font-bold text-center text-white ">
+            <h3 className="mb-4 text-xl font-bold text-center text-white ">
               Inngang sett fra parkering
             </h3>
             <Image

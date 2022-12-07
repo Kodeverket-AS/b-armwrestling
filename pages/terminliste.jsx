@@ -3,7 +3,7 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import logo_wrestling from "../images/logo_wrestling.png"
-import { Timeline, HiCalendar, Button } from "flowbite-react"
+import { Timeline, Button } from "flowbite-react"
 
 import { BsFillCalendarCheckFill } from "react-icons/bs"
 
@@ -27,18 +27,21 @@ const TermList = () => {
         <Timeline>
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
-            <Timeline.Content className="text-white">
-              <Timeline.Time>18 - 19 Mars 2022</Timeline.Time>
-              <Timeline.Title className="font-bold text-white">
-                Hardanger Open, Norway
+            <Timeline.Content>
+              <Timeline.Time className="text-lg">
+                18 - 19 Mars 2022
+              </Timeline.Time>
+              <Timeline.Title className="font-bold text-white ">
+                Hardanger Open, Hardanger
               </Timeline.Title>
-              <Timeline.Body className="">
+              <Timeline.Body className="text-gray-400">
                 All Norwegian athletes must be a member of the Norges
                 Bryteforbund. The athletes must have a license in the Norwegian
                 Wrestling Federation before the start of the event. Contact your
                 local club for more information. All foreign athletes (WAF
                 members) must be a member of their national armwrestling
                 federation, and bring a statement that confirms the membership.
+                Properties: date: lg, title: 2xl, body: text-base:
               </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
@@ -50,12 +53,20 @@ const TermList = () => {
           </Timeline.Item>
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
-            <Timeline.Content className="text-white">
-              <Timeline.Time>6 - 15 Mai 2022</Timeline.Time>
-              <Timeline.Title className="font-bold text-white">
+            <Timeline.Content>
+              <Timeline.Time className="text-lg">6 - 15 Mai 2022</Timeline.Time>
+              <Timeline.Title className="font-bold text-white ">
                 Europa Mesterskap, Romania
               </Timeline.Title>
-              <Timeline.Body className="">Description</Timeline.Body>
+              <Timeline.Body className="text-gray-500">
+                All Norwegian athletes must be a member of the Norges
+                Bryteforbund. The athletes must have a license in the Norwegian
+                Wrestling Federation before the start of the event. Contact your
+                local club for more information. All foreign athletes (WAF
+                members) must be a member of their national armwrestling
+                federation, and bring a statement that confirms the membership.
+                Properties: date: lg, title: 2xl, body: text-base:
+              </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
                   Learn More
@@ -66,12 +77,20 @@ const TermList = () => {
           </Timeline.Item>
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
-            <Timeline.Content className="text-white">
-              <Timeline.Time>Uke 25 2022</Timeline.Time>
+            <Timeline.Content>
+              <Timeline.Time className="text-lg">Uke 25 2022</Timeline.Time>
               <Timeline.Title className="font-bold text-white">
                 NM-veka, Skien
               </Timeline.Title>
-              <Timeline.Body className="">Description</Timeline.Body>
+              <Timeline.Body className="text-gray-600">
+                All Norwegian athletes must be a member of the Norges
+                Bryteforbund. The athletes must have a license in the Norwegian
+                Wrestling Federation before the start of the event. Contact your
+                local club for more information. All foreign athletes (WAF
+                members) must be a member of their national armwrestling
+                federation, and bring a statement that confirms the membership.
+                Properties: date: lg, title: 2xl, body: text-base:
+              </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
                   Learn More
@@ -82,7 +101,7 @@ const TermList = () => {
           </Timeline.Item>
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
-            <Timeline.Content className="text-white">
+            <Timeline.Content>
               <Timeline.Time>16 - 17 September 2022</Timeline.Time>
               <Timeline.Title className="font-bold text-white">
                 FjordFight, Sandefjord
@@ -98,7 +117,7 @@ const TermList = () => {
           </Timeline.Item>
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
-            <Timeline.Content className="text-white">
+            <Timeline.Content>
               <Timeline.Time>14 - 23 Oktober 2022</Timeline.Time>
               <Timeline.Title className="font-bold text-white">
                 Verdens Mesterskap, Analaya, Tyrkia
@@ -114,7 +133,7 @@ const TermList = () => {
           </Timeline.Item>
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
-            <Timeline.Content className="text-white">
+            <Timeline.Content>
               <Timeline.Time>25 - 26 November 2022</Timeline.Time>
               <Timeline.Title className="font-bold text-white">
                 Arms In Hell, Trondheim

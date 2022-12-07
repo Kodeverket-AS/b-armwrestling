@@ -84,24 +84,26 @@ const NavBar = () => {
               </button>
               <ul
                 className=" hidden peer-hover:flex hover:flex 
-                                  w-[200px]
-                                  flex-col drop-shadow-lg absolute bg-zinc-900 top-11"
+                                  w-[210px]
+                                  flex-col drop-shadow-lg absolute bg-zinc-500 top-10"
               >
-                <li className="text-white hover:bg-ba-color-gold">
-                  <Link href="/diverse-linker" className="px-5 py-3 md:block">
-                    Diverse Linker
-                  </Link>
-                </li>
-                <li className="text-white hover:bg-ba-color-gold">
-                  <Link href="/terminliste" className="px-5 py-3 md:block">
-                    Terminliste
-                  </Link>
-                </li>
-                <li className="text-white hover:bg-ba-color-gold">
-                  <Link href="/galleri" className="px-5 py-3 md:block">
-                    Galleri
-                  </Link>
-                </li>
+                <div className="outline outline-8 bg-zinc-500">
+                  <li className="text-white hover:bg-ba-color-gold">
+                    <Link href="/diverse-linker" className="px-5 py-3 md:block">
+                      Diverse Linker
+                    </Link>
+                  </li>
+                  <li className="visible text-white hover:bg-ba-color-gold">
+                    <Link href="/terminliste" className="px-5 py-3 md:block">
+                      Terminliste
+                    </Link>
+                  </li>
+                  <li className="visible text-white hover:bg-ba-color-gold">
+                    <Link href="/galleri" className="px-5 py-3 md:block">
+                      Galleri
+                    </Link>
+                  </li>
+                </div>
               </ul>
               <Link href="/bli-medlem">
                 <button className="z-20 px-4 py-2 mt-6 text-center text-white transition duration-500 ease-in-out transform border-2 lg:w-full w-36 border-ba-color-gold rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 md:mt-0">

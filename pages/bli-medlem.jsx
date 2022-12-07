@@ -25,7 +25,7 @@ const BliMedlem = () => {
             />
           </div>
           <div
-            className="mt-0 h-96"
+            className="h-auto mt-0"
           >
             <h2
               className="font-bold"
@@ -45,8 +45,8 @@ const BliMedlem = () => {
             <p>Innmelding gjør du enkelt
               {' '}
               <Link
-              className="underline hover:text-ba-color-gold"
-              href="/"
+                className="italic font-bold underline hover:text-ba-color-gold"
+                href="/"
               >
                 her!
               </Link>
@@ -66,6 +66,16 @@ const BliMedlem = () => {
               </li>
             </ul>
             <br />
+            <div
+            className="text-center md:text-left"
+            >
+
+            <button
+              className="px-5 py-4 mx-auto mb-6 text-base font-medium text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+              Meld deg inn her
+            </button>
+                </div>
           </div>
         </div>
         <div>

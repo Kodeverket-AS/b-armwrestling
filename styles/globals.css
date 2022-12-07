@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #1e1e1e;
+}
+
 .wrapper {
   min-height: 100vh;
 }
@@ -38,29 +42,28 @@
 .listing > ul {
   margin-bottom: 2rem;
   list-style: disc;
-  }
-  
+}
+
+.listing > ul > li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.listing > ul > li > ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.listing > ul > li > ul > li {
+  margin: 0.5rem;
+}
+
+@media (min-width: 768px) {
   .listing > ul > li {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-left: 1.5rem;
   }
-  
-  .listing > ul > li > ul {
-    padding-left: 1.5rem;
-    list-style: disc;
-  }
-  
+
   .listing > ul > li > ul > li {
-    margin: .5rem;
+    margin-left: 1rem;
   }
-
-  @media (min-width: 768px) {
-
-    .listing > ul > li {
-      margin-left: 1.5rem;
-    }
-
-    .listing > ul > li > ul > li {
-      margin-left: 1rem;
-    }
-  }
+}

@@ -42,7 +42,7 @@ const TermList = () => {
 
               <Button
                 color="gray"
-                className="text-black transition duration-500 border-0  hover:bg-ba-color-gold hover:text-black hover:scale-105 md:h-full"
+                className="text-black transition duration-500 border-0 hover:bg-ba-color-gold hover:text-black hover:scale-105 md:h-full h-[2rem]"
               >
                 <Link href="#" target="_blank">
                   Les mer
@@ -67,7 +67,7 @@ const TermList = () => {
               </Timeline.Body>
               <Button
                 color="gray"
-                className="h-[2rem] text-black transition duration-500 border-0  hover:bg-ba-color-gold hover:text-black hover:scale-105"
+                className="text-black transition duration-500 border-0 hover:bg-ba-color-gold hover:text-black hover:scale-105 md:h-full h-[2rem]"
               >
                 <Link href="#" target="_blank">
                   Les mer
@@ -92,7 +92,7 @@ const TermList = () => {
               </Timeline.Body>
               <Button
                 color="gray"
-                className="h-[2rem] text-black transition duration-500 border-0  hover:bg-ba-color-gold hover:text-black hover:scale-105"
+                className="text-black transition duration-500 border-0 hover:bg-ba-color-gold hover:text-black hover:scale-105 md:h-full h-[2rem]"
               >
                 <Link href="#" target="_blank">
                   Les mer
@@ -117,7 +117,7 @@ const TermList = () => {
               </Timeline.Body>
               <Button
                 color="gray"
-                className="h-[2rem] text-black transition duration-500 border-0  hover:bg-ba-color-gold hover:text-black hover:scale-105"
+                className="text-black transition duration-500 border-0 hover:bg-ba-color-gold hover:text-black hover:scale-105 md:h-full h-[2rem]"
               >
                 <Link href="#" target="_blank">
                   Les mer
@@ -142,7 +142,7 @@ const TermList = () => {
               </Timeline.Body>
               <Button
                 color="gray"
-                className="h-[2rem] text-black transition duration-500 border-0  hover:bg-ba-color-gold hover:text-black hover:scale-105"
+                className="text-black transition duration-500 border-0 hover:bg-ba-color-gold hover:text-black hover:scale-105 md:h-full h-[2rem]"
               >
                 <Link href="#" target="_blank">
                   Les mer
@@ -167,7 +167,7 @@ const TermList = () => {
               </Timeline.Body>
               <Button
                 color="gray"
-                className="h-[2rem] text-black transition duration-500 border-0  hover:bg-ba-color-gold hover:text-black hover:scale-105"
+                className="text-black transition duration-500 border-0 hover:bg-ba-color-gold hover:text-black hover:scale-105 md:h-full h-[2rem]"
               >
                 <Link href="#" target="_blank">
                   Les mer

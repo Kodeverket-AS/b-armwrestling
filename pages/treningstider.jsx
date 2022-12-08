@@ -63,7 +63,7 @@ const Treningstider = () => {
               alt="inngang sett fra veien"
             ></Image>
             <h3 className="text-xl font-bold text-center text-white md:order-first">
-              Inngang sett fra parkering
+              Ingang sett fra parkeringen
             </h3>
           </div>
         </div>

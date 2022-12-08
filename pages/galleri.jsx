@@ -63,7 +63,7 @@ const Gallery = () => {
         <title>Galleri</title>
         <meta
           name="description"
-          content="Photo gallery Bergen Armwrestling"
+          content="Bildegalleriet til Bergen Armwrestling Club er en samling av håndbakbilder"
         ></meta>
       </Head>
       <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">

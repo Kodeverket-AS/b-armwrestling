@@ -57,15 +57,15 @@ const Treningstider = () => {
         {/* block 3 */}
         {/* className="mx-auto max-w-[800px] w-[90%] mb-4  justify-center items-center" */}
         <div className="col-span-2 mt-4 md:mt-0 md:mb-8">
-          <div className="mx-auto max-w-[1024px] w-[90%] items-center flex justify-center flex-col ">
+          <div className="mx-auto max-w-[768px] w-[90%] items-center flex justify-center flex-col ">
             <Image
               src={venue_img_with_pointer}
-              className="rounded-sm max-h-[400px]"
-              alt="inngang sett fra veien"
+              className="rounded-sm max-h-[500px]"
+              alt="Inngang sett fra parkeringen"
             ></Image>
-            <h3 className="text-xl font-bold text-center text-white md:mb-2 md:order-first">
+            <p className="text-xl text-center text-white md:mb-2">
               Inngang sett fra parkeringen
-            </h3>
+            </p>
           </div>
         </div>
       </div>

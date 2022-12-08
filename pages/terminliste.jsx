@@ -26,10 +26,9 @@ const TermList = () => {
       <div className="flex justify-center items-center mx-auto w-[80%] max-w-[650px]">
         <Timeline>
           <Timeline.Item>
-            <p className="text-white">date = cursive, btn text = lg</p>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time className="text-lg italic ">
+              <Timeline.Time className="text-base italic ">
                 18 - 19 Mars 2022
               </Timeline.Time>
               <Timeline.Title className="font-bold text-white ">
@@ -40,28 +39,22 @@ const TermList = () => {
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              {/* <Button color="gray">
+
+              <Button
+                color="gray"
+                className="text-black transition duration-500 border-0 hover:bg-ba-color-gold hover:text-black hover:scale-105 "
+              >
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>
-
-              <button className="flex items-center px-6 py-2 text-black bg-white rounded-lg hover:bg-red-500">
-                Les mer
-                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
-              </button> */}
-              <button className="text-lg text-white underline hover:text-ba-color-gold">
-                Les mer
-              </button>
             </Timeline.Content>
           </Timeline.Item>
           <Timeline.Item>
-            <p className="text-white">date = cursive, btn text = xl</p>
-
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time className="text-lg italic">
+              <Timeline.Time className="text-base italic ">
                 6 - 15 Mai 2022
               </Timeline.Time>
               <Timeline.Title className="font-bold text-white ">
@@ -72,22 +65,21 @@ const TermList = () => {
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              {/* <Button color="gray">
+              <Button
+                color="gray"
+                className="text-black transition duration-500 border-0 bg-ba-color-gold hover:white hover:text-black hover:scale-105 "
+              >
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
-              </Button> */}
-
-              <button className="text-xl text-white underline hover:text-ba-color-gold">
-                Les mer
-              </button>
+              </Button>
             </Timeline.Content>
           </Timeline.Item>
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time className="text-lg">Uke 25 2022</Timeline.Time>
+              <Timeline.Time className="text-base">Uke 25 2022</Timeline.Time>
               <Timeline.Title className="font-bold text-white">
                 NM-veka, Skien
               </Timeline.Title>
@@ -96,12 +88,16 @@ const TermList = () => {
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              <Button color="gray" className="hidden">
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>
+
+              <button className="text-lg text-white underline hover:text-ba-color-gold">
+                Les mer
+              </button>
             </Timeline.Content>
           </Timeline.Item>
           <Timeline.Item>

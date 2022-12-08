@@ -114,7 +114,7 @@ const Hero = () => {
             </div>
             <div>
               <Image
-                className="mx-auto"
+                className="mx-auto invert"
                 src={logo_anthrax}
                 width={100}
                 alt="Logoen til Anthrax Sportswear"

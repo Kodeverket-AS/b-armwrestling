@@ -11,6 +11,7 @@ import logo_trimtex from "../images/index/TSA.svg"
 import logo_accountor from "../images/index/accountor.svg"
 import Head from "next/head"
 
+
 const Hero = () => {
   return (
     <>
@@ -54,6 +55,7 @@ const Hero = () => {
                 opp som en del av Norges Bryteforbund.
               </p>
             </div>
+
           </div>
           <div>
             <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto my-8">
@@ -141,4 +143,5 @@ const Hero = () => {
   )
 }
 
-export default Hero
+
+export default Hero;

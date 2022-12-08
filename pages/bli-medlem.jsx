@@ -9,8 +9,8 @@ const BliMedlem = () => {
         Bli medlem
       </h1>
       <div
-        className="grid w-5/6 grid-cols-1 mx-auto text-white md:grid-cols-2 md:gap-8"
-      >
+        className="grid w-5/6 grid-cols-1 mx-auto mb-12 text-white md:grid-cols-2 md:gap-20"
+        >
         <div
           className="grid md:grid-rows-2"
         >

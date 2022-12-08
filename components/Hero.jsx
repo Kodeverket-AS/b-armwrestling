@@ -1,14 +1,14 @@
-import Image from "next/image"
-import Link from "next/link"
-import React from "react"
-import FrontPic from "../images/index/frontpic.png"
-import logo_jobbjakt from "../public/JobbJakt.png"
-import logo_antidoping from "../public/logo_antidoping.png"
-import logo_nbf from "../public/logo_nbf.svg"
-import logo_anthrax from "../public/logo_anthrax.png"
-import logo_deltaker_blue from "../public/logo_deltaker_blue.png"
-import logo_trimtex from "../images/index/TSA.svg"
-import logo_accountor from "../images/index/accountor.svg"
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import FrontPic from "../images/index/header_example2.png";
+import logo_jobbjakt from "../public/JobbJakt.png";
+import logo_antidoping from "../public/logo_antidoping.png";
+import logo_nbf from "../public/logo_nbf.svg";
+import logo_anthrax from "../public/logo_anthrax.png";
+import logo_deltaker_blue from "../public/logo_deltaker_blue.png";
+import logo_trimtex from "../images/index/TSA.svg";
+import logo_accountor from "../images/index/accountor.svg";
 
 const Hero = () => {
   return (
@@ -99,9 +99,7 @@ const Hero = () => {
             />
             <p>Trimtex Sport AS</p>
           </div>
-          <div
-          className="flex flex-col justify-end"
-          >
+          <div className="flex flex-col justify-end">
             <Image
               className="m-auto"
               src={logo_deltaker_blue}
@@ -131,7 +129,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

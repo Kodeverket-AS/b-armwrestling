@@ -54,8 +54,8 @@ const Treningstider = () => {
 
         {/* block 3 */}
         {/* className="mx-auto max-w-[800px] w-[90%] mb-4  justify-center items-center" */}
-        <div className="col-span-2 mt-4 md:mt-0 md:mb-8">
-          <div className="mx-auto max-w-[768px] w-[90%] items-center flex justify-center flex-col ">
+        <div className="col-span-2 mt-6 md:mt-0 md:mb-8">
+          <div className="mx-auto max-w-[500px] w-[90%] items-center flex justify-center flex-col ">
             <Image
               src={inngang_narrow}
               className="rounded-sm max-h-[500px]"

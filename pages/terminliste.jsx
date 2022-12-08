@@ -15,7 +15,7 @@ const TermList = () => {
         <title>Terminliste</title>
         <meta
           name="description"
-          content="Termlist Bergen Armwrestling, lists arm wrestling competitions. "
+          content="Terminliste for Bergen Armwrestling Club, vi konkurerer lokalt og internasjonalt. Påmelding skjer gjennom deltaker.no"
         ></meta>
       </Head>
       <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">
@@ -35,16 +35,13 @@ const TermList = () => {
                 Hardanger Open, Hardanger
               </Timeline.Title>
               <Timeline.Body className="text-gray-400">
-                All Norwegian athletes must be a member of the Norges
-                Bryteforbund. The athletes must have a license in the Norwegian
-                Wrestling Federation before the start of the event. Contact your
-                local club for more information. All foreign athletes (WAF
-                members) must be a member of their national armwrestling
-                federation, and bring a statement that confirms the membership.
+                Alle norske utøvere må være medlem av Norges Idrettsforbund.
+                Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
+                mer informasjon.
               </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
-                  Learn More
+                  Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>
@@ -58,16 +55,13 @@ const TermList = () => {
                 Europa Mesterskap, Romania
               </Timeline.Title>
               <Timeline.Body className="text-gray-400">
-                All Norwegian athletes must be a member of the Norges
-                Bryteforbund. The athletes must have a license in the Norwegian
-                Wrestling Federation before the start of the event. Contact your
-                local club for more information. All foreign athletes (WAF
-                members) must be a member of their national armwrestling
-                federation, and bring a statement that confirms the membership.
+                Alle norske utøvere må være medlem av Norges Idrettsforbund.
+                Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
+                mer informasjon.
               </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
-                  Learn More
+                  Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>
@@ -81,16 +75,13 @@ const TermList = () => {
                 NM-veka, Skien
               </Timeline.Title>
               <Timeline.Body className="text-gray-400">
-                All Norwegian athletes must be a member of the Norges
-                Bryteforbund. The athletes must have a license in the Norwegian
-                Wrestling Federation before the start of the event. Contact your
-                local club for more information. All foreign athletes (WAF
-                members) must be a member of their national armwrestling
-                federation, and bring a statement that confirms the membership.
+                Alle norske utøvere må være medlem av Norges Idrettsforbund.
+                Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
+                mer informasjon.
               </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
-                  Learn More
+                  Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>
@@ -104,16 +95,13 @@ const TermList = () => {
                 FjordFight, Sandefjord
               </Timeline.Title>
               <Timeline.Body className="text-gray-400">
-                All Norwegian athletes must be a member of the Norges
-                Bryteforbund. The athletes must have a license in the Norwegian
-                Wrestling Federation before the start of the event. Contact your
-                local club for more information. All foreign athletes (WAF
-                members) must be a member of their national armwrestling
-                federation, and bring a statement that confirms the membership.
+                Alle norske utøvere må være medlem av Norges Idrettsforbund.
+                Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
+                mer informasjon.
               </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
-                  Learn More
+                  Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>
@@ -127,16 +115,13 @@ const TermList = () => {
                 Verdens Mesterskap, Analaya, Tyrkia
               </Timeline.Title>
               <Timeline.Body className="text-gray-400">
-                All Norwegian athletes must be a member of the Norges
-                Bryteforbund. The athletes must have a license in the Norwegian
-                Wrestling Federation before the start of the event. Contact your
-                local club for more information. All foreign athletes (WAF
-                members) must be a member of their national armwrestling
-                federation, and bring a statement that confirms the membership.
+                Alle norske utøvere må være medlem av Norges Idrettsforbund.
+                Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
+                mer informasjon.
               </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
-                  Learn More
+                  Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>
@@ -150,16 +135,13 @@ const TermList = () => {
                 Arms In Hell, Trondheim
               </Timeline.Title>
               <Timeline.Body className="text-gray-400">
-                All Norwegian athletes must be a member of the Norges
-                Bryteforbund. The athletes must have a license in the Norwegian
-                Wrestling Federation before the start of the event. Contact your
-                local club for more information. All foreign athletes (WAF
-                members) must be a member of their national armwrestling
-                federation, and bring a statement that confirms the membership.
+                Alle norske utøvere må være medlem av Norges Idrettsforbund.
+                Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
+                mer informasjon.
               </Timeline.Body>
               <Button color="gray">
                 <Link href="#" target="_blank">
-                  Learn More
+                  Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>

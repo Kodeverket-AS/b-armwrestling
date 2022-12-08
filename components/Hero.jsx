@@ -69,10 +69,10 @@ const Hero = () => {
         {/* <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[250px] mx-auto mt-8 mb-4"></div> */}
         <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[325px] mx-auto mt-8 mb-4 md:my-6"></div>
         {/* Samarbeidspartnere  */}
-        <h2 className="mb-4 text-xl font-bold text-center text-ba-color-gold md:text-2xl lg:text-3xl">
+        <h2 className="mb-12 text-xl font-bold text-center text-ba-color-gold md:text-2xl lg:text-3xl">
           Samarbeidspartnere
         </h2>
-        <div className="grid grid-cols-1 gap-6 md:gap-12 mx-auto text-center justify-items-center md:grid-cols-3 md:w-[700] mb-12">
+        <div className="grid grid-cols-1 content-around gap-y-12 mx-auto text-center justify-items-center md:grid-cols-3 md:w-[700] ">
           <div>
             <Image
               className="mx-auto"
@@ -99,11 +99,13 @@ const Hero = () => {
             />
             <p>Trimtex Sport AS</p>
           </div>
-          <div>
+          <div
+          className="flex flex-col justify-end"
+          >
             <Image
-              className="mx-auto"
+              className="m-auto"
               src={logo_deltaker_blue}
-              width={250}
+              width={175}
               alt="Logoen til deltager.no"
             />
             <p>Deltager.no</p>
@@ -121,7 +123,7 @@ const Hero = () => {
             <Image
               className="m-auto"
               src={logo_accountor}
-              width={200}
+              width={175}
               alt="Logoen til Accountor"
             />
             <p>Accountor</p>

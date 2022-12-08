@@ -1,24 +1,21 @@
-import Image from "next/image"
-import Link from "next/link"
-import React from "react"
-import FrontPic from "../images/index/frontpic.png"
-import logo_jobbjakt from "../public/JobbJakt.png"
-import logo_antidoping from "../public/logo_antidoping.png"
-import logo_nbf from "../public/logo_nbf.svg"
-import logo_anthrax from "../public/logo_anthrax.png"
-import logo_deltaker_blue from "../public/logo_deltaker_blue.png"
-import logo_trimtex from "../images/index/TSA.svg"
-import logo_accountor from "../images/index/accountor.svg"
-import Head from "next/head"
-
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import FrontPic from "../images/index/header_example2.png";
+import logo_jobbjakt from "../public/JobbJakt.png";
+import logo_antidoping from "../public/logo_antidoping.png";
+import logo_nbf from "../public/logo_nbf.svg";
+import logo_anthrax from "../public/logo_anthrax.png";
+import logo_deltaker_blue from "../public/logo_deltaker_blue.png";
+import logo_trimtex from "../images/index/TSA.svg";
+import logo_accountor from "../images/index/accountor.svg";
+import Head from "next/head";
 
 const Hero = () => {
   return (
     <>
       <Head>
-        <title>
-          Bergen Armwrestling Club
-        </title>
+        <title>Bergen Armwrestling Club</title>
         <meta
           name="description"
           content="Bergen Armwresting Club er en håndbakklubb som ligger sentralt i Bergen, og vil ha med deg"
@@ -51,11 +48,10 @@ const Hero = () => {
               <p>
                 Håndbak er en sosial og interessant sport, og en kamp varer som
                 oftest mellom 1 - 2 sekunder. Mye avhenger av utøvers teknikk,
-                muskelstyrke og hurtighet. I 1998 ble Norges Håndbak Forbund tatt
-                opp som en del av Norges Bryteforbund.
+                muskelstyrke og hurtighet. I 1998 ble Norges Håndbak Forbund
+                tatt opp som en del av Norges Bryteforbund.
               </p>
             </div>
-
           </div>
           <div>
             <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto my-8">
@@ -107,9 +103,7 @@ const Hero = () => {
               />
               <p>Trimtex Sport AS</p>
             </div>
-            <div
-              className="flex flex-col justify-end"
-            >
+            <div className="flex flex-col justify-end">
               <Image
                 className="m-auto"
                 src={logo_deltaker_blue}
@@ -140,8 +134,7 @@ const Hero = () => {
         </div>
       </div>
     </>
-  )
-}
-
+  );
+};
 
 export default Hero;

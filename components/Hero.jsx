@@ -69,7 +69,7 @@ const Hero = () => {
         {/* <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[250px] mx-auto mt-8 mb-4"></div> */}
         <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[325px] mx-auto mt-8 mb-4 md:my-6"></div>
         {/* Samarbeidspartnere  */}
-        <h2 className="mb-12 text-xl font-bold text-center text-ba-color-gold md:text-2xl lg:text-3xl">
+        <h2 className="mb-6 text-xl font-bold text-center text-ba-color-gold md:text-2xl lg:text-3xl">
           Samarbeidspartnere
         </h2>
         <div className="grid grid-cols-1 content-around gap-y-12 mx-auto text-center justify-items-center md:grid-cols-3 md:w-[700] ">

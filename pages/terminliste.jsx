@@ -28,18 +28,21 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time className="text-lg">
+              <Timeline.Time className="text-base italic text-white">
                 18 - 19 Mars 2022
               </Timeline.Time>
-              <Timeline.Title className="font-bold text-white ">
-                Hardanger Open, Hardanger
+              <Timeline.Title className="font-bold text-ba-color-gold ">
+                Hardanger Open
               </Timeline.Title>
-              <Timeline.Body className="text-gray-400">
+              <Timeline.Body className="text-white">
                 Alle norske utøvere må være medlem av Norges Idrettsforbund.
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              <Button
+                color="gray"
+                className="text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]"
+              >
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
@@ -50,16 +53,21 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time className="text-lg">6 - 15 Mai 2022</Timeline.Time>
-              <Timeline.Title className="font-bold text-white ">
+              <Timeline.Time className="text-base italic text-white">
+                6 - 15 Mai 2022
+              </Timeline.Time>
+              <Timeline.Title className="font-bold text-ba-color-gold ">
                 Europa Mesterskap, Romania
               </Timeline.Title>
-              <Timeline.Body className="text-gray-400">
+              <Timeline.Body className="text-white">
                 Alle norske utøvere må være medlem av Norges Idrettsforbund.
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              <Button
+                color="gray"
+                className="text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]"
+              >
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
@@ -70,16 +78,21 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time className="text-lg">Uke 25 2022</Timeline.Time>
-              <Timeline.Title className="font-bold text-white">
+              <Timeline.Time className="text-base italic text-white">
+                Uke 25 2022
+              </Timeline.Time>
+              <Timeline.Title className="font-bold text-ba-color-gold ">
                 NM-veka, Skien
               </Timeline.Title>
-              <Timeline.Body className="text-gray-400">
+              <Timeline.Body className="text-white">
                 Alle norske utøvere må være medlem av Norges Idrettsforbund.
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              <Button
+                color="gray"
+                className="text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]"
+              >
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
@@ -90,16 +103,21 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time>16 - 17 September 2022</Timeline.Time>
-              <Timeline.Title className="font-bold text-white">
+              <Timeline.Time className="text-base italic text-white">
+                16 - 17 September 2022
+              </Timeline.Time>
+              <Timeline.Title className="font-bold text-ba-color-gold ">
                 FjordFight, Sandefjord
               </Timeline.Title>
-              <Timeline.Body className="text-gray-400">
+              <Timeline.Body className="text-white">
                 Alle norske utøvere må være medlem av Norges Idrettsforbund.
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              <Button
+                color="gray"
+                className="text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]"
+              >
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
@@ -110,16 +128,21 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time>14 - 23 Oktober 2022</Timeline.Time>
-              <Timeline.Title className="font-bold text-white">
+              <Timeline.Time className="text-base italic text-white">
+                14 - 23 Oktober 2022
+              </Timeline.Time>
+              <Timeline.Title className="font-bold text-ba-color-gold ">
                 Verdens Mesterskap, Analaya, Tyrkia
               </Timeline.Title>
-              <Timeline.Body className="text-gray-400">
+              <Timeline.Body className="text-white">
                 Alle norske utøvere må være medlem av Norges Idrettsforbund.
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              <Button
+                color="gray"
+                className="text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]"
+              >
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
@@ -130,16 +153,46 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time>25 - 26 November 2022</Timeline.Time>
-              <Timeline.Title className="font-bold text-white">
+              <Timeline.Time className="text-base italic text-white">
+                25 - 26 November 2022
+              </Timeline.Time>
+              <Timeline.Title className="font-bold text-ba-color-gold ">
                 Arms In Hell, Trondheim
               </Timeline.Title>
-              <Timeline.Body className="text-gray-400">
+              <Timeline.Body className="text-white">
                 Alle norske utøvere må være medlem av Norges Idrettsforbund.
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              <Button
+                color="gray"
+                className="text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]"
+              >
+                <Link href="#" target="_blank">
+                  Les mer
+                </Link>
+                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
+              </Button>
+            </Timeline.Content>
+          </Timeline.Item>
+          <Timeline.Item>
+            <Timeline.Point icon={BsFillCalendarCheckFill} />
+            <Timeline.Content>
+              <Timeline.Time className="text-base italic text-white">
+                6 - 15 Mai 2022
+              </Timeline.Time>
+              <Timeline.Title className="font-bold text-ba-color-gold ">
+                Europa Mesterskap, Romania
+              </Timeline.Title>
+              <Timeline.Body className="text-white">
+                Alle norske utøvere må være medlem av Norges Idrettsforbund.
+                Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
+                mer informasjon.
+              </Timeline.Body>
+              <Button
+                color="gray"
+                className="text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]"
+              >
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
@@ -150,7 +203,7 @@ const TermList = () => {
         </Timeline>
       </div>
       {/* Disclaimer */}
-      <p className="px-4 py-4 mx-auto text-white w-[95%] max-w-[650px]">
+      <p className="px-4 py-4 mx-auto text-white w-[95%] max-w-[650px] mb-8">
         På{" "}
         <Link
           href="https://www.deltaker.no"

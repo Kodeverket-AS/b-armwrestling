@@ -61,7 +61,7 @@ const Treningstider = () => {
               className="rounded-sm max-h-[500px]"
               alt="Inngang sett fra parkeringen"
             ></Image>
-            <p className="text-xl text-center text-white md:mb-2">
+            <p className="text-center text-white md:mb-2">
               Inngang sett fra parkeringen
             </p>
           </div>

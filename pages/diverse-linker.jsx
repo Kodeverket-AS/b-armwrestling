@@ -19,7 +19,15 @@ import { BiLink } from "react-icons/bi";
 export default function VariousLinks() {
     return (
         <>
-            <Head>Diverse Linker</Head>
+            <Head>
+        <title>
+          Diverse linker
+        </title>
+        <meta
+          name="description"
+          content="Her finner du linker til relevante sider om håndbak, håndbakregler og flere av landets håndbakklubber."
+        />
+      </Head>
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 Diverse Linker
             </h1>

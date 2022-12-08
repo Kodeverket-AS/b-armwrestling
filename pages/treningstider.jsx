@@ -1,11 +1,21 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from "next/head"
 
 import inngang_narrow from "../public/inngang_narrow.png"
 
 const Treningstider = () => {
   return (
     <>
+    <Head>
+        <title>
+          Treningstider
+        </title>
+        <meta
+          name="description"
+          content="Bergen Armwrestling Club trener tirsdager klokken 19.00 til 21.00. Og dem ligger på gnisten aktivitetsenter."
+        />
+      </Head>
       <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold ">
         Treningstider
       </h1>

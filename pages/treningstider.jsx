@@ -3,6 +3,7 @@ import Image from "next/image"
 import venue_outside_crop from "../public/venue_outside_Crop.jpg"
 import venue_outside from "../public/venue_outside.jpg"
 import venue_outside_fit from "../public/venue_outside_fit.jpg"
+import venue_img_with_pointer from "../public/venue_img_with_pointer.png"
 
 const Treningstider = () => {
   return (
@@ -58,7 +59,7 @@ const Treningstider = () => {
         <div className="col-span-2">
           <div className="mx-auto max-w-[1024px] w-[90%]  mb-4 items-center flex justify-center flex-col md:mb-8 my-4">
             <Image
-              src={venue_outside_fit}
+              src={venue_img_with_pointer}
               className="rounded-sm max-h-[400px]"
               alt="inngang sett fra veien"
             ></Image>

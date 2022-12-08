@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import venue_outside_crop from "../public/venue_outside_Crop.jpg"
 import venue_outside from "../public/venue_outside.jpg"
+import venue_outside_fit from "../public/venue_outside_fit.jpg"
 
 const Treningstider = () => {
   return (
@@ -55,15 +56,15 @@ const Treningstider = () => {
         {/* block 3 */}
         {/* className="mx-auto max-w-[800px] w-[90%] mb-4  justify-center items-center" */}
         <div className="col-span-2">
-          <div className="mx-auto max-w-[1024px] w-[90%] mb-4 items-center flex justify-center flex-col md:mb-8">
-            <h3 className="mb-4 text-xl font-bold text-center text-white ">
-              Inngang sett fra parkering
-            </h3>
+          <div className="mx-auto max-w-[1024px] w-[90%]  mb-4 items-center flex justify-center flex-col md:mb-8 my-4">
             <Image
-              src={venue_outside}
-              className="rounded-sm"
+              src={venue_outside_fit}
+              className="rounded-sm max-h-[500px]"
               alt="inngang sett fra veien"
             ></Image>
+            <h3 className="text-xl font-bold text-center text-white md:order-first">
+              Inngang sett fra parkering
+            </h3>
           </div>
         </div>
       </div>

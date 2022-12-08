@@ -26,9 +26,10 @@ const TermList = () => {
       <div className="flex justify-center items-center mx-auto w-[80%] max-w-[650px]">
         <Timeline>
           <Timeline.Item>
+            <p className="text-white">date = cursive, btn text = lg</p>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time className="text-lg">
+              <Timeline.Time className="text-lg italic ">
                 18 - 19 Mars 2022
               </Timeline.Time>
               <Timeline.Title className="font-bold text-white ">
@@ -39,18 +40,30 @@ const TermList = () => {
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              {/* <Button color="gray">
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
               </Button>
+
+              <button className="flex items-center px-6 py-2 text-black bg-white rounded-lg hover:bg-red-500">
+                Les mer
+                <AiOutlineArrowRight className="w-3 h-3 ml-2" />
+              </button> */}
+              <button className="text-lg text-white underline hover:text-ba-color-gold">
+                Les mer
+              </button>
             </Timeline.Content>
           </Timeline.Item>
           <Timeline.Item>
+            <p className="text-white">date = cursive, btn text = xl</p>
+
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time className="text-lg">6 - 15 Mai 2022</Timeline.Time>
+              <Timeline.Time className="text-lg italic">
+                6 - 15 Mai 2022
+              </Timeline.Time>
               <Timeline.Title className="font-bold text-white ">
                 Europa Mesterskap, Romania
               </Timeline.Title>
@@ -59,12 +72,16 @@ const TermList = () => {
                 Utøverene må også ha lisens fra Norges Bryteforbund. Se FAQ for
                 mer informasjon.
               </Timeline.Body>
-              <Button color="gray">
+              {/* <Button color="gray">
                 <Link href="#" target="_blank">
                   Les mer
                 </Link>
                 <AiOutlineArrowRight className="w-3 h-3 ml-2" />
-              </Button>
+              </Button> */}
+
+              <button className="text-xl text-white underline hover:text-ba-color-gold">
+                Les mer
+              </button>
             </Timeline.Content>
           </Timeline.Item>
           <Timeline.Item>
@@ -90,7 +107,9 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time>16 - 17 September 2022</Timeline.Time>
+              <Timeline.Time className="text-lg">
+                16 - 17 September 2022
+              </Timeline.Time>
               <Timeline.Title className="font-bold text-white">
                 FjordFight, Sandefjord
               </Timeline.Title>
@@ -110,7 +129,9 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time>14 - 23 Oktober 2022</Timeline.Time>
+              <Timeline.Time className="text-lg">
+                14 - 23 Oktober 2022
+              </Timeline.Time>
               <Timeline.Title className="font-bold text-white">
                 Verdens Mesterskap, Analaya, Tyrkia
               </Timeline.Title>
@@ -130,7 +151,9 @@ const TermList = () => {
           <Timeline.Item>
             <Timeline.Point icon={BsFillCalendarCheckFill} />
             <Timeline.Content>
-              <Timeline.Time>25 - 26 November 2022</Timeline.Time>
+              <Timeline.Time className="text-lg">
+                25 - 26 November 2022
+              </Timeline.Time>
               <Timeline.Title className="font-bold text-white">
                 Arms In Hell, Trondheim
               </Timeline.Title>

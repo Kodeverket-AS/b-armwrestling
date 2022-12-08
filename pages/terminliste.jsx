@@ -291,7 +291,7 @@ const TermList_old = () => {
         <Link
           href="https://www.deltaker.no"
           target="_blank"
-          className="underline text-ba-color-gold hover:text-purple-600"
+          className="text-white underline hover:text-ba-color-gold"
         >
           deltaker.no
         </Link>{" "}

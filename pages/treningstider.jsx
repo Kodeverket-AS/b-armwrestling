@@ -56,7 +56,7 @@ const Treningstider = () => {
 
         {/* block 3 */}
         {/* className="mx-auto max-w-[800px] w-[90%] mb-4  justify-center items-center" */}
-        <div className="col-span-2 mt-4 ">
+        <div className="col-span-2 mt-4 md:mt-0 md:mb-8">
           <div className="mx-auto max-w-[1024px] w-[90%] items-center flex justify-center flex-col ">
             <Image
               src={venue_img_with_pointer}

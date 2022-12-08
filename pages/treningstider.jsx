@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from "next/head"
 
 import inngang_narrow from "../public/inngang_narrow.png"
 

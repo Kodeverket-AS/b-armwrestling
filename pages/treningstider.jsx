@@ -59,7 +59,7 @@ const Treningstider = () => {
           <div className="mx-auto max-w-[1024px] w-[90%]  mb-4 items-center flex justify-center flex-col md:mb-8 my-4">
             <Image
               src={venue_outside_fit}
-              className="rounded-sm max-h-[500px]"
+              className="rounded-sm max-h-[400px]"
               alt="inngang sett fra veien"
             ></Image>
             <h3 className="text-xl font-bold text-center text-white md:order-first">

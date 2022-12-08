@@ -66,11 +66,11 @@ const Gallery = () => {
           content="Bildegalleriet til Bergen Armwrestling Club er en samling av håndbakbilder"
         ></meta>
       </Head>
-      <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">
+      <h1 className="pt-8 text-5xl text-center md:mb-12 text-ba-color-gold">
         Galleri
       </h1>
       <div className="mx-auto lg:max-w-5xl">
-        <div className="h-[400px] mb-4 sm:h-64 w-[90%]  mx-auto  md:w-[615px] md:h-[400px] lg:w-[930px]">
+        <div className="h-[300px] mb-4 sm:h-64 w-[90%]  mx-auto  md:w-[615px] md:h-[400px] lg:w-[930px]">
           <Carousel slideInterval={5000} className="rounded-md">
             <Image
               src={image_01}

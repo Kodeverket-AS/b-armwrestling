@@ -48,7 +48,7 @@ const Hero = () => {
         {/* Call to Action  */}
         <div>
           {/* <Image /> */}
-          <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
+          <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto my-8">
             <div className="mt-3 rounded-lg sm:mt-0">
               <Link href="/bli-medlem">
                 <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
@@ -66,10 +66,8 @@ const Hero = () => {
           </div>
         </div>
         {/* Gold line  */}
-        <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[200px] mx-auto mt-8 mb-4"></div>
-        <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[250px] mx-auto mt-8 mb-4"></div>
-        <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[300px] mx-auto mt-8 mb-4"></div>
-        <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[400px] mx-auto mt-8 mb-4"></div>
+        {/* <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[250px] mx-auto mt-8 mb-4"></div> */}
+        <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[325px] mx-auto mt-8 mb-4 md:my-6"></div>
         {/* Samarbeidspartnere  */}
         <h2 className="mb-4 text-xl font-bold text-center text-ba-color-gold md:text-2xl lg:text-3xl">
           Samarbeidspartnere

@@ -10,6 +10,7 @@ import logo_deltaker_blue from "../public/logo_deltaker_blue.png";
 import logo_trimtex from "../images/index/TSA.svg";
 import logo_accountor from "../images/index/accountor.svg";
 import Head from "next/head";
+import { i18n } from "../next.config";
 
 const Hero = () => {
   return (
@@ -133,6 +134,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <p></p>
     </>
   );
 };

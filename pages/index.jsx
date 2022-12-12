@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 
@@ -8,13 +9,15 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, [
         'common',
         'hero',
+        'schedule',
       ])),
       // Will be passed to the page component as props
     },
   }
 }
 
-const Home = () => {
+
+const Home = ({locale}) => {
   return (
     <>
       <Hero />

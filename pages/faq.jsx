@@ -3,6 +3,21 @@ import { Accordion } from "flowbite-react";
 import Head from "next/head";
 import Link from "next/link";
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'hero',
+        'schedule',
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
+}
+
 const Faq = () => {
     return (
         <>

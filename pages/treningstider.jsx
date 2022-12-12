@@ -1,15 +1,32 @@
 import Link from "next/link"
 import Image from "next/image"
 import Head from "next/head"
-
+import { useTranslation } from 'next-i18next'
 import inngang_narrow from "../public/inngang_narrow.png"
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'hero',
+        'schedule',
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
+}
+
 const Treningstider = () => {
+  const { t } = useTranslation('schedule')
+
   return (
     <>
     <Head>
         <title>
-          Treningstider
+          {t('Schedule')}
         </title>
         <meta
           name="description"
@@ -17,7 +34,7 @@ const Treningstider = () => {
         />
       </Head>
       <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold ">
-        Treningstider
+        {t('Schedule')}
       </h1>
 
       <div className="grid justify-center grid-cols-1 text-white md:max-w-5xl md:grid-cols-2 md:gap-12 md:mx-auto">
@@ -25,7 +42,7 @@ const Treningstider = () => {
         <div className="grid md:grid-rows-2 md:justify-end md:h-48">
           <div className="grid grid-cols-2 mb-4 text-2xl font-bold">
             <p className="grid justify-center h-0 md:mt-14 md:justify-start md:ml-10 xxs:mr-6 xs:mr-12">
-              Tirsdag
+              {t('Day')}
             </p>
             <p className="grid justify-start md:mt-14 xs:ml-7 md:ml-2 lg:justify-center lg:ml-4">
               19.00-21.00
@@ -33,21 +50,19 @@ const Treningstider = () => {
           </div>
           <div className="mx-10 lg:mt-4">
             <p>
-              Fortløpende oppdatert informasjon om trening, arrangementer med
-              mer legges ut på vår lukkete{" "}
+              {t('Basic info 1')}{" "}
               <Link
                 className="underline hover:text-ba-color-gold"
                 href="https://www.facebook.com/profile.php?id=100063867946394"
+                title={t('Link describtion')}
               >
-                Facebook gruppe
+                {t('Link')}
               </Link>{" "}
-              for våre medlemmer.
+              {t('Basic info 2')}
             </p>
             <br />
             <p>
-              Vi trener fast hver tirsdag på Gnisten Aktivitetssenter. Vi låner
-              dette lokalet av Bergen Kommune og ønsker et tett sammarbeid med
-              dem for å fremme klubben og idretten vår.
+              {t('Location')}
             </p>
           </div>
         </div>
@@ -72,7 +87,7 @@ const Treningstider = () => {
               alt="Inngang sett fra parkeringen"
             ></Image>
             <p className="text-center text-white md:mb-2">
-              Inngang sett fra parkeringen
+              {t('Door')}
             </p>
           </div>
         </div>

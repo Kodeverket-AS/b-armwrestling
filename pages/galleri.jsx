@@ -10,6 +10,21 @@ import image_01 from "../public/group_01.webp"
 import image_02 from "../public/group_02.webp"
 import image_03 from "../public/group_03.webp"
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'hero',
+        'schedule',
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
+}
+
 const Gallery = () => {
   const [clickedImg, setClickedImg] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(null)

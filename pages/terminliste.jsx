@@ -8,6 +8,21 @@ import { Timeline, Button } from "flowbite-react"
 import { BsFillCalendarCheckFill } from "react-icons/bs"
 
 import { AiOutlineArrowRight } from "react-icons/ai"
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'hero',
+        'schedule',
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
+}
 const TermList = () => {
   return (
     <>

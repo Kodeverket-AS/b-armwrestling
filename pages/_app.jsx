@@ -6,7 +6,6 @@ import { appWithTranslation } from 'next-i18next'
 
 
 const MyApp = ({ Component, pageProps }) => {
-  // const [language, setLanguage] = useState("nor")
   return (
     <>
       <NavBar />

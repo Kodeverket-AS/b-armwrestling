@@ -228,118 +228,87 @@ const Faq = () => {
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Hvem styrer klubben?
+                            {t('Who leads')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Vi har et styre bestående av en leder,
-                                    nestleder, 2 styremedlemmer og 1 varamedlem.
+                                    {t('Who leads answare 1')}
                                     {/* Linkes til bilder av oss? */}
                                 </li>
                                 <li>
-                                    Årlig gjennomføres generalforsamling der
-                                    alle medlemmer inviteres og har anledning
-                                    til å være med å ta opp saker og har
-                                    stemmerett.
+                                    {t('Who leads answare 2')}
                                 </li>
                             </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Hva er reglene i håndbak?
+                            {t('Rules')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Hovedhensikten er å få motstanders hånd
-                                    nedenfor en viss høyde på sin side av
-                                    håndbakbordet. Man kan også vinne på at
-                                    motstander gjør for mange feil.
+                                    {t('Rules answare 1')}
                                 </li>
                                 <li>
-                                    Man konkurrerer stående på standardisert
-                                    bord.
+                                    {t('Rules answare 2')}
                                 </li>
                                 <li>
-                                    Man holder alltid albuen på paden, mens
-                                    motsatt arm holde i peg (metallstang).
-                                    Skuldrene er parallelle ved start,
-                                    tommelknoker synes på begge hender, ingen
-                                    berører hverandres hender med andre
-                                    kroppsdeler. Håndleddene er rette.
+                                    {t('Rules answare 3')}
                                 </li>
                                 <li>
-                                    Dommeren sier “ready go!”, og etter dette
-                                    kan man bøye håndledd så mye man vil og
-                                    bevege seg det man trenger, så lenge albuen
-                                    forblir på paden og andre armen holder i
-                                    peg. Én fot må alltid være i bakken.
+                                    {t('Rules answare 4')}
                                 </li>
                                 <li>
-                                    Farlige posisjoner for utøver der man har
-                                    stor fare for å skade seg stoppes som regel
-                                    av dommer.
+                                    {t('Rules answare 5')}
                                 </li>
                                 <li>
-                                    Det finnes advarsler/warnings og feil/fouls.
-                                    2 advarsler kan bli til én feil - litt
-                                    avhengig av om man er i “dommergrep” eller
-                                    ei.
+                                    {t('Rules answare 6')}
                                 </li>
                                 <li>
-                                    For mer detaljer omkring regler, spør oss i
-                                    klubben, evt les også på &nbsp;
+                                    {t('Rules answare 7')} &nbsp;
                                     <Link
                                         className='underline hover:text-ba-color-gold'
                                         href='http://www.waf-armwrestling.com/armwrestling-rules/'
+                                        title={t('WAF link des')}
                                     >
                                         World Armwrestling Federation (WAF)
                                     </Link>
-                                    &nbsp; sine sider.
+                                    &nbsp; {t('Rules answare 7.5')}
                                 </li>
                             </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Kan man sitte og bryte håndbak?
+                            {t('Sit down')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Ja, man har parabord med kortere ben for de
-                                    som ikke kan stå og bryte. Klubben har ett
-                                    sett med korte ben som kan settes på et bord
-                                    ved behov.
+                                    {t('Sit down answare')}
                                 </li>
                             </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Hvilke teknikker brukes?
+                            {t('Technique')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    I hovedsak kan man dele håndbak inn i 3
-                                    hovedteknikker.
+                                    {t('Technique answare 1')}
                                     <ul>
                                         <li>
-                                            Top roll: mye fokus på
-                                            “håndkontroll” og å styre
-                                            motstanders hånd
+                                            {t('Technique answare 2')}
                                         </li>
                                         <li>
-                                            Hook: mer fokus på å bruke
-                                            “armstyrke” og trekke motstander til
-                                            paden.
+                                            {t('Technique answare 3')}
                                         </li>
                                         <li>
-                                            Press: fokus på å bruke triceps og
-                                            presse motstander ned mot pad
+                                            {t('Technique answare 4')}
                                         </li>
                                     </ul>
                                 </li>
@@ -348,158 +317,118 @@ const Faq = () => {
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Hvor kan jeg finne mer informasjon om teknikker og
-                            øvelser?
+                            {t('More info technique')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Det finnes mye på nettet, særlig Youtube.
-                                    Kanalen &nbsp;
+                                    {t('More info technique answare 1')} &nbsp;
                                     <Link
                                         className='underline hover:text-ba-color-gold'
                                         href='https://www.youtube.com/c/voiceofarmwrestling'
+                                        title={t('VoA link des')}
                                     >
                                         “Voice of Armwrestling”
                                     </Link>
-                                    , blant andre, i regi av to meritterte
-                                    latviske utøvere, har veldig mange
-                                    informative videoer i sitt arkiv.
+                                    {t('More info technique answare 2')}
                                 </li>
                             </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Er det mye skader i håndbak?
+                            {t('Damage')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Som i alle idretter er det jo alltid en
-                                    sjanse for skader, særlig når man trener mot
-                                    andre personer, men hvis man bruker tid på å
-                                    få god og trygg teknikk, er risikoen for
-                                    alvorlige skader liten. En viktig regel på
-                                    treningene er at man aldri bryter raskt og
-                                    brått mot andre uten å avtale det på forhånd
-                                    - særlig hvis en er veldig mye
-                                    sterkere/erfaren enn den andre. Ta vare på
-                                    hverandre!
+                                    {t('Damage answare')}
                                 </li>
                             </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Er det ulike klasser man konkurrerer i?
+                            {t('Weight class')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Ja, det er både ulike vektklasser og
-                                    aldersklasser, både for venstre arm og høyre
-                                    arm. I Norge har man noe større vekthopp per
-                                    klasse og færre vektklasser enn i EM og VM,
-                                    grunnet antall deltakere. Seniorklassen er
-                                    regnet som den tøffeste og er en “åpen”
-                                    klasse der alle kan delta. Juniorklasser
-                                    deles inn i flere trinn. Det finnes egne
-                                    aldersklasser for de over 40 år, 50 år osv
+                                    {t('Weight class answare')}
                                 </li>
                             </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Hva hvis jeg vil konkurrere - hva trenger jeg?
+                            {t('Compete what I need')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Da må du ha konkurranseskjorte. Denne kjøper
-                                    du via klubbens lager, eller når det
-                                    bestilles inn nye partier. På første
-                                    skjorten dekker klubben 200kr av kostnaden.
-                                    Ved nye bestillinger, legges det ut
-                                    informasjon om dette på vår &nbsp;
+                                    {t('Compete what I need answare 1')} &nbsp;
                                     <Link
                                         className='underline hover:text-ba-color-gold'
                                         href='https://www.facebook.com/groups/702890543475643'
+                                        title={t('BAC FB group link des')}
                                     >
-                                        facebookgruppe.
+                                        {t('FB group link')}
                                     </Link>
                                 </li>
                                 <li>
-                                    Du må ha lisens:
+                                    {t('Compete what I need answare 2')}
                                     {/* not here */}
                                     <ul>
                                         <li>
-                                            Engangslisens eller årslisens.
-                                            Årslisens er også inkludert en
-                                            helseforsikring
+                                            {t('Compete what I need answare 3')}
                                         </li>
                                         <li>
-                                            Lisens er via &nbsp;
+                                            {t('Compete what I need answare 4')} &nbsp;
                                             <Link
                                                 className='underline hover:text-ba-color-gold'
                                                 href='https://bryting.no/praktisk-info/lisens-og-forsikring/'
+                                                title={t('Link Bryteforbundet des')}
                                             >
                                                 Bryteforbundet
                                             </Link>
-                                            {/* (link til lisensinfo) */}, og
-                                            klubben har ingen økonomisk
-                                            tilknytning til dette.
+                                            {/* (link til lisensinfo) */}{t('Compete what I need answare 4.5')}
                                         </li>
                                         <li>
-                                            Man må være klubbmedlem for å få
-                                            lisens og klubben aktiverer
-                                            muligheten for utøver til å betale
-                                            lisens via &nbsp;
+                                            {t('Compete what I need answare 5')} &nbsp;
                                             <Link
                                                 className='underline hover:text-ba-color-gold'
                                                 href='https://www.minidrett.no/'
+                                                title={t('Link MinIdrett des')}
                                             >
                                                 MinIdrett.no.
                                             </Link>
-                                            Ta kontakt ved spørsmål.
+                                            {t('Compete what I need answare 5.5')}
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    Man må betale en deltageravgift per arm
-                                    (høyre og/eller venstre) og per vektklasse.
-                                    Er man med i flere vektklasser, kan det være
-                                    rabattert pris.
+                                    {t('Compete what I need answare 6')}
                                 </li>
                                 <li>
-                                    Klubben dekker dommeravgift til
-                                    Bryteforbundet på vegne av deltakerne.
+                                    {t('Compete what I need answare 7')}
                                 </li>
                             </ul>
                         </Accordion.Content>
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Er det dopingkontroller i håndbak?
+                            {t('Doping')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Ja, det er det. Sporten samarbeider med
-                                    Antidoping Norge og vi er bl.a. sertifisert
-                                    som Rent IL og oppfordrer alle utøvere til å
-                                    gjennomføre sertifisering som Ren Utøver.
-                                    Dopingkontroll skjer både på konkurranser og
-                                    på treninger. Det kan også oppsøkes utøvere
-                                    utenfor treningslokaler. Det er
-                                    nulltoleranse for doping. Liste over
-                                    forbudte stoffer finner man på &nbsp;
+                                    {t('Doping answare')} &nbsp;
                                     <Link
                                         className='underline hover:text-ba-color-gold'
                                         href='https://www.antidoping.no/medisinsk/dopinglisten'
+                                        title={t('Doping list link des')}
                                     >
-                                        dopinglitsen
+                                        {t('Doping list')}
                                     </Link>
                                 </li>
                             </ul>
@@ -507,21 +436,12 @@ const Faq = () => {
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <Accordion.Title className=" text-ba-color-gold">
-                            Hvordan er håndbakmiljøet nasjonalt?
+                            {t('National')}
                         </Accordion.Title>
                         <Accordion.Content className='listing'>
                             <ul>
                                 <li>
-                                    Håndbakmiljøet i Norge er svært åpent og
-                                    avstanden fra topputøvere til nybegynnere er
-                                    lav mtp informasjonsutveksling, vedbåde
-                                    konkurranser og treninger. Det sies som
-                                    regel klart "ja" om man er omkring og ønsker
-                                    besøke andre klubber for å trene når man
-                                    ikke er hjemme ved egen klubb. Det er en
-                                    sport i fremdrift, nå med Norges Cup hvor
-                                    flere stevner i året settes sammen, blant
-                                    annet NM
+                                    {t('National answare')}
                                 </li>
                             </ul>
                         </Accordion.Content>

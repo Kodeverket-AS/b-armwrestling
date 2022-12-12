@@ -7,7 +7,7 @@
     "BAC FB group link des": "Link til facebookgruppen til Bergen Armwrestling Club",
     "When and where answare 3.5": "i forkant av ukens trening, der mange melder sin ankomst",
     "Parking": "Er det parkeringsplass ved treningslokalet?",
-    "Parling answare": "Ja, det noen gratis parkeringsplasser ved lokalet; rett foran lokalets vinduer og på høyre siden (når man ser mot lokalet). Det er også mulig å stå foran det gule bygget tilhørende kommunen. I gatene i området er det soneparkering.",
+    "Parking answare": "Ja, det noen gratis parkeringsplasser ved lokalet; rett foran lokalets vinduer og på høyre siden (når man ser mot lokalet). Det er også mulig å stå foran det gule bygget tilhørende kommunen. I gatene i området er det soneparkering.",
     "Wardrobe": "Er det garderobe?",
     "Wardrobe answare": "Vi disponerer stort toalett der det god plass til å skifte om man har behov for dette",
     "Bus": "Hvordan er bussforbindelsen til treningslokalet?",
@@ -62,7 +62,7 @@
     "Damage": "Er det mye skader i håndbak?",
     "Damage answare": "Som i alle idretter er det jo alltid en sjanse for skader, særlig når man trener mot andre personer, men hvis man bruker tid på å få god og trygg teknikk, er risikoen for alvorlige skader liten. En viktig regel på treningene er at man aldri bryter raskt og brått mot andre uten å avtale det på forhånd - særlig hvis en er veldig mye sterkere/erfaren enn den andre. Ta vare på hverandre!",
     "Weight class": "Er det ulike klasser man konkurrerer i?",
-    "Weigth class answare": "Ja, det er både ulike vektklasser og aldersklasser, både for venstre arm og høyre arm. I Norge har man noe større vekthopp per klasse og færre vektklasser enn i EM og VM, grunnet antall deltakere. Seniorklassen er regnet som den tøffeste og er en “åpen” klasse der alle kan delta. Juniorklasser deles inn i flere trinn. Det finnes egne aldersklasser for de over 40 år, 50 år osv",
+    "Weight class answare": "Ja, det er både ulike vektklasser og aldersklasser, både for venstre arm og høyre arm. I Norge har man noe større vekthopp per klasse og færre vektklasser enn i EM og VM, grunnet antall deltakere. Seniorklassen er regnet som den tøffeste og er en “åpen” klasse der alle kan delta. Juniorklasser deles inn i flere trinn. Det finnes egne aldersklasser for de over 40 år, 50 år osv",
     "Compete what I need": "Hva hvis jeg vil konkurrere - hva trenger jeg?",
     "Compete what I need answare 1": "Da må du ha konkurranseskjorte. Denne kjøper du via klubbens lager, eller når det bestilles inn nye partier. På første skjorten dekker klubben 200kr av kostnaden. Ved nye bestillinger, legges det ut informasjon om dette på vår",
     "FB group link": "facebookgruppe.",
@@ -80,5 +80,6 @@
     "Doping answare": "Ja, det er det. Sporten samarbeider med Antidoping Norge og vi er bl.a. sertifisert som Rent IL og oppfordrer alle utøvere til å gjennomføre sertifisering som Ren Utøver. Dopingkontroll skjer både på konkurranser og på treninger. Det kan også oppsøkes utøvere utenfor treningslokaler. Det er nulltoleranse for doping. Liste over forbudte stoffer finner man på",
     "Doping list": "doplisten.",
     "Doping list link des": "Link til antidoping norge sin dopingliste",
-    "National": "Håndbakmiljøet i Norge er svært åpent og avstanden fra topputøvere til nybegynnere er lav mtp informasjonsutveksling, vedbåde konkurranser og treninger. Det sies som regel klart “ja” om man er omkring og ønsker besøke andre klubber for å trene når man ikke er hjemme ved egen klubb. Det er en sport i fremdrift, nå med Norges Cup hvor flere stevner i året settes sammen, blant annet NM"
+    "National": "Hvordan er håndbakmiljøet nasjonalt?",
+    "National answare": "Håndbakmiljøet i Norge er svært åpent og avstanden fra topputøvere til nybegynnere er lav mtp informasjonsutveksling, vedbåde konkurranser og treninger. Det sies som regel klart “ja” om man er omkring og ønsker besøke andre klubber for å trene når man ikke er hjemme ved egen klubb. Det er en sport i fremdrift, nå med Norges Cup hvor flere stevner i året settes sammen, blant annet NM"
 }

@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "../images/logov2.png";
 import { MdArrowDropDown } from "react-icons/md";
+import { useTranslation } from 'next-i18next'
+
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   return (

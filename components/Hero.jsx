@@ -10,9 +10,12 @@ import logo_deltaker_blue from "../public/logo_deltaker_blue.png";
 import logo_trimtex from "../images/index/TSA.svg";
 import logo_accountor from "../images/index/accountor.svg";
 import Head from "next/head";
-import { i18n } from "../next.config";
+import { useTranslation } from 'next-i18next'
+// import { changeLanguage } from "i18next";
 
 const Hero = () => {
+  const { t } = useTranslation('hero')
+
   return (
     <>
       <Head>
@@ -33,7 +36,7 @@ const Hero = () => {
               priority
             />
             <h1 className="relative pt-2 mb-4 text-2xl font-bold text-center md:pt-0 text-ba-color-gold md:text-3xl md:mb-0 md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5">
-              Bergen Armwrestling Club
+            Bergen Armwrestling Club
             </h1>
           </div>
 
@@ -41,16 +44,11 @@ const Hero = () => {
           <div>
             <div className="w-4/5 mx-auto text-sm">
               <p className="font-bold ">
-                Håndbak eller armbrytning strekker seg helt tilbake til de
-                olympiske leker i Athen. I det siste har vi sett endringer i
-                regler, stil og omfang.
+                {t('Armwrestling origin')}
               </p>
               <br />
               <p>
-                Håndbak er en sosial og interessant sport, og en kamp varer som
-                oftest mellom 1 - 2 sekunder. Mye avhenger av utøvers teknikk,
-                muskelstyrke og hurtighet. I 1998 ble Norges Håndbak Forbund
-                tatt opp som en del av Norges Bryteforbund.
+                {t('Armwrestling story')}
               </p>
             </div>
           </div>
@@ -59,14 +57,14 @@ const Hero = () => {
               <div className="mt-3 rounded-lg sm:mt-0">
                 <Link href="/bli-medlem">
                   <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    Bli medlem
+                    {t('Join button')}
                   </button>
                 </Link>
               </div>
               <div className="mt-3 rounded-lg sm:mt-0 sm:ml-3">
                 <Link href="/treningstider">
                   <button className="items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-white transition duration-500 ease-in-out transform border-2 border-white hover:bg-white hover:text-black shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                    Se treningstider
+                    {t('Nanana')}
                   </button>
                 </Link>
               </div>
@@ -75,7 +73,7 @@ const Hero = () => {
           <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[325px] mx-auto mt-8 mb-4 md:my-6"></div>
           {/* Samarbeidspartnere  */}
           <h2 className="mb-6 text-xl font-bold text-center text-ba-color-gold md:text-2xl lg:text-3xl">
-            Samarbeidspartnere
+            {t('Partners')}
           </h2>
           <div className="grid grid-cols-1 content-around gap-y-12 mx-auto text-center justify-items-center md:grid-cols-3 md:w-[700] ">
             <div>
@@ -134,7 +132,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <p></p>
     </>
   );
 };

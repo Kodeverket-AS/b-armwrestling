@@ -6,28 +6,25 @@ import Image from "next/image";
 import deltakerlogo from "../images/diverseLinker/Deltaker green only logo.png";
 import NBF from "../images/diverseLinker/NBF-logo.png";
 import rentil from "../images/diverseLinker/rent-il.png";
-import WAF from '../images/diverseLinker/WAF2.png'
-import Grasrot from '../images/diverseLinker/grasrotandelen.png'
+import WAF from "../images/diverseLinker/WAF2.png";
+import Grasrot from "../images/diverseLinker/grasrotandelen.png";
 
 /*Icons from React Icon*/
 import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsGlobe } from "react-icons/bs";
 import { BsDot } from "react-icons/bs";
-import { BiLink } from "react-icons/bi";
 
 export default function VariousLinks() {
     return (
         <>
             <Head>
-        <title>
-          Diverse linker
-        </title>
-        <meta
-          name="description"
-          content="Her finner du linker til relevante sider om håndbak, håndbakregler og flere av landets håndbakklubber."
-        />
-      </Head>
+                <title>Diverse linker</title>
+                <meta
+                    name='description'
+                    content='Her finner du linker til relevante sider om håndbak, håndbakregler og flere av landets håndbakklubber.'
+                />
+            </Head>
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 Diverse Linker
             </h1>
@@ -43,6 +40,7 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://bryting.no/brytegrener/handbak/'
                                     target='_blank'
+                                    title='Håndbak kategorien til Bryting.no sin nettside'
                                 >
                                     Norges Bryteforbund
                                     <Image
@@ -55,6 +53,7 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between mt-4'
                                     href='https://www.antidoping.no/'
                                     target='_blank'
+                                    title='Nettsiden til Antidoping Norge'
                                 >
                                     Antidoping Norge
                                     <Image
@@ -67,6 +66,7 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between mt-4'
                                     href='https://www.deltager.no/deltagerforside.aspx'
                                     target='_blank'
+                                    title='Nettsiden til Deltaker.no'
                                 >
                                     Deltaker.no
                                     <Image
@@ -84,6 +84,7 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.norsk-tipping.no/grasrotandelen/din-mottaker/825211012'
                                     target='_blank'
+                                    title='Norsk Tipping sin nettside med Bergen Armwrestling sitt nummer'
                                 >
                                     Støtt oss med din grasrot
                                     {/* <BiLink /> */}
@@ -92,12 +93,12 @@ export default function VariousLinks() {
                                         alt='ba shield'
                                         width={50}
                                     />
-
                                 </Link>
                                 <Link
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.youtube.com/channel/UClhMrYai_XGlBW_mRPhfQJQ'
                                     target='_blank'
+                                    title='Norges Bryterforbund sin offisielle Youtube kanal'
                                 >
                                     NBF Bryte-TV på YouTube
                                     {/* <BiLink /> */}
@@ -111,6 +112,7 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.youtube.com/@WORLDARMWRESTLINGFEDERATION/featured'
                                     target='_blank'
+                                    title='World Armwrestling Federation sin offisielle Youtube kanal'
                                 >
                                     World Armwrestling Federation
                                     <br /> på YouTube
@@ -142,9 +144,10 @@ export default function VariousLinks() {
                                         Bergen Armwrestling
                                         <div className='flex flex-row gap-4 ml-10'>
                                             <Link
-                                                href='https://jobbjakt.no/'
+                                                href='https://bergenarmwrestling.no/'
                                                 target='_blank'
-                                                alt='Link til Webside'
+                                                alt='Link til Bergen Armwrestling'
+                                                title='Nettsiden til Bergen Armwrestling'
                                             >
                                                 <BsGlobe />
                                             </Link>
@@ -152,6 +155,7 @@ export default function VariousLinks() {
                                                 href='https://www.instagram.com/bergen_armwrestling/'
                                                 target='_blank'
                                                 alt='Link til Instagram'
+                                                title='Bergen Armwrestling sin Instagram-profil'
                                             >
                                                 <BsInstagram />
                                             </Link>
@@ -159,6 +163,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/people/Bergen-Armwrestling-Club/100063867946394/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Bergen Armwrestling sin facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -171,6 +176,7 @@ export default function VariousLinks() {
                                                 href='http://www.christianiaak.no/'
                                                 target='_blank'
                                                 alt='Link til Webside'
+                                                title='Christiania Håndbak Klubb sin nettside'
                                             >
                                                 <BsGlobe />
                                             </Link>
@@ -185,6 +191,7 @@ export default function VariousLinks() {
                                                 href='https://thomasas88.wixsite.com/fredrikstadhk?fbclid=IwAR30esLtuhXzdxCA0EYxOSlNPDFXcQoc0oolj-zD3VCPlQOJlbfOZxI9KI0'
                                                 target='_blank'
                                                 alt='Link til Webside'
+                                                title='Fredrikstad Håndbak-klubb sin nettside'
                                             >
                                                 <BsGlobe />
                                             </Link>
@@ -193,6 +200,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/fredrikstadhk/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Fredrikstad Håndbak-klubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -205,6 +213,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/groups/1124104771091647/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Gjerdrum Håndbakklubb sin nettside'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -217,6 +226,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/groups/1855217708058225/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Hardanger Handbak Klubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -229,6 +239,7 @@ export default function VariousLinks() {
                                                 href='http://jolsterhandbak.no/?fbclid=IwAR0zZw9XEP8mlcFyrIcYF5tnCJ4g5bFHRUcOVYA5fq8Ig-FQcFtv89xluc0'
                                                 target='_blank'
                                                 alt='Link til Webside'
+                                                title='Jølster Handbakklubb sin nettside'
                                             >
                                                 <BsGlobe />
                                             </Link>
@@ -237,6 +248,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/JOLSTERHK/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Jølster Handbakklubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -249,6 +261,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/krs.haandbak/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Kristiansand Håndbakklubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -265,6 +278,7 @@ export default function VariousLinks() {
                                                 href='https://www.instagram.com/lindesneshk/?igshid=sps52mx6bj8r&fbclid=IwAR3IJ4pcov4QVhJJGQKGr3vXuVX-x9pvyzmVx_X2zhwEoSH-qUeZa1T5olM'
                                                 target='_blank'
                                                 alt='Link til Instagram'
+                                                title='Lindesnes Håndbakklubb sin Instagram-profil'
                                             >
                                                 <BsInstagram />
                                             </Link>
@@ -272,6 +286,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/LindesnesHK/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Lindesnes Håndbakklubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -284,6 +299,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/groups/1025447257487345/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Lærdal Handbakklubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -305,6 +321,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/nidarohandbak/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Nidarø Håndbakklubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -317,6 +334,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/groups/1283951821979096/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Notodden Håndbakklubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -329,6 +347,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/groups/465887663538930/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Os Håndbak Klubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -341,6 +360,7 @@ export default function VariousLinks() {
                                                 href='https://www.sandefjord.kommune.no/globalassets/kultur-idrett-og-fritid/kif-dokumenter/lag-og-foreninger/sandefjord-handbak-flyer.pdf'
                                                 target='_blank'
                                                 alt='Link til Webside'
+                                                title='Sandefjord Håndbak sin nettside'
                                             >
                                                 <BsGlobe />
                                             </Link>
@@ -348,6 +368,7 @@ export default function VariousLinks() {
                                                 href='https://www.instagram.com/sandefjord_handbak/?fbclid=IwAR2IrDWSpxo-hOyczfEP6ZWYkdxAxBaGuSrQnZ_PAE0FyrHSfiBCSfAD2jM'
                                                 target='_blank'
                                                 alt='Link til Instagram'
+                                                title=' Sandefjord Håndbak sin Instagram-profil'
                                             >
                                                 <BsInstagram />
                                             </Link>
@@ -355,6 +376,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/sandefjordhandbak/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title=' Sandefjord Håndbak sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -367,6 +389,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/Skienhk/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Skien Håndbak Klubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -379,6 +402,7 @@ export default function VariousLinks() {
                                                 href='https://www.sportsklubben1909.no/p/62612/handbak'
                                                 target='_blank'
                                                 alt='Link til Webside'
+                                                title='Sportsklubben 1909 sin nettside'
                                             >
                                                 <BsGlobe />
                                             </Link>
@@ -387,6 +411,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/groups/647060559786800?_gl=1*8z6e3w*_ga*MTk1OTkxNTg1Ni4xNjY3MzA2NDIz*_ga_FYY91S696B*MTY2ODYxMTc4NC40LjEuMTY2ODYxMTc5NS4wLjAuMA..'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Sportsklubben 1909 sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -399,6 +424,7 @@ export default function VariousLinks() {
                                                 href='https://www.facebook.com/stavangerhaandbakklubb/'
                                                 target='_blank'
                                                 alt='Link til Facebook'
+                                                title='Stavanger håndbakklubb sin Facebook side'
                                             >
                                                 <BsFacebook />
                                             </Link>
@@ -414,6 +440,7 @@ export default function VariousLinks() {
                                                 href='http://lindasgym.no/handbak/'
                                                 target='_blank'
                                                 alt='Link til Webside'
+                                                title='Stord Handbak Klubb sin nettside'
                                             >
                                                 <BsGlobe />
                                             </Link>
@@ -421,6 +448,7 @@ export default function VariousLinks() {
                                                 href='https://www.instagram.com/stord_handbak/'
                                                 target='_blank'
                                                 alt='Link til Instagram'
+                                                title='Stord Handbak Klubb sin Instagram-profil'
                                             >
                                                 <BsInstagram />
                                             </Link>

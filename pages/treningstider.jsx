@@ -1,16 +1,14 @@
-import Link from "next/link"
-import Image from "next/image"
-import Head from "next/head"
+import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
 
-import inngang_narrow from "../public/inngang_narrow.png"
+import inngang_narrow from "../public/inngang_narrow.png";
 
 const Treningstider = () => {
   return (
     <>
-    <Head>
-        <title>
-          Treningstider
-        </title>
+      <Head>
+        <title>Treningstider</title>
         <meta
           name="description"
           content="Bergen Armwrestling Club trener tirsdager klokken 19.00 til 21.00. Og dem ligger på gnisten aktivitetsenter."
@@ -57,7 +55,7 @@ const Treningstider = () => {
           {/* className="mx-auto my-6 md:h-64 md:ml-0 md:max-w-lg md:w-[90%] md:mr-2"  */}
           <iframe
             // xl:w-ba-width-large
-            className="mx-auto my-4 w-[100%] h-[250px] md:ml-0 md:max-w-lg md:mr-2"
+            className="mx-auto my-11 w-[100%] h-[270px] md:ml-0 md:max-w-lg md:mr-2"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-eLtEdtB-XioubLC_9yUcxUja3xYrukI&q=Gnisten_Aktivitetssenter,Bergen"
           />
         </div>
@@ -78,7 +76,7 @@ const Treningstider = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Treningstider
+export default Treningstider;

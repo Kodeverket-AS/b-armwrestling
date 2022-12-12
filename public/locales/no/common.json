@@ -1,5 +1,4 @@
 {
-    "NavBar": {
         "Home": "Hjem",
         "Schedule": "Treningstider",
         "More": "Mer",
@@ -7,5 +6,4 @@
         "Termlist": "Terminliste",
         "Gallery": "Galleri",
         "Button": "Meld deg inn"
-    }
 }

@@ -1,5 +1,4 @@
 {
-    "NavBar": {
         "Home": "Home",
         "Schedule": "Trening schedule",
         "More": "More",
@@ -8,4 +7,3 @@
         "Gallery": "Gallery",
         "Button": "Join us"
     }
-}

@@ -14,8 +14,8 @@ const NavBar = () => {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex items-center mb-4 sm:mb-0">
               <Image src={Logo} width={50} alt="Bergen Armwrestling Logo" />
-              <span className="invisible lg:visible ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
-                Bergen Armwrestling
+              <span className="hidden lg:block ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
+                Bergen Armwrestling Club
               </span>
             </Link>
             <div className="md:hidden">

@@ -4,6 +4,7 @@ import Head from "next/head"
 import { useTranslation } from 'next-i18next'
 import inngang_narrow from "../public/inngang_narrow.png"
 
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export async function getStaticProps({ locale }) {
@@ -73,7 +74,7 @@ const Treningstider = () => {
           {/* className="mx-auto my-6 md:h-64 md:ml-0 md:max-w-lg md:w-[90%] md:mr-2"  */}
           <iframe
             // xl:w-ba-width-large
-            className="mx-auto my-4 w-[100%] h-[250px] md:ml-0 md:max-w-lg md:mr-2"
+            className="mx-auto my-11 w-[100%] h-[270px] md:ml-0 md:max-w-lg md:mr-2"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-eLtEdtB-XioubLC_9yUcxUja3xYrukI&q=Gnisten_Aktivitetssenter,Bergen"
           />
         </div>
@@ -94,7 +95,7 @@ const Treningstider = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Treningstider
+export default Treningstider;

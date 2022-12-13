@@ -22,8 +22,10 @@ const NavBar = () => {
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                onClick={() => setNavbar(!navbar)}
+                className="p-2 text-gray-900 rounded-md outline-none focus:border-gray-900 focus:border"
+                onClick={() => {
+                  setNavbar(!navbar);
+                }}
               >
                 {navbar ? (
                   <svg
@@ -63,7 +65,12 @@ const NavBar = () => {
             className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
               }`}
           >
-            <ul className="relative items-center justify-center space-y-8 text-center md:flex md:space-x-6 md:space-y-0">
+            <ul
+              className="relative items-center justify-center space-y-8 text-center md:flex md:space-x-6 md:space-y-0"
+              onClick={() => {
+                setNavbar(!navbar);
+              }}
+            >
               <li className="text-white">
                 <Link href="/">
                   {t('Home')}

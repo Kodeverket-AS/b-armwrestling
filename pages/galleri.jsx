@@ -1,61 +1,111 @@
-import React from "react"
+import React, { useState } from "react"
 import Head from "next/head"
 import Image from "next/image"
-import data from "./galleri/images.json"
 import { Carousel } from "flowbite-react"
-import Overlay from "../components/Overlay"
-import { useState } from "react"
 
-import image_01 from "../public/group_01.webp"
-import image_02 from "../public/group_02.webp"
-import image_03 from "../public/group_03.webp"
+// Used for Slideshow
+import Lightbox from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
 
-const Gallery = () => {
-  const [clickedImg, setClickedImg] = useState(null)
-  const [currentIndex, setCurrentIndex] = useState(null)
+// Used for photo gallery || requires --legacy-peer-deps
+import Gallery from "react-photo-gallery-next"
 
-  const handleClick = (item, index) => {
-    setCurrentIndex(index)
-    setClickedImg(item.link)
-  }
+import { AiFillCloseCircle } from "react-icons/ai"
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs"
 
-  const handleRotationRight = () => {
-    const totalLength = data.data.length
+import image1 from "../public/image1.webp"
+import image2 from "../public/group_01.webp"
+import image3 from "../public/group_02.webp"
+import image4 from "../public/group_03.webp"
+import image5 from "../public/group_04.webp"
+import image6 from "../public/group_05.webp"
+import image7 from "../public/match_01.webp"
+import image8 from "../public/match_02.webp"
+import image9 from "../public/match_03.webp"
+import image10 from "../public/FB_image.webp"
 
-    if (currentIndex + 1 >= totalLength) {
-      setCurrentIndex(0)
-      const newUrl = data.data[0].link
-      setClickedImg(newUrl)
-      return
-    }
-    const newIndex = currentIndex + 1
-    const newUrl = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex
-    })
-    const newItem = newUrl[0].link
+// For Slideshow
+const slides = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+]
 
-    setClickedImg(newItem)
-    setCurrentIndex(newIndex)
-  }
+// For gallery
+const photos = [
+  {
+    src: "/image1.webp",
+    width: 4,
+    height: 1,
+    priority: "priority",
+    alt: "Old group photo",
+  },
+  {
+    src: "/group_01.webp",
+    width: 3,
+    height: 1,
+    alt: "...",
+  },
+  {
+    src: "/group_02.webp",
+    width: 2,
+    height: 1,
+    alt: "...",
+  },
+  {
+    src: "/group_03.webp",
+    width: 3,
+    height: 1,
+    alt: "...",
+  },
+  {
+    src: "/group_04.webp",
+    width: 3,
+    height: 1,
+    alt: "...",
+  },
+  {
+    src: "/group_05.webp",
+    width: 3,
+    height: 1,
 
-  const handleRotationLeft = () => {
-    const totalLength = data.data.length
+    alt: "...",
+  },
+  {
+    src: "/match_01.webp",
+    width: 2,
+    height: 2,
+    alt: "...",
+  },
+  {
+    src: "/match_02.webp",
+    width: 2,
+    height: 2,
+    alt: "...",
+  },
+  {
+    src: "match_03.webp",
+    width: 1,
+    height: 1,
+    alt: "...",
+  },
+  {
+    src: "/FB_image.webp",
+    width: 1,
+    height: 1,
+    alt: "...",
+  },
+]
 
-    if (currentIndex === 0) {
-      setCurrentIndex(totalLength)
-      const newUrl = data.data[totalLength - 1].link
-      setClickedImg(newUrl)
-      return
-    }
-    const newIndex = currentIndex - 1
-    const newUrl = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex
-    })
-    const newItem = newUrl[0].link
-
-    setClickedImg(newItem)
-    setCurrentIndex(newIndex)
-  }
+const Galleri = () => {
+  const [index, setIndex] = useState(-1)
 
   return (
     <>
@@ -69,44 +119,85 @@ const Gallery = () => {
       <h1 className="pt-8 text-5xl text-center md:mb-12 text-ba-color-gold">
         Galleri
       </h1>
-      <div className="mx-auto lg:max-w-5xl">
-        <div className="h-[300px] mb-4 sm:h-64 w-[90%]  mx-auto  md:w-[615px] md:h-[400px] lg:w-[930px]">
-          <Carousel slideInterval={5000} className="rounded-md">
+      <div className="items-center justify-center mx-auto my-4 lg:max-w-5xl">
+        {/* Carousel  */}
+        <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
+          <Carousel slideInterval={5000} className="rounded-none">
             <Image
-              src={image_01}
+              src={image1}
               alt="Gruppebilde etter seier"
               width={930}
+              height={400}
               priority
-              className="rounded-md"
+              className="rounded-none"
             />
-            <Image src={image_02} alt="Gruppebilde med medaljer rundt halsen" width={930} />
-            <Image src={image_03} alt="Bilde tatt fra en håndbakkamp" width={930} />
+            <Image
+              src={image2}
+              alt="Gruppebilde med medaljer rundt halsen"
+              width={930}
+              height={400}
+              className="rounded-none"
+            />
+            <Image
+              src={image3}
+              alt="Bilde tatt fra en håndbakkamp"
+              width={930}
+              height={400}
+              className="rounded-none"
+            />
           </Carousel>
         </div>
-        <div className="flex flex-col flex-wrap items-center justify-center gap-4 pb-6 mx-auto md:flex-row">
-          {data.data.map((item, index) => (
-            <Image
-              className="rounded-md w-[90%] max-w-[425px]  md:w-[300px] md:h-[200px] h-[auto] object-cover hover:cursor-pointer"
-              key={index}
-              src={`/${item.link}`}
-              width={400}
-              height={300}
-              alt={item.text}
-              onClick={() => handleClick(item, index)}
-            />
-          ))}
-        </div>
-        {clickedImg && (
-          <Overlay
-            clickedImg={clickedImg}
-            setClickedImg={setClickedImg}
-            handleRotationRight={handleRotationRight}
-            handleRotationLeft={handleRotationLeft}
-          />
-        )}
+        <Gallery
+          photos={photos}
+          targetRowHeight={200}
+          placeholder="blur"
+          margin={6}
+          onClick={(e, photo) => {
+            setIndex(photo.index)
+          }}
+        />
       </div>
+      {/* Modal Solution */}
+      <Lightbox
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        styles={{
+          button: { color: "#ca9d3d", fontSize: "40px" },
+        }}
+        slides={slides}
+        render={{
+          iconPrev: () => <BsArrowLeftCircle />,
+          iconNext: () => <BsArrowRightCircle />,
+          iconClose: () => <AiFillCloseCircle />,
+          slide: (image, offset, rect) => {
+            const width = Math.round(
+              Math.min(rect.width, (rect.height / image.height) * image.width)
+            )
+            const height = Math.round(
+              Math.min(rect.height, (rect.width / image.width) * image.height)
+            )
+            return (
+              <div style={{ position: "relative", width, height }}>
+                <Image
+                  fill
+                  src={image}
+                  loading="eager"
+                  placeholder="blur"
+                  alt={"alt" in image ? image.alt : ""}
+                  sizes={
+                    typeof window !== "undefined"
+                      ? `${Math.ceil((width / window.innerWidth) * 100)}vw`
+                      : `${width}px`
+                  }
+                />
+              </div>
+            )
+          },
+        }}
+      />
     </>
   )
 }
 
-export default Gallery
+export default Galleri

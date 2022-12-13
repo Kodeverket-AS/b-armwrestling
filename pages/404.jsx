@@ -3,6 +3,21 @@ import Image from "next/image";
 
 import fourofour from "../images/404.jpg";
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'hero',
+        'schedule',
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
+}
+
 export default function FourOFour() {
     return (
         <>

@@ -3,6 +3,7 @@ import Head from "next/head"
 import Image from "next/image"
 import { Carousel } from "flowbite-react"
 
+
 // Used for Slideshow
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
@@ -23,6 +24,23 @@ import twopersonarmwrestling from "../public/twopersonarmwrestling.webp"
 import youngandoldarmwrestling from "../public/youngandoldarmwrestling.webp"
 import competitionwrestling from "../public/competitionwrestling.webp"
 import clubphoto from "../public/clubphoto.webp"
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from "react-i18next"
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'hero',
+        'schedule',
+        'termlist',
+        'gallery'
+      ])),
+    },
+  }
+}
 
 // For Slideshow
 const slides = [
@@ -106,6 +124,7 @@ const photos = [
 
 const Galleri = () => {
   const [index, setIndex] = useState(-1)
+  const { t } = useTranslation('gallery')
 
   return (
     <>
@@ -114,10 +133,10 @@ const Galleri = () => {
         <meta
           name="description"
           content="Bildegalleriet til Bergen Armwrestling Club er en samling av håndbakbilder"
-        ></meta>
+        />
       </Head>
       <h1 className="pt-8 text-5xl text-center md:mb-12 text-ba-color-gold">
-        Galleri
+        {t('Gallery')}
       </h1>
       <div className="items-center justify-center mx-auto my-4 lg:max-w-5xl">
         {/* Carousel  */}

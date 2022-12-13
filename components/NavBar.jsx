@@ -3,7 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "../images/logov2.png";
 import { MdArrowDropDown } from "react-icons/md";
+import { useTranslation } from 'next-i18next'
+
 const NavBar = () => {
+  const { t } = useTranslation('common')
+
   const [navbar, setNavbar] = useState(false);
   return (
     <nav className="w-full shadow bg-zinc-900">
@@ -12,8 +16,8 @@ const NavBar = () => {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex items-center mb-4 sm:mb-0">
               <Image src={Logo} width={50} alt="Bergen Armwrestling Logo" />
-              <span className="invisible lg:visible ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
-                Bergen Armwrestling
+              <span className="hidden lg:block ml-2.5 self-center text-2xl font-semibold whitespace-nowrap text-white">
+                Bergen Armwrestling Club
               </span>
             </Link>
             <div className="md:hidden">
@@ -58,9 +62,8 @@ const NavBar = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+              }`}
           >
             <ul
               className="relative items-center justify-center space-y-8 text-center md:flex md:space-x-6 md:space-y-0"
@@ -69,25 +72,35 @@ const NavBar = () => {
               }}
             >
               <li className="text-white">
-                <Link href="/">Hjem</Link>
+                <Link href="/">
+                  {t('Home')}
+                </Link>
               </li>
               <li className="text-white">
-                <Link href="/treningstider">Treningstider</Link>
+                <Link href="/treningstider">
+                  {t('Schedule')}
+                </Link>
               </li>
               <li className="text-white">
                 <Link href="/faq">FAQ</Link>
               </li>
               <li className="text-white md:hidden">
-                <Link href="/diverse-linker">Diverse Linker</Link>
+                <Link href="/diverse-linker">
+                  {t('Links')}
+                </Link>
               </li>
               <li className="text-white md:hidden">
-                <Link href="/terminliste">Terminliste</Link>
+                <Link href="/terminliste">
+                  {t('Termlist')}
+                </Link>
               </li>
               <li className="text-white md:hidden">
-                <Link href="/galleri">Galleri</Link>
+                <Link href="/galleri">
+                  {t('Gallery')}
+                </Link>
               </li>
               <button className="items-center hidden px-5 py-2 text-white peer hover:bg-ba-color-gold md:flex ">
-                Mer <MdArrowDropDown className="ml-2 " />
+                {t('More')} <MdArrowDropDown className="ml-2 " />
               </button>
 
               <div
@@ -98,24 +111,24 @@ const NavBar = () => {
                 <div className="px-10 pb-10">
                   <li className="text-white hover:bg-ba-color-gold bg-zinc-900">
                     <Link href="/diverse-linker" className="px-5 py-3 md:block">
-                      Diverse Linker
+                      {t('Links')}
                     </Link>
                   </li>
                   <li className="visible text-white hover:bg-ba-color-gold bg-zinc-900">
                     <Link href="/terminliste" className="px-5 py-3 md:block">
-                      Terminliste
+                      {t('Termlist')}
                     </Link>
                   </li>
                   <li className="visible text-white hover:bg-ba-color-gold bg-zinc-900">
                     <Link href="/galleri" className="px-5 py-3 md:block">
-                      Galleri
+                      {t('Gallery')}
                     </Link>
                   </li>
                 </div>
               </div>
               <Link href="/bli-medlem">
                 <button className="z-20 px-4 py-2 mt-6 text-center text-white transition duration-500 ease-in-out transform border-2 lg:w-full w-36 border-ba-color-gold rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 md:mt-0">
-                  Meld deg inn
+                  {t('Button')}
                 </button>
               </Link>
             </ul>

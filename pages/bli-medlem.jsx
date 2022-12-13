@@ -3,12 +3,32 @@ import Image from "next/image";
 import Link from "next/link";
 import GroupPic from "../images/bli-medlem/grouppic.jpg"
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'hero',
+        'schedule',
+        'faq',
+        'member'
+      ])),
+    },
+  }
+}
+
 const BliMedlem = () => {
+  const { t } = useTranslation('member')
+
   return (
     <>
     <Head>
         <title>
-          Bli medlem
+          {t('Title')}
         </title>
         <meta
           name="description"
@@ -17,7 +37,7 @@ const BliMedlem = () => {
       </Head>
       <div className="mx-auto text-white lg:max-w-5xl">
         <h1 className="pt-8 mb-8 text-5xl text-center text-ba-color-gold">
-          Bli medlem
+          {t('Title')}
         </h1>
         <div
           className="grid w-5/6 grid-cols-1 mx-auto mb-12 text-white md:grid-cols-2 md:gap-20"
@@ -41,40 +61,40 @@ const BliMedlem = () => {
               <h2
                 className="font-bold"
               >
-                Ønsker du medlemskap i Bergen Armwrestling?
+                {t('Become member')}
               </h2>
               <br />
               <p>
-                Kom å test oss ut!
+                {t('Test us')}
               </p>
               <br />
               <p>
-                Hos oss får du 3 prøvetreninger, før du trenger å ta stilling til om
-                du ønsker å melde deg inn.
+                {t('Trail')}
               </p>
               <br />
-              <p>Innmelding gjør du enkelt
+              <p>
+                {t('Sign up')}
                 {' '}
                 <Link
                   className="italic font-bold underline hover:text-ba-color-gold"
                   href="https://medlemskap.nif.no/553975"
                   title="Meld deg inn her"
                 >
-                  her!
+                  {t('Sign up link')}
                 </Link>
               </p>
               <br />
               <ul>
-                Medlemskontigent pr 2022
+                {t('Membership fee')}
                 <li
                   className="ml-10 list-disc"
                 >
-                  Over 21 år: kr 500
+                  {t('Over 21')}
                 </li>
                 <li
                   className="ml-10 list-disc"
                 >
-                  Under 21 år: kr 300
+                  {t('Under 21')}
                 </li>
               </ul>
               <br />
@@ -88,7 +108,7 @@ const BliMedlem = () => {
                   <button
                     className="px-5 py-4 mx-auto mb-6 text-base font-medium text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   >
-                    Meld deg inn her
+                    {t('Sign up btn')}
                   </button>
                 </Link>
               </div>
@@ -97,23 +117,23 @@ const BliMedlem = () => {
           <div>
             <div>
               <p>
-                Er du under 15 år, må innmelding gjøres av en forsatt.
+                {t('Under 15')}
               </p>
               <br />
               <p>
-                Vi anbefaler en nedre aldersgrense på 13 år, da vi pr nå ikke kan tilby egne barnepartier.
+                {t('Age limit')}
               </p>
               <br />
               <p>
-                Det oppfordres til at de yngste deltakerne har med seg en foresatt når en prøver ut sporten, eller vurderer å bli medlem.
+                {t('Young members')}
               </p>
               <br />
               <p>
-                Har du spørsmål knyttet til innmelding, bes man ta kontakt med klubbleder, André Engene eller via klubbmail:  bergenarmwrestling@outlook.com
+                {t('Contact')}
               </p>
               <br />
               <p>
-                Eventuelt møter du opp på en av våre treninger som er tirsdager mellom kl 19-21.
+                {t('Schedule')}
               </p>
               <br />
             </div>
@@ -121,45 +141,45 @@ const BliMedlem = () => {
             <h2
               className="font-bold"
             >
-              Om Bergen Armwrestling
+              {t('About BAW')}
             </h2>
             <br />
             <ul>
               <li
                 className="ml-10 list-disc"
               >
-                Stiftet juni 2020
+                {t('Founded')}
               </li>
               <li
                 className="ml-10 list-disc"
               >
-                30 medlemmer
+                {t('Members')}
               </li>
               <li
                 className="ml-10 list-disc"
               >
-                Trener på Gnisten, som vi låner gratis av Bergen Kommune
+                {t('Location')}
               </li>
             </ul>
             <br />
             <h2
               className="font-bold"
             >
-              Om Håndbak
+              {t('About')}
             </h2>
             <br />
             <p>
-              Håndbak eller armbrytning strekker seg helt tilbake til de olympiske leker i Athen.
+              {t('Athen')}
             </p>
             <p>
-              I det siste har vi sett endringer i regler, stil og omfang.
+              {t('Changes')}
             </p>
             <br />
             <p>
-              Håndbak er en sosial og interessant sport, og en kamp varer som oftest mellom 1 - 2 sekunder.
+              {t('Match')}
             </p>
             <p>
-              Mye avhenger av utøvers teknikk, muskelstyrke og hurtighet.
+              {t('Technique')}
             </p>
           </div>
         </div>

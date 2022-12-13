@@ -3,7 +3,6 @@ import Head from "next/head"
 import Image from "next/image"
 import { Carousel } from "flowbite-react"
 
-
 // Used for Slideshow
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
@@ -25,18 +24,18 @@ import youngandoldarmwrestling from "../public/youngandoldarmwrestling.webp"
 import competitionwrestling from "../public/competitionwrestling.webp"
 import clubphoto from "../public/clubphoto.webp"
 
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { useTranslation } from "react-i18next"
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [
-        'common',
-        'hero',
-        'schedule',
-        'termlist',
-        'gallery'
+        "common",
+        "hero",
+        "schedule",
+        "termlist",
+        "gallery",
       ])),
     },
   }
@@ -109,7 +108,7 @@ const photos = [
     alt: "En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på",
   },
   {
-    src: "competitionwrestling.webp",
+    src: "/competitionwrestling.webp",
     width: 1,
     height: 1,
     alt: "To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med",
@@ -124,7 +123,7 @@ const photos = [
 
 const Galleri = () => {
   const [index, setIndex] = useState(-1)
-  const { t } = useTranslation('gallery')
+  const { t } = useTranslation("gallery")
 
   return (
     <>
@@ -136,9 +135,9 @@ const Galleri = () => {
         />
       </Head>
       <h1 className="pt-8 text-5xl text-center md:mb-12 text-ba-color-gold">
-        {t('Gallery')}
+        {t("Gallery")}
       </h1>
-      <div className="items-center justify-center mx-auto my-4 lg:max-w-5xl">
+      <div className="items-center justify-center mx-auto my-4 mb-12 lg:max-w-5xl">
         {/* Carousel  */}
         <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
           <Carousel slideInterval={5000} className="rounded-none">

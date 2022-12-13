@@ -7,24 +7,6 @@ import { Carousel } from "flowbite-react"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
 
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        'common',
-        'hero',
-        'schedule',
-      ])),
-      // Will be passed to the page component as props
-    },
-  }
-}
-
-const Gallery = () => {
-  const [clickedImg, setClickedImg] = useState(null)
-  const [currentIndex, setCurrentIndex] = useState(null)
 // Used for photo gallery || requires --legacy-peer-deps
 import Gallery from "react-photo-gallery-next"
 
@@ -121,7 +103,6 @@ const photos = [
     alt: "Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet",
   },
 ]
-}
 
 const Galleri = () => {
   const [index, setIndex] = useState(-1)

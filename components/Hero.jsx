@@ -1,15 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import FrontPic from "../images/index/header_example2.png";
-import logo_jobbjakt from "../public/JobbJakt.png";
-import logo_antidoping from "../public/logo_antidoping.png";
-import logo_nbf from "../public/logo_nbf.svg";
-import logo_anthrax from "../public/logo_anthrax.png";
-import logo_deltaker_blue from "../public/logo_deltaker_blue.png";
-import logo_trimtex from "../images/index/TSA.svg";
-import logo_accountor from "../images/index/accountor.svg";
-import Head from "next/head";
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import FrontPic from "../images/index/header_example2.png"
+import logo_jobbjakt from "../public/JobbJakt.png"
+import logo_antidoping from "../public/logo_antidoping.png"
+import logo_nbf from "../public/logo_nbf.svg"
+import logo_anthrax from "../public/logo_anthrax.png"
+import logo_deltaker_blue from "../public/logo_deltaker_blue.png"
+import logo_trimtex from "../images/index/TSA.svg"
+import logo_accountor from "../images/index/accountor.svg"
+import Head from "next/head"
 
 const Hero = () => {
   return (
@@ -76,7 +76,7 @@ const Hero = () => {
           <h2 className="mb-6 text-xl font-bold text-center text-ba-color-gold md:text-2xl lg:text-3xl">
             Samarbeidspartnere
           </h2>
-          <div className="grid grid-cols-1 content-around gap-y-12 mx-auto text-center justify-items-center md:grid-cols-3 md:w-[700] ">
+          <div className="grid grid-cols-1 content-around gap-y-12 mx-auto text-center justify-items-center md:grid-cols-3 md:w-[700] justify-center items-center ">
             <div>
               <Image
                 className="mx-auto"
@@ -85,6 +85,15 @@ const Hero = () => {
                 width={75}
               />
               <p>Antidoping Norge</p>
+            </div>
+            <div>
+              <Image
+                className="mx-auto"
+                src={logo_jobbjakt}
+                alt="Logoen til Jobbjakt"
+                width={75}
+              />
+              <p>Jobbjakt</p>
             </div>
             <div>
               <Image
@@ -121,7 +130,7 @@ const Hero = () => {
               />
               <p>Anthrax Sportswear</p>
             </div>
-            <div className="flex flex-col justify-end">
+            <div className="flex flex-col justify-end md:col-span-3 ">
               <Image
                 className="m-auto"
                 src={logo_accountor}
@@ -134,7 +143,7 @@ const Hero = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

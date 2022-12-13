@@ -31,94 +31,94 @@ import Gallery from "react-photo-gallery-next"
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs"
 
-import image1 from "../public/image1.webp"
-import image2 from "../public/group_01.webp"
-import image3 from "../public/group_02.webp"
-import image4 from "../public/group_03.webp"
-import image5 from "../public/group_04.webp"
-import image6 from "../public/group_05.webp"
-import image7 from "../public/match_01.webp"
-import image8 from "../public/match_02.webp"
-import image9 from "../public/match_03.webp"
-import image10 from "../public/FB_image.webp"
+import clubmembers from "../public/clubmembers.webp"
+import victory from "../public/victory.webp"
+import medals from "../public/medals.webp"
+import training from "../public/training.webp"
+import flextraining from "../public/flextraining.webp"
+import trainingmedia from "../public/trainingmedia.webp"
+import twopersonarmwrestling from "../public/twopersonarmwrestling.webp"
+import youngandoldarmwrestling from "../public/youngandoldarmwrestling.webp"
+import competitionwrestling from "../public/competitionwrestling.webp"
+import clubphoto from "../public/clubphoto.webp"
 
 // For Slideshow
 const slides = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
-  image8,
-  image9,
-  image10,
+  clubmembers,
+  victory,
+  medals,
+  training,
+  flextraining,
+  trainingmedia,
+  twopersonarmwrestling,
+  youngandoldarmwrestling,
+  competitionwrestling,
+  clubphoto,
 ]
 
 // For gallery
 const photos = [
   {
-    src: "/image1.webp",
+    src: "/clubmembers.webp",
     width: 4,
     height: 1,
     priority: "priority",
-    alt: "Old group photo",
+    alt: "Glade medlemmer hos Bergen Armwrestling som poserer foran kamera",
   },
   {
-    src: "/group_01.webp",
+    src: "/victory.webp",
     width: 3,
     height: 1,
-    alt: "...",
+    alt: "Jubel, deltakere som har vunnet medalje står på scenen med hendene i været",
   },
   {
-    src: "/group_02.webp",
+    src: "/medals.webp",
     width: 2,
     height: 1,
-    alt: "...",
+    alt: "Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken",
   },
   {
-    src: "/group_03.webp",
+    src: "/training.webp",
     width: 3,
     height: 1,
-    alt: "...",
+    alt: "Medlemmer som er i full gang med å trene i øvingslokalet",
   },
   {
-    src: "/group_04.webp",
+    src: "/flextraining.webp",
     width: 3,
     height: 1,
-    alt: "...",
+    alt: "To personer som bryter håndbak, mens andre medlemer viser muskler",
   },
   {
-    src: "/group_05.webp",
+    src: "/trainingmedia.webp",
     width: 3,
     height: 1,
 
-    alt: "...",
+    alt: "NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund",
   },
   {
-    src: "/match_01.webp",
+    src: "/twopersonarmwrestling.webp",
     width: 2,
     height: 2,
-    alt: "...",
+    alt: "To medlemmer som er i gang med å bryte håndbak under en trening",
   },
   {
-    src: "/match_02.webp",
+    src: "/youngandoldarmwrestling.webp",
     width: 2,
     height: 2,
-    alt: "...",
+    alt: "En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på",
   },
   {
-    src: "match_03.webp",
+    src: "competitionwrestling.webp",
     width: 1,
     height: 1,
-    alt: "...",
+    alt: "To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med",
   },
   {
-    src: "/FB_image.webp",
+    src: "/clubphoto.webp",
     width: 1,
     height: 1,
-    alt: "...",
+    alt: "Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet",
   },
 ]
 }
@@ -143,23 +143,23 @@ const Galleri = () => {
         <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
           <Carousel slideInterval={5000} className="rounded-none">
             <Image
-              src={image1}
-              alt="Gruppebilde etter seier"
+              src={clubmembers}
+              alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
               width={930}
               height={400}
               priority
               className="rounded-none"
             />
             <Image
-              src={image2}
-              alt="Gruppebilde med medaljer rundt halsen"
+              src={victory}
+              alt="Jubel, deltakere som har vunnet medalje står på scenen med hendene i været"
               width={930}
               height={400}
               className="rounded-none"
             />
             <Image
-              src={image3}
-              alt="Bilde tatt fra en håndbakkamp"
+              src={medals}
+              alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
               width={930}
               height={400}
               className="rounded-none"

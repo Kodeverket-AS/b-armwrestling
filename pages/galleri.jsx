@@ -7,7 +7,6 @@ import { Carousel } from "flowbite-react"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
 
-<<<<<<< HEAD
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export async function getStaticProps({ locale }) {
@@ -26,10 +25,8 @@ export async function getStaticProps({ locale }) {
 const Gallery = () => {
   const [clickedImg, setClickedImg] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(null)
-=======
 // Used for photo gallery || requires --legacy-peer-deps
 import Gallery from "react-photo-gallery-next"
->>>>>>> develop
 
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs"
@@ -124,6 +121,7 @@ const photos = [
     alt: "...",
   },
 ]
+}
 
 const Galleri = () => {
   const [index, setIndex] = useState(-1)

@@ -13,7 +13,6 @@ export async function getStaticProps({ locale }) {
         'faq,',
         'termlist'
       ])),
-      // Will be passed to the page component as props
     },
   }
 }

@@ -21,7 +21,6 @@ export async function getStaticProps({ locale }) {
         'schedule',
         'termlist',
       ])),
-      // Will be passed to the page component as props
     },
   }
 }

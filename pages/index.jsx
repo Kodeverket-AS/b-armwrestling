@@ -10,7 +10,8 @@ export async function getStaticProps({ locale }) {
         'common',
         'hero',
         'schedule',
-        'faq,'
+        'faq,',
+        'termlist'
       ])),
       // Will be passed to the page component as props
     },

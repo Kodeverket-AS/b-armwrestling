@@ -1,18 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 import Head from "next/head"
 import Image from "next/image"
 import { Carousel } from "flowbite-react"
-import Overlay from "../components/Overlay"
 
-import { useState } from "react"
+// Used for Slideshow
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
 
+// Used for photo gallery || requires --legacy-peer-deps
+import Gallery from "react-photo-gallery-next"
+
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs"
-
-// Had to use --legacy-peer-deps to get it to work
-import Gallery from "react-photo-gallery-next"
 
 import image1 from "../public/image1.webp"
 import image2 from "../public/group_01.webp"
@@ -123,26 +122,28 @@ const Galleri = () => {
       <div className="items-center justify-center mx-auto my-4 lg:max-w-5xl">
         {/* Carousel  */}
         <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
-          <Carousel slideInterval={5000} className="rounded-md">
+          <Carousel slideInterval={5000} className="rounded-none">
             <Image
               src={image1}
               alt="Gruppebilde etter seier"
               width={930}
               height={400}
               priority
-              className="rounded-md"
+              className="rounded-none"
             />
             <Image
               src={image2}
               alt="Gruppebilde med medaljer rundt halsen"
               width={930}
               height={400}
+              className="rounded-none"
             />
             <Image
               src={image3}
               alt="Bilde tatt fra en håndbakkamp"
               width={930}
               height={400}
+              className="rounded-none"
             />
           </Carousel>
         </div>
@@ -151,10 +152,7 @@ const Galleri = () => {
           targetRowHeight={200}
           placeholder="blur"
           margin={6}
-          className="rounded-md"
           onClick={(e, photo) => {
-            // console.log(e.currentTarget)
-            // console.log(photo)
             setIndex(photo.index)
           }}
         />

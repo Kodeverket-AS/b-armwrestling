@@ -3,6 +3,7 @@ import Head from "next/head"
 import Image from "next/image"
 import { Carousel } from "flowbite-react"
 
+
 // Used for Slideshow
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
@@ -23,6 +24,23 @@ import twopersonarmwrestling from "../public/twopersonarmwrestling.webp"
 import youngandoldarmwrestling from "../public/youngandoldarmwrestling.webp"
 import competitionwrestling from "../public/competitionwrestling.webp"
 import clubphoto from "../public/clubphoto.webp"
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from "react-i18next"
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'hero',
+        'schedule',
+        'termlist',
+        'gallery'
+      ])),
+    },
+  }
+}
 
 // For Slideshow
 const slides = [
@@ -45,79 +63,80 @@ const photos = [
     width: 4,
     height: 1,
     priority: "priority",
-    alt: "Glade medlemmer hos Bergen Armwrestling som poserer foran kamera",
+    alt: {t('Clubmembers')},
   },
   {
     src: "/victory.webp",
     width: 3,
     height: 1,
-    alt: "Jubel, deltakere som har vunnet medalje står på scenen med hendene i været",
+    alt: {t('Victory')},
   },
   {
     src: "/medals.webp",
     width: 2,
     height: 1,
-    alt: "Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken",
+    alt: {t('Medals')},
   },
   {
     src: "/training.webp",
     width: 3,
     height: 1,
-    alt: "Medlemmer som er i full gang med å trene i øvingslokalet",
+    alt: {t('Training')},
   },
   {
     src: "/flextraining.webp",
     width: 3,
     height: 1,
-    alt: "To personer som bryter håndbak, mens andre medlemer viser muskler",
+    alt: {t('Flextraining')},
   },
   {
     src: "/trainingmedia.webp",
     width: 3,
     height: 1,
 
-    alt: "NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund",
+    alt: {t('Trainingmedia')},
   },
   {
     src: "/twopersonarmwrestling.webp",
     width: 2,
     height: 2,
-    alt: "To medlemmer som er i gang med å bryte håndbak under en trening",
+    alt: {t('Two peson armwrestling')},
   },
   {
     src: "/youngandoldarmwrestling.webp",
     width: 2,
     height: 2,
-    alt: "En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på",
+    alt: {t('Young and old armwrestling')},
   },
   {
     src: "competitionwrestling.webp",
     width: 1,
     height: 1,
-    alt: "To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med",
+    alt: {t('Competition wrestling')},
   },
   {
     src: "/clubphoto.webp",
     width: 1,
     height: 1,
-    alt: "Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet",
+    alt: {t('Clubphoto')},
   },
 ]
 
 const Galleri = () => {
   const [index, setIndex] = useState(-1)
+  const { t } = useTranslation('gallery')
 
   return (
     <>
       <Head>
-        <title>Galleri</title>
+        <title>{t('Gallery')}</title>
         <meta
           name="description"
           content="Bildegalleriet til Bergen Armwrestling Club er en samling av håndbakbilder"
-        ></meta>
+        />
       </Head>
       <h1 className="pt-8 text-5xl text-center md:mb-12 text-ba-color-gold">
-        Galleri
+        {t('Gallery')}
       </h1>
       <div className="items-center justify-center mx-auto my-4 lg:max-w-5xl">
         {/* Carousel  */}

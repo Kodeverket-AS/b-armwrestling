@@ -93,7 +93,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <button className="items-center hidden px-5 py-2 text-white peer hover:bg-ba-color-gold md:flex ">
-                {t('Button')} <MdArrowDropDown className="ml-2 " />
+                {t('More')} <MdArrowDropDown className="ml-2 " />
               </button>
 
               <div

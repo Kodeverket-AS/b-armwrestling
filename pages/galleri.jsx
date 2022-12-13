@@ -63,62 +63,62 @@ const photos = [
     width: 4,
     height: 1,
     priority: "priority",
-    alt: {t('Clubmembers')},
+    alt: "Glade medlemmer hos Bergen Armwrestling som poserer foran kamera",
   },
   {
     src: "/victory.webp",
     width: 3,
     height: 1,
-    alt: {t('Victory')},
+    alt: "Jubel, deltakere som har vunnet medalje står på scenen med hendene i været",
   },
   {
     src: "/medals.webp",
     width: 2,
     height: 1,
-    alt: {t('Medals')},
+    alt: "Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken",
   },
   {
     src: "/training.webp",
     width: 3,
     height: 1,
-    alt: {t('Training')},
+    alt: "Medlemmer som er i full gang med å trene i øvingslokalet",
   },
   {
     src: "/flextraining.webp",
     width: 3,
     height: 1,
-    alt: {t('Flextraining')},
+    alt: "To personer som bryter håndbak, mens andre medlemer viser muskler",
   },
   {
     src: "/trainingmedia.webp",
     width: 3,
     height: 1,
 
-    alt: {t('Trainingmedia')},
+    alt: "NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund",
   },
   {
     src: "/twopersonarmwrestling.webp",
     width: 2,
     height: 2,
-    alt: {t('Two peson armwrestling')},
+    alt: "To medlemmer som er i gang med å bryte håndbak under en trening",
   },
   {
     src: "/youngandoldarmwrestling.webp",
     width: 2,
     height: 2,
-    alt: {t('Young and old armwrestling')},
+    alt: "En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på",
   },
   {
     src: "competitionwrestling.webp",
     width: 1,
     height: 1,
-    alt: {t('Competition wrestling')},
+    alt: "To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med",
   },
   {
     src: "/clubphoto.webp",
     width: 1,
     height: 1,
-    alt: {t('Clubphoto')},
+    alt: "Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet",
   },
 ]
 
@@ -129,7 +129,7 @@ const Galleri = () => {
   return (
     <>
       <Head>
-        <title>{t('Gallery')}</title>
+        <title>Galleri</title>
         <meta
           name="description"
           content="Bildegalleriet til Bergen Armwrestling Club er en samling av håndbakbilder"

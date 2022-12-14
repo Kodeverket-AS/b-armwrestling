@@ -49,8 +49,6 @@ const Hero = () => {
                             <p className='mb-8 text-4xl italic '>
                                 {t("Armwrestling origin")}
                             </p>
-                            <br />
-                            <p>{t("Armwrestling story")}</p>
                         </div>
                     </div>
                     <div>

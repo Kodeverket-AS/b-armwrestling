@@ -138,14 +138,14 @@ const NavBar = () => {
           className="text-white "
         >
           <Link
-          href="/no:slug"
+          href="/no"
           >
           <button>
               Norsk
           </button>
           </Link>
           <Link
-          href="/en:slug"
+          href="/en"
           >
           <button>
               Engelsk

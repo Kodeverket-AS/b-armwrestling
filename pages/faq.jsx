@@ -393,6 +393,7 @@ const Faq = () => {
                                             >
                                                 Bryteforbundet
                                             </Link>
+                                            {' '}
                                             {/* (link til lisensinfo) */}{t('Compete what I need answare 4.5')}
                                         </li>
                                         <li>
@@ -404,6 +405,7 @@ const Faq = () => {
                                             >
                                                 MinIdrett.no.
                                             </Link>
+                                            {' '}
                                             {t('Compete what I need answare 5.5')}
                                         </li>
                                     </ul>

@@ -50,7 +50,7 @@ const Hero = () => {
                                 {t("Armwrestling origin")}
                             </p>
                             <br />
-                            <p>{t("Armwrestling story")}</p>
+                            {/* <p>{t("Armwrestling story")}</p> */}
                         </div>
                     </div>
                     <div>

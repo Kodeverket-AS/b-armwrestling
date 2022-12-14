@@ -72,18 +72,6 @@ const BliMedlem = () => {
                 {t('Trail')}
               </p>
               <br />
-              <p>
-                {t('Sign up')}
-                {' '}
-                <Link
-                  className="italic font-bold underline hover:text-ba-color-gold"
-                  href="https://medlemskap.nif.no/553975"
-                  title="Meld deg inn her"
-                >
-                  {t('Sign up link')}
-                </Link>
-              </p>
-              <br />
               <ul>
                 {t('Membership fee')}
                 <li

@@ -1,14 +1,16 @@
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Logo from "../images/logov2.png";
-import { MdArrowDropDown } from "react-icons/md";
-import { useTranslation } from 'next-i18next'
+import { useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import Logo from "../images/logov2.png"
+import { MdArrowDropDown } from "react-icons/md"
+import { useTranslation } from "next-i18next"
+import { useRouter } from "next/router"
 
 const NavBar = () => {
-  const { t } = useTranslation('common')
+  const { t } = useTranslation("common")
 
-  const [navbar, setNavbar] = useState(false);
+  const router = useRouter()
+  const [navbar, setNavbar] = useState(false)
   return (
     <nav className="w-full shadow bg-zinc-900">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -24,7 +26,7 @@ const NavBar = () => {
               <button
                 className="p-2 text-gray-900 rounded-md outline-none focus:border-gray-900 focus:border"
                 onClick={() => {
-                  setNavbar(!navbar);
+                  setNavbar(!navbar)
                 }}
               >
                 {navbar ? (
@@ -62,45 +64,36 @@ const NavBar = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-              }`}
+            className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
             <ul
               className="relative items-center justify-center space-y-8 text-center md:flex md:space-x-6 md:space-y-0"
               onClick={() => {
-                setNavbar(!navbar);
+                setNavbar(!navbar)
               }}
             >
               <li className="text-white">
-                <Link href="/">
-                  {t('Home')}
-                </Link>
+                <Link href="/">{t("Home")}</Link>
               </li>
               <li className="text-white">
-                <Link href="/treningstider">
-                  {t('Schedule')}
-                </Link>
+                <Link href="/treningstider">{t("Schedule")}</Link>
               </li>
               <li className="text-white">
                 <Link href="/faq">FAQ</Link>
               </li>
               <li className="text-white md:hidden">
-                <Link href="/diverse-linker">
-                  {t('Links')}
-                </Link>
+                <Link href="/diverse-linker">{t("Links")}</Link>
               </li>
               <li className="text-white md:hidden">
-                <Link href="/terminliste">
-                  {t('Termlist')}
-                </Link>
+                <Link href="/terminliste">{t("Termlist")}</Link>
               </li>
               <li className="text-white md:hidden">
-                <Link href="/galleri">
-                  {t('Gallery')}
-                </Link>
+                <Link href="/galleri">{t("Gallery")}</Link>
               </li>
               <button className="items-center hidden px-5 py-2 text-white peer hover:bg-ba-color-gold md:flex ">
-                {t('More')} <MdArrowDropDown className="ml-2 " />
+                {t("More")} <MdArrowDropDown className="ml-2 " />
               </button>
 
               <div
@@ -111,50 +104,48 @@ const NavBar = () => {
                 <div className="px-10 pb-10">
                   <li className="text-white hover:bg-ba-color-gold bg-zinc-900">
                     <Link href="/diverse-linker" className="px-5 py-3 md:block">
-                      {t('Links')}
+                      {t("Links")}
                     </Link>
                   </li>
                   <li className="visible text-white hover:bg-ba-color-gold bg-zinc-900">
                     <Link href="/terminliste" className="px-5 py-3 md:block">
-                      {t('Termlist')}
+                      {t("Termlist")}
                     </Link>
                   </li>
                   <li className="visible text-white hover:bg-ba-color-gold bg-zinc-900">
                     <Link href="/galleri" className="px-5 py-3 md:block">
-                      {t('Gallery')}
+                      {t("Gallery")}
                     </Link>
                   </li>
                 </div>
               </div>
               <Link href="/bli-medlem">
                 <button className="z-20 px-4 py-2 mt-6 text-center text-white transition duration-500 ease-in-out transform border-2 lg:w-full w-36 border-ba-color-gold rounded-xl hover:bg-ba-color-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 md:mt-0">
-                  {t('Button')}
+                  {t("Button")}
                 </button>
               </Link>
             </ul>
           </div>
         </div>
-        <div
-          className="text-white "
-        >
-          <Link
-          href="/no"
+        Language Toggle
+        <div className="text-white ">
+          <button
+            onClick={() => {
+              if (router.locale == "en") {
+                router.push(`/no${router.route}`)
+              } else {
+                router.push(`/en${router.route}`)
+              }
+            }}
           >
-          <button>
-              Norsk
+            {router.locale === "no"
+              ? "Change to English"
+              : "Change to Norwegian"}
           </button>
-          </Link>
-          <Link
-          href="/en"
-          >
-          <button>
-              Engelsk
-          </button>
-          </Link>
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

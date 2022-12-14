@@ -7,9 +7,6 @@ import { Carousel } from "flowbite-react"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
 
-// Used for photo gallery || requires --legacy-peer-deps
-import Gallery from "react-photo-gallery-next"
-
 import { AiFillCloseCircle } from "react-icons/ai"
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs"
 
@@ -24,22 +21,22 @@ import youngandoldarmwrestling from "../public/youngandoldarmwrestling.webp"
 import competitionwrestling from "../public/competitionwrestling.webp"
 import clubphoto from "../public/clubphoto.webp"
 
-// import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-// import { useTranslation } from "react-i18next"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { useTranslation } from "react-i18next"
 
-// export async function getStaticProps({ locale }) {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale, [
-//         "common",
-//         "hero",
-//         "schedule",
-//         "termlist",
-//         "gallery",
-//       ])),
-//     },
-//   }
-// }
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "hero",
+        "schedule",
+        "termlist",
+        "gallery",
+      ])),
+    },
+  }
+}
 
 // For Slideshow
 const slides = [
@@ -55,75 +52,14 @@ const slides = [
   clubphoto,
 ]
 
-// For gallery
-const photos = [
-  {
-    src: "/clubmembers.webp",
-    width: 4,
-    height: 1,
-    priority: "priority",
-    alt: "Glade medlemmer hos Bergen Armwrestling som poserer foran kamera",
-  },
-  {
-    src: "/victory.webp",
-    width: 3,
-    height: 1,
-    alt: "Jubel, deltakere som har vunnet medalje står på scenen med hendene i været",
-  },
-  {
-    src: "/medals.webp",
-    width: 2,
-    height: 1,
-    alt: "Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken",
-  },
-  {
-    src: "/training.webp",
-    width: 3,
-    height: 1,
-    alt: "Medlemmer som er i full gang med å trene i øvingslokalet",
-  },
-  {
-    src: "/flextraining.webp",
-    width: 3,
-    height: 1,
-    alt: "To personer som bryter håndbak, mens andre medlemer viser muskler",
-  },
-  {
-    src: "/trainingmedia.webp",
-    width: 3,
-    height: 1,
-
-    alt: "NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund",
-  },
-  {
-    src: "/twopersonarmwrestling.webp",
-    width: 2,
-    height: 2,
-    alt: "To medlemmer som er i gang med å bryte håndbak under en trening",
-  },
-  {
-    src: "/youngandoldarmwrestling.webp",
-    width: 2,
-    height: 2,
-    alt: "En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på",
-  },
-  {
-    src: "/competitionwrestling.webp",
-    width: 1,
-    height: 1,
-    alt: "To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med",
-  },
-  {
-    src: "/clubphoto.webp",
-    width: 1,
-    height: 1,
-    alt: "Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet",
-  },
-]
-
 const Galleri = () => {
   const [index, setIndex] = useState(-1)
-  // const { t } = useTranslation("gallery")
+  const { t } = useTranslation("gallery")
+
+  const handleClick = (e) => {
+    let idx = Number(e.target.getAttribute("index"))
+    setIndex(idx)
+  }
 
   return (
     <>
@@ -135,10 +71,10 @@ const Galleri = () => {
         />
       </Head>
       <h1 className="pt-8 text-5xl text-center md:mb-12 text-ba-color-gold">
-        {/* {t("Gallery")} */}
+        {t("Gallery")}
       </h1>
       {/* Carousel and Gallery  */}
-      <div className="items-center justify-center mx-auto my-4 mb-12 lg:max-w-5xl">
+      <div className="items-center justify-center max-w-5xl mx-auto my-4 mb-12">
         {/* Carousel  */}
         <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
           <Carousel slideInterval={5000} className="rounded-none">
@@ -148,6 +84,7 @@ const Galleri = () => {
               width={930}
               height={400}
               priority
+              className="object-cover"
             />
             <Image
               src={victory}
@@ -168,74 +105,80 @@ const Galleri = () => {
         <div className="grid grid-cols-2 grid-rows-1 gap-2 mx-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-auto ">
           <Image
             src={clubmembers}
-            className="col-span-2 md:col-span-3 lg:col-span-2  md:h-[425px] lg:h-[321px] "
+            className="rounded-sm col-span-2 md:col-span-3 lg:col-span-2  md:h-[425px] lg:h-[321px] "
             alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
-            index={1}
-            onClick={(e, index) => {
-              console.log(e.target)
-              console.log(e.target.index)
-            }}
+            index={0}
+            onClick={handleClick}
           ></Image>
 
           <Image
             src={victory}
-            className="col-span-2 md:col-span-2 lg:col-span-2 md:h-[334px] lg:h-[321px] "
+            className="rounded-sm col-span-2 md:col-span-2 lg:col-span-2 md:h-[334px] lg:h-[321px] "
             alt="Jubel, deltakere som har vunnet medalje står på scenen med hendene i været"
+            index={1}
+            onClick={handleClick}
           ></Image>
           <Image
             src={medals}
-            className="h-full col-span-2  md:col-span-1 md:h-[334px] object-fit lg:col-span-2 lg:object-cover lg:h-[285px] "
+            className="rounded-sm h-full col-span-2  md:col-span-1 md:h-[334px] object-fit lg:col-span-2 lg:object-cover lg:h-[285px] "
             alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
+            onClick={handleClick}
+            index={2}
           ></Image>
 
           <Image
             src={training}
-            className="h-full col-span-2 md:col-span-3 lg:col-span-2 lg:object-cover lg:h-[285px]"
+            className="rounded-sm h-full col-span-2 md:col-span-3 lg:col-span-2 lg:object-cover lg:h-[285px]"
             alt="Medlemmer som er i full gang med å trene i øvingslokalet"
+            onClick={handleClick}
+            index={3}
           ></Image>
 
           <Image
             src={flextraining}
-            className="h-full col-span-2 md:col-span-3 lg:col-span-2 lg-h-[280px] "
+            className="rounded-sm h-full col-span-2 md:col-span-3 lg:col-span-2 lg-h-[280px] "
             alt="To personer som bryter håndbak, mens andre medlemer viser muskler"
+            onClick={handleClick}
+            index={4}
           ></Image>
 
           <Image
             src={trainingmedia}
-            className="h-full col-span-2 lg:col-span-2 lg-h-[280px] "
+            className="rounded-sm h-full col-span-2 lg:col-span-2 lg-h-[280px] "
             alt="NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund"
+            onClick={handleClick}
+            index={5}
           ></Image>
 
           <Image
             src={twopersonarmwrestling}
-            className="h-full col-span-1 "
+            className="h-full col-span-1 rounded-sm "
             alt="To medlemmer som er i gang med å bryte håndbak under en trening"
+            onClick={handleClick}
+            index={6}
           ></Image>
           <Image
             src={youngandoldarmwrestling}
-            className="h-full col-span-1"
+            className="h-full col-span-1 rounded-sm"
             alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"
+            onClick={handleClick}
+            index={7}
           ></Image>
           <Image
             src={competitionwrestling}
-            className="h-full col-span-1"
+            className="h-full col-span-1 rounded-sm"
             alt="To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med"
+            onClick={handleClick}
+            index={8}
           ></Image>
           <Image
             src={clubphoto}
-            className="h-full col-span-1"
+            className="h-full col-span-1 rounded-sm"
             alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
+            onClick={handleClick}
+            index={9}
           ></Image>
         </div>
-        {/* <Gallery
-          photos={photos}
-          targetRowHeight={200}
-          placeholder="blur"
-          margin={6}
-          onClick={(e, photo) => {
-            setIndex(photo.index)
-          }}
-        /> */}
       </div>
 
       {/* Slideshow  */}

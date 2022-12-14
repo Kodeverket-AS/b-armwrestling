@@ -134,6 +134,24 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
+        <div
+          className="text-white "
+        >
+          <Link
+          href="/no:slug"
+          >
+          <button>
+              Norsk
+          </button>
+          </Link>
+          <Link
+          href="/en:slug"
+          >
+          <button>
+              Engelsk
+          </button>
+          </Link>
+        </div>
       </div>
     </nav>
   );

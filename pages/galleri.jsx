@@ -137,12 +137,44 @@ const Galleri = () => {
       <h1 className="pt-8 text-5xl text-center md:mb-12 text-ba-color-gold">
         {/* {t("Gallery")} */}
       </h1>
+      {/* Carousel and Gallery  */}
       <div className="items-center justify-center mx-auto my-4 mb-12 lg:max-w-5xl">
+        {/* Carousel  */}
+        <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
+          <Carousel slideInterval={5000} className="rounded-none">
+            <Image
+              src={clubmembers}
+              alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
+              width={930}
+              height={400}
+              priority
+            />
+            <Image
+              src={victory}
+              alt="Jubel, deltakere som har vunnet medalje står på scenen med hendene i været"
+              width={930}
+              height={400}
+            />
+            <Image
+              src={medals}
+              alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
+              width={930}
+              height={400}
+            />
+          </Carousel>
+        </div>
+
+        {/* Gallery  */}
         <div className="grid grid-cols-2 grid-rows-1 gap-2 mx-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-auto ">
           <Image
             src={clubmembers}
             className="col-span-2 md:col-span-3 lg:col-span-2  md:h-[425px] lg:h-[321px] "
             alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
+            index={1}
+            onClick={(e, index) => {
+              console.log(e.target)
+              console.log(e.target.index)
+            }}
           ></Image>
 
           <Image
@@ -152,25 +184,25 @@ const Galleri = () => {
           ></Image>
           <Image
             src={medals}
-            className="h-full col-span-2  md:col-span-1 md:h-[334px] object-fit lg:col-span-2 lg:object-cover "
+            className="h-full col-span-2  md:col-span-1 md:h-[334px] object-fit lg:col-span-2 lg:object-cover lg:h-[285px] "
             alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
           ></Image>
 
           <Image
             src={training}
-            className="h-full col-span-2 md:col-span-3 lg:col-span-2 lg:object-cover lg:h-[360px]"
+            className="h-full col-span-2 md:col-span-3 lg:col-span-2 lg:object-cover lg:h-[285px]"
             alt="Medlemmer som er i full gang med å trene i øvingslokalet"
           ></Image>
 
           <Image
             src={flextraining}
-            className="h-full col-span-2 md:col-span-3 lg:col-span-2 lg:h-[360px] "
+            className="h-full col-span-2 md:col-span-3 lg:col-span-2 lg-h-[280px] "
             alt="To personer som bryter håndbak, mens andre medlemer viser muskler"
           ></Image>
 
           <Image
             src={trainingmedia}
-            className="h-full col-span-2 lg:col-span-2 "
+            className="h-full col-span-2 lg:col-span-2 lg-h-[280px] "
             alt="NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund"
           ></Image>
 
@@ -194,16 +226,6 @@ const Galleri = () => {
             className="h-full col-span-1"
             alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
           ></Image>
-
-          {/* <Image src={victory} className=""></Image>
-          <Image src={medals} className=""></Image>
-          <Image src={training} className=""></Image>
-          <Image src={flextraining} className=""></Image>
-          <Image src={trainingmedia} className=""></Image>
-          <Image src={twopersonarmwrestling} className=""></Image>
-          <Image src={youngandoldarmwrestling} className=""></Image>
-          <Image src={competitionwrestling} className=""></Image>
-          <Image src={clubphoto} className=""></Image> */}
         </div>
         {/* <Gallery
           photos={photos}
@@ -215,6 +237,46 @@ const Galleri = () => {
           }}
         /> */}
       </div>
+
+      {/* Slideshow  */}
+      <Lightbox
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        styles={{
+          button: { color: "#ca9d3d", fontSize: "40px" },
+        }}
+        slides={slides}
+        render={{
+          iconPrev: () => <BsArrowLeftCircle />,
+          iconNext: () => <BsArrowRightCircle />,
+          iconClose: () => <AiFillCloseCircle />,
+          slide: (image, offset, rect) => {
+            const width = Math.round(
+              Math.min(rect.width, (rect.height / image.height) * image.width)
+            )
+            const height = Math.round(
+              Math.min(rect.height, (rect.width / image.width) * image.height)
+            )
+            return (
+              <div style={{ position: "relative", width, height }}>
+                <Image
+                  fill
+                  src={image}
+                  loading="eager"
+                  placeholder="blur"
+                  alt={"alt" in image ? image.alt : ""}
+                  sizes={
+                    typeof window !== "undefined"
+                      ? `${Math.ceil((width / window.innerWidth) * 100)}vw`
+                      : `${width}px`
+                  }
+                />
+              </div>
+            )
+          },
+        }}
+      />
     </>
   )
 }

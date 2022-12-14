@@ -127,8 +127,7 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
-        Language Toggle
-        <div className="text-white ">
+        <div className="text-center text-white ">
           <button
             onClick={() => {
               if (router.locale == "en") {
@@ -140,7 +139,7 @@ const NavBar = () => {
           >
             {router.locale === "no"
               ? "Change to English"
-              : "Change to Norwegian"}
+              : "Bytt til Norsk"}
           </button>
         </div>
       </div>

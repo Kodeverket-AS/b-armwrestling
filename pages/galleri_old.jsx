@@ -139,7 +139,7 @@ const Galleri = () => {
       </h1>
       <div className="items-center justify-center mx-auto my-4 mb-12 lg:max-w-5xl">
         {/* Carousel  */}
-        {/* <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
+        <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
           <Carousel slideInterval={5000} className="rounded-none">
             <Image
               src={clubmembers}
@@ -164,20 +164,8 @@ const Galleri = () => {
               className="rounded-none"
             />
           </Carousel>
-        </div> */}
-        <div className="grid grid-cols-4 gap-4">
-          <Image src={clubmembers} className="col-span-4 max-h-[460px]"></Image>
-          <Image src={victory} className="col-span-3 max-h-[460px]"></Image>
-          <Image src={medals} className="col-span-2"></Image>
-          <Image src={training} className="col-span-3"></Image>
-          <Image src={flextraining} className="col-span-3"></Image>
-          <Image src={trainingmedia} className="col-span-3"></Image>
-          <Image src={twopersonarmwrestling} className="col-span-2"></Image>
-          <Image src={youngandoldarmwrestling} className="row-span-2"></Image>
-          <Image src={competitionwrestling} className="row-span-1"></Image>
-          <Image src={clubphoto} className="col-span-1"></Image>
         </div>
-        {/* <Gallery
+        <Gallery
           photos={photos}
           targetRowHeight={200}
           placeholder="blur"
@@ -185,10 +173,10 @@ const Galleri = () => {
           onClick={(e, photo) => {
             setIndex(photo.index)
           }}
-        /> */}
+        />
       </div>
       {/* Modal Solution */}
-      {/* <Lightbox
+      <Lightbox
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
@@ -225,7 +213,7 @@ const Galleri = () => {
             )
           },
         }}
-      /> */}
+      />
     </>
   )
 }

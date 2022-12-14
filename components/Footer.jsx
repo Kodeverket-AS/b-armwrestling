@@ -1,8 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
-import Logo from "../images/logov2.png";
+import Link from "next/link"
+import Image from "next/image"
+import Logo from "../images/logov2.png"
+import { useTranslation } from "next-i18next"
 
 const Footer = () => {
+  const { t } = useTranslation("common")
+
   return (
     <footer className="w-full p-4 shadow bg-zinc-900 md:px-6 md:py-8">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center ">
@@ -35,7 +38,7 @@ const Footer = () => {
             </li>
             <li>
               <Link href="#" className="hover:underline">
-                Meld deg inn
+                {t("Button")}
               </Link>
             </li>
           </ul>
@@ -47,7 +50,7 @@ const Footer = () => {
         </span>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -38,7 +38,7 @@ const Hero = () => {
                             alt='Gruppebilde av klubbens medlemmer'
                             priority
                         />
-                        <h1 className='relative pt-2 mb-4 text-2xl font-bold text-center md:pt-0 text-ba-color-gold md:text-2xl md:mb-4 md:bottom-10 lg:text-4xl lg:bottom-24 lg:mt-11'>
+                        <h1 className='relative pt-2 mb-4 text-2xl font-bold text-center md:pt-0 text-ba-color-gold md:text-2xl md:mb-0 md:bottom-10 lg:text-4xl lg:bottom-24 lg:mt-11'>
                             Bergen Armwrestling Club
                         </h1>
                     </div>
@@ -46,7 +46,7 @@ const Hero = () => {
                     {/* Hero Text  */}
                     <div>
                         <div className='w-4/5 mx-auto text-sm'>
-                            <p className='mb-8 text-4xl italic '>
+                            <p className='mb-6  text-2xl text-center leading-10	  '>
                                 {t("Armwrestling origin")}
                             </p>
                             <br />
@@ -57,14 +57,14 @@ const Hero = () => {
                         <div className='flex justify-center w-full max-w-2xl gap-2 mx-auto my-8'>
                             <div className='mt-3 rounded-lg sm:mt-0'>
                                 <Link href='/bli-medlem'>
-                                    <button className='px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'>
+                                    <button className='border-2 border-ba-color-gold px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-14 lg:py-7  rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'>
                                         {t("Join button")}
                                     </button>
                                 </Link>
                             </div>
                             <div className='mt-3 rounded-lg sm:mt-0 sm:ml-3'>
                                 <Link href='/treningstider'>
-                                    <button className='items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-white transition duration-500 ease-in-out transform border-2 border-white hover:bg-white hover:text-black shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500'>
+                                    <button className='items-center block px-5 lg:px-12 lg:py-7 py-3.5 text-base font-medium text-center text-white transition duration-500 ease-in-out transform border-2 border-white hover:bg-white hover:text-black shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500'>
                                         {t("Nanana")}
                                     </button>
                                 </Link>

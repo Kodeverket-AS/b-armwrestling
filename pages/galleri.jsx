@@ -24,22 +24,22 @@ import youngandoldarmwrestling from "../public/youngandoldarmwrestling.webp"
 import competitionwrestling from "../public/competitionwrestling.webp"
 import clubphoto from "../public/clubphoto.webp"
 
-import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { useTranslation } from "react-i18next"
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+// import { useTranslation } from "react-i18next"
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        "common",
-        "hero",
-        "schedule",
-        "termlist",
-        "gallery",
-      ])),
-    },
-  }
-}
+// export async function getStaticProps({ locale }) {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, [
+//         "common",
+//         "hero",
+//         "schedule",
+//         "termlist",
+//         "gallery",
+//       ])),
+//     },
+//   }
+// }
 
 // For Slideshow
 const slides = [
@@ -123,7 +123,7 @@ const photos = [
 
 const Galleri = () => {
   const [index, setIndex] = useState(-1)
-  const { t } = useTranslation("gallery")
+  // const { t } = useTranslation("gallery")
 
   return (
     <>
@@ -135,11 +135,97 @@ const Galleri = () => {
         />
       </Head>
       <h1 className="pt-8 text-5xl text-center md:mb-12 text-ba-color-gold">
-        {t("Gallery")}
+        {/* {t("Gallery")} */}
       </h1>
       <div className="items-center justify-center mx-auto my-4 mb-12 lg:max-w-5xl">
-        {/* Carousel  */}
-        {/* <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
+        <div className="grid grid-cols-2 grid-rows-1 gap-2 mx-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-auto ">
+          <Image
+            src={clubmembers}
+            className="col-span-2 md:col-span-3 lg:col-span-2  md:h-[425px] lg:h-[321px] "
+            alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
+          ></Image>
+
+          <Image
+            src={victory}
+            className="col-span-2 md:col-span-2 lg:col-span-2 md:h-[334px] lg:h-[321px] "
+            alt="Jubel, deltakere som har vunnet medalje står på scenen med hendene i været"
+          ></Image>
+          <Image
+            src={medals}
+            className="h-full col-span-2  md:col-span-1 md:h-[334px] object-fit lg:col-span-2 lg:object-cover "
+            alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
+          ></Image>
+
+          <Image
+            src={training}
+            className="h-full col-span-2 md:col-span-3 lg:col-span-2 lg:object-cover lg:h-[360px]"
+            alt="Medlemmer som er i full gang med å trene i øvingslokalet"
+          ></Image>
+
+          <Image
+            src={flextraining}
+            className="h-full col-span-2 md:col-span-3 lg:col-span-2 lg:h-[360px] "
+            alt="To personer som bryter håndbak, mens andre medlemer viser muskler"
+          ></Image>
+
+          <Image
+            src={trainingmedia}
+            className="h-full col-span-2 lg:col-span-2 "
+            alt="NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund"
+          ></Image>
+
+          <Image
+            src={twopersonarmwrestling}
+            className="h-full col-span-1 "
+            alt="To medlemmer som er i gang med å bryte håndbak under en trening"
+          ></Image>
+          <Image
+            src={youngandoldarmwrestling}
+            className="h-full col-span-1"
+            alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"
+          ></Image>
+          <Image
+            src={competitionwrestling}
+            className="h-full col-span-1"
+            alt="To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med"
+          ></Image>
+          <Image
+            src={clubphoto}
+            className="h-full col-span-1"
+            alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
+          ></Image>
+
+          {/* <Image src={victory} className=""></Image>
+          <Image src={medals} className=""></Image>
+          <Image src={training} className=""></Image>
+          <Image src={flextraining} className=""></Image>
+          <Image src={trainingmedia} className=""></Image>
+          <Image src={twopersonarmwrestling} className=""></Image>
+          <Image src={youngandoldarmwrestling} className=""></Image>
+          <Image src={competitionwrestling} className=""></Image>
+          <Image src={clubphoto} className=""></Image> */}
+        </div>
+        {/* <Gallery
+          photos={photos}
+          targetRowHeight={200}
+          placeholder="blur"
+          margin={6}
+          onClick={(e, photo) => {
+            setIndex(photo.index)
+          }}
+        /> */}
+      </div>
+    </>
+  )
+}
+
+export default Galleri
+
+{
+  /* Carousel  */
+}
+{
+  /* <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
           <Carousel slideInterval={5000} className="rounded-none">
             <Image
               src={clubmembers}
@@ -164,31 +250,14 @@ const Galleri = () => {
               className="rounded-none"
             />
           </Carousel>
-        </div> */}
-        <div className="grid grid-cols-4 gap-4">
-          <Image src={clubmembers} className="col-span-4 max-h-[460px]"></Image>
-          <Image src={victory} className="col-span-3 max-h-[460px]"></Image>
-          <Image src={medals} className="col-span-2"></Image>
-          <Image src={training} className="col-span-3"></Image>
-          <Image src={flextraining} className="col-span-3"></Image>
-          <Image src={trainingmedia} className="col-span-3"></Image>
-          <Image src={twopersonarmwrestling} className="col-span-2"></Image>
-          <Image src={youngandoldarmwrestling} className="row-span-2"></Image>
-          <Image src={competitionwrestling} className="row-span-1"></Image>
-          <Image src={clubphoto} className="col-span-1"></Image>
-        </div>
-        {/* <Gallery
-          photos={photos}
-          targetRowHeight={200}
-          placeholder="blur"
-          margin={6}
-          onClick={(e, photo) => {
-            setIndex(photo.index)
-          }}
-        /> */}
-      </div>
-      {/* Modal Solution */}
-      {/* <Lightbox
+        </div> */
+}
+
+{
+  /* Modal Solution */
+}
+{
+  /* <Lightbox
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
@@ -225,9 +294,5 @@ const Galleri = () => {
             )
           },
         }}
-      /> */}
-    </>
-  )
+      /> */
 }
-
-export default Galleri

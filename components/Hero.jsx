@@ -1,20 +1,20 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import FrontPic from "../images/index/header_example2.png";
-import logo_jobbjakt from "../public/JobbJakt.png";
-import logo_antidoping from "../public/logo_antidoping.png";
-import logo_nbf from "../public/logo_nbf.svg";
-import logo_anthrax from "../public/logo_anthrax.png";
-import logo_deltaker_blue from "../public/logo_deltaker_blue.png";
-import logo_trimtex from "../images/index/TSA.svg";
-import logo_accountor from "../images/index/accountor.svg";
-import Head from "next/head";
-import { useTranslation } from 'next-i18next'
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import FrontPic from "../images/index/header_example2.png"
+import logo_jobbjakt from "../public/JobbJakt.png"
+import logo_antidoping from "../public/logo_antidoping.png"
+import logo_nbf from "../public/logo_nbf.svg"
+import logo_anthrax from "../public/logo_anthrax.png"
+import logo_deltaker_blue from "../public/logo_deltaker_blue.png"
+import logo_trimtex from "../images/index/TSA.svg"
+import logo_accountor from "../images/index/accountor.svg"
+import Head from "next/head"
+import { useTranslation } from "next-i18next"
 // import { changeLanguage } from "i18next";
 
 const Hero = () => {
-  const { t } = useTranslation('hero')
+  const { t } = useTranslation("hero")
 
   return (
     <>
@@ -36,20 +36,16 @@ const Hero = () => {
               priority
             />
             <h1 className="relative pt-2 mb-4 text-2xl font-bold text-center md:pt-0 text-ba-color-gold md:text-3xl md:mb-0 md:bottom-12 lg:text-4xl lg:bottom-20 lg:mt-5">
-            Bergen Armwrestling Club
+              Bergen Armwrestling Club
             </h1>
           </div>
 
           {/* Hero Text  */}
           <div>
             <div className="w-4/5 mx-auto text-sm">
-              <p className="font-bold ">
-                {t('Armwrestling origin')}
-              </p>
+              <p className="font-bold ">{t("Armwrestling origin")}</p>
               <br />
-              <p>
-                {t('Armwrestling story')}
-              </p>
+              <p>{t("Armwrestling story")}</p>
             </div>
           </div>
           <div>
@@ -57,14 +53,14 @@ const Hero = () => {
               <div className="mt-3 rounded-lg sm:mt-0">
                 <Link href="/bli-medlem">
                   <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-ba-color-gold lg:px-10 rounded-xl hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    {t('Join button')}
+                    {t("Join button")}
                   </button>
                 </Link>
               </div>
               <div className="mt-3 rounded-lg sm:mt-0 sm:ml-3">
                 <Link href="/treningstider">
                   <button className="items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-white transition duration-500 ease-in-out transform border-2 border-white hover:bg-white hover:text-black shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                    {t('Nanana')}
+                    {t("Nanana")}
                   </button>
                 </Link>
               </div>
@@ -73,7 +69,7 @@ const Hero = () => {
           <div className="h-0.5 bg-gradient-to-r from-transparent via-ba-color-gold to-transparent w-[90%] max-w-[325px] mx-auto mt-8 mb-4 md:my-6"></div>
           {/* Samarbeidspartnere  */}
           <h2 className="mb-6 text-xl font-bold text-center text-ba-color-gold md:text-2xl lg:text-3xl">
-            {t('Partners')}
+            {t("Partners")}
           </h2>
           <div className="grid grid-cols-1 content-around gap-y-12 mx-auto text-center justify-items-center md:grid-cols-3 md:w-[700] justify-center items-center ">
             <div>
@@ -85,15 +81,7 @@ const Hero = () => {
               />
               <p>Antidoping Norge</p>
             </div>
-            <div>
-              <Image
-                className="mx-auto"
-                src={logo_jobbjakt}
-                alt="Logoen til Jobbjakt"
-                width={75}
-              />
-              <p>Jobbjakt</p>
-            </div>
+
             <div>
               <Image
                 className="mx-auto"
@@ -129,7 +117,7 @@ const Hero = () => {
               />
               <p>Anthrax Sportswear</p>
             </div>
-            <div className="flex flex-col justify-end md:col-span-3 ">
+            <div className="flex flex-col justify-end ">
               <Image
                 className="m-auto"
                 src={logo_accountor}
@@ -137,6 +125,15 @@ const Hero = () => {
                 alt="Logoen til Accountor"
               />
               <p>Accountor</p>
+            </div>
+            <div className="md:col-span-3">
+              <Image
+                className="mx-auto"
+                src={logo_jobbjakt}
+                alt="Logoen til Jobbjakt"
+                width={95}
+              />
+              <p>Jobbjakt</p>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ const Hero = () => {
                             alt='Gruppebilde av klubbens medlemmer'
                             priority
                         />
-                        <h1 className='relative pt-2 mb-4 text-2xl font-bold text-center md:pt-0 text-ba-color-gold md:text-2xl md:mb-4 md:bottom-10 lg:text-4xl lg:bottom-24 lg:mt-11'>
+                        <h1 className='relative pt-2 mb-4 text-2xl font-bold text-center md:pt-0 text-ba-color-gold md:text-3xl md:mb-4 md:bottom-4 lg:text-4xl lg:bottom-24 lg:mt-11'>
                             Bergen Armwrestling Club
                         </h1>
                     </div>
@@ -50,7 +50,7 @@ const Hero = () => {
                                 {t("Armwrestling origin")}
                             </p>
                             <br />
-                            {/* <p>{t("Armwrestling story")}</p> */}
+                            <p>{t("Armwrestling story")}</p>
                         </div>
                     </div>
                     <div>
@@ -96,7 +96,7 @@ const Hero = () => {
                             />
                             <p>Norges bryteforbund</p>
                         </div>
-                        <div className='flex flex-col justify-end'>
+                        <div className='flex flex-col justify-end h-full'>
                             <Image
                                 className='m-auto'
                                 src={logo_trimtex}
@@ -104,7 +104,7 @@ const Hero = () => {
                             />
                             <p>Trimtex Sport AS</p>
                         </div>
-                        <div className='flex flex-col justify-end'>
+                        <div className='flex flex-col justify-end h-full'>
                             <Image
                                 className='m-auto'
                                 src={logo_deltaker_blue}
@@ -113,7 +113,7 @@ const Hero = () => {
                             />
                             <p>Deltager.no</p>
                         </div>
-                        <div>
+                        <div className="h-full">
                             <Image
                                 className='mx-auto invert'
                                 src={logo_anthrax}
@@ -122,7 +122,7 @@ const Hero = () => {
                             />
                             <p>Anthrax Sportswear</p>
                         </div>
-                        <div className='flex flex-col justify-end '>
+                        <div className='flex flex-col justify-end h-full'>
                             <Image
                                 className='m-auto'
                                 src={logo_accountor}

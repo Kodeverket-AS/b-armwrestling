@@ -46,7 +46,7 @@ const Hero = () => {
                                 {t("Armwrestling origin")}
                             </p>
                             <br />
-                            <p>{t("Armwrestling story")}</p>
+                            {/* <p>{t("Armwrestling story")}</p> */}
                         </div>
                     </div>
                     <div>
@@ -109,7 +109,7 @@ const Hero = () => {
                             />
                             <p>Deltager.no</p>
                         </div>
-                        <div className="h-full">
+                        <div className='h-full'>
                             <Image
                                 className='mx-auto invert'
                                 src={logo_anthrax}

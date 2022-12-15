@@ -77,26 +77,28 @@ const Galleri = () => {
       <div className="items-center justify-center max-w-5xl mx-auto my-4 mb-12">
         {/* Carousel  */}
         <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
-          <Carousel slideInterval={5000} className="rounded-none">
+          <Carousel slideInterval={5000} className="rounded-none ">
             <Image
               src={clubmembers}
               alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
               width={930}
               height={400}
               priority
-              className="object-cover"
+              className="object-cover hover:cursor-default"
             />
             <Image
               src={victory}
               alt="Jubel, deltakere som har vunnet medalje står på scenen med hendene i været"
               width={930}
               height={400}
+              className=" hover:cursor-default"
             />
             <Image
               src={medals}
               alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
               width={930}
               height={400}
+              className=" hover:cursor-default"
             />
           </Carousel>
         </div>

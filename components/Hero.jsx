@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FrontPic from "../images/index/header_example2.png";
-import HeroIMG from "../images/index/hero-img.jpeg";
-import HeroIMG2 from "../images/index/hero-img2.jpg";
 import HeroIMG3 from "../images/index/hero-img3.jpg";
 import logo_jobbjakt from "../public/JobbJakt.png";
 import logo_antidoping from "../public/logo_antidoping.png";
@@ -14,7 +11,6 @@ import logo_trimtex from "../images/index/TSA.svg";
 import logo_accountor from "../images/index/accountor.svg";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
-// import { changeLanguage } from "i18next";
 
 const Hero = () => {
     const { t } = useTranslation("hero");

@@ -80,7 +80,7 @@ const Galleri = () => {
           <Carousel slideInterval={5000} className="rounded-none ">
             <Image
               src={clubmembers}
-              alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
+              alt={t("Clubmembers")}
               width={930}
               height={400}
               priority
@@ -88,14 +88,14 @@ const Galleri = () => {
             />
             <Image
               src={victory}
-              alt="Jubel, deltakere som har vunnet medalje står på scenen med hendene i været"
+              alt={t("Victory")}
               width={930}
               height={400}
               className=" hover:cursor-default"
             />
             <Image
               src={medals}
-              alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
+              alt={t("Medals")}
               width={930}
               height={400}
               className=" hover:cursor-default"
@@ -107,51 +107,51 @@ const Galleri = () => {
         <div className="grid grid-cols-2 grid-rows-1 gap-1.5 mx-2 md:grid-cols-7 auto-rows-auto ">
           <Image
             src={clubmembers}
+            alt={t("Clubmembers")}
             className="rounded-sm col-span-2 md:col-span-7 lg:col-span-4  md:h-[425px] lg:h-[321px] "
-            alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
             index={0}
             onClick={handleClick}
           />
           <Image
             src={victory}
+            alt={t("Victory")}
             className="rounded-sm col-span-2 md:col-span-4 lg:col-span-3 md:h-[334px] lg:h-[321px] "
-            alt="Jubel, deltakere som har vunnet medalje står på scenen med hendene i været"
             index={1}
             onClick={handleClick}
           />
           <Image
             src={medals}
+            alt={t("Medals")}
             className="rounded-sm h-full col-span-2  md:col-span-3 md:h-[334px] object-fit lg:col-span-3 lg:object-cover lg:h-[285px] "
-            alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
             onClick={handleClick}
             index={2}
           />
           <Image
             src={training}
+            alt={t("Training")}
             className="rounded-sm h-full col-span-2 md:col-span-7 md:h-[360px] lg:col-span-4 lg:object-cover lg:h-[285px]"
-            alt="Medlemmer som er i full gang med å trene i øvingslokalet"
             onClick={handleClick}
             index={3}
           />
           <Image
             src={flextraining}
+            alt={t("Flextraining")}
             className="rounded-sm h-full col-span-2 md:col-span-7 md:h-[360px] lg:col-span-4 lg:h-[280px] "
-            alt="To personer som bryter håndbak, mens andre medlemer viser muskler"
             onClick={handleClick}
             index={4}
           />
           <Image
             src={trainingmedia}
+            alt={t("Trainingmedia")}
             className="h-full col-span-2 rounded-sm md:col-span-5 lg:col-span-3 "
-            alt="NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund"
             onClick={handleClick}
             index={5}
           />
           {/* ONly visible on tablet  */}
           <Image
             src={twopersonarmwrestling}
+            alt={t("Two person armwrestling")}
             className="hidden h-full col-span-1 rounded-sm md:block md:col-span-2 lg:hidden "
-            alt="To medlemmer som er i gang med å bryte håndbak under en trening"
             onClick={handleClick}
             index={6}
           />{" "}
@@ -161,29 +161,29 @@ const Galleri = () => {
         <div className="grid grid-cols-2 gap-2 m-2 md:grid md:grid-cols-3 lg:grid-cols-4">
           <Image
             src={twopersonarmwrestling}
+            alt={t("Two person armwrestling")}
             className="h-full col-span-1 rounded-sm md:hidden lg:block lg:col-span-1"
-            alt="To medlemmer som er i gang med å bryte håndbak under en trening"
             onClick={handleClick}
             index={6}
           />
           <Image
             src={youngandoldarmwrestling}
+            alt={t("Young and old armwrestling")}
             className="col-span-1 lg:col-span-1"
-            alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"
             onClick={handleClick}
             index={7}
           />
           <Image
             src={competitionwrestling}
+            alt={t("Competition wrestling")}
             className="col-span-1 lg:col-span-1"
-            alt="To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med"
             onClick={handleClick}
             index={8}
           />
           <Image
             src={clubphoto}
+            alt={t("Clubphoto")}
             className="h-full col-span-1 lg:col-span-1"
-            alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
             onClick={handleClick}
             index={9}
           />
@@ -210,6 +210,8 @@ const Galleri = () => {
             const height = Math.round(
               Math.min(rect.height, (rect.width / image.width) * image.height)
             )
+            console.log(image)
+
             return (
               <div style={{ position: "relative", width, height }}>
                 <Image

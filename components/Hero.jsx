@@ -46,7 +46,7 @@ const Hero = () => {
                                 {t("Armwrestling origin")}
                             </p>
                             <br />
-                            {/* <p>{t("Armwrestling story")}</p> */}
+                            <p>{t("Armwrestling story")}</p>
                         </div>
                     </div>
                     <div>
@@ -92,7 +92,7 @@ const Hero = () => {
                             />
                             <p>Norges bryteforbund</p>
                         </div>
-                        <div className='flex flex-col justify-end'>
+                        <div className='flex flex-col justify-end h-full'>
                             <Image
                                 className='m-auto'
                                 src={logo_trimtex}
@@ -100,7 +100,7 @@ const Hero = () => {
                             />
                             <p>Trimtex Sport AS</p>
                         </div>
-                        <div className='flex flex-col justify-end'>
+                        <div className='flex flex-col justify-end h-full'>
                             <Image
                                 className='m-auto'
                                 src={logo_deltaker_blue}
@@ -109,7 +109,7 @@ const Hero = () => {
                             />
                             <p>Deltager.no</p>
                         </div>
-                        <div>
+                        <div className="h-full">
                             <Image
                                 className='mx-auto invert'
                                 src={logo_anthrax}
@@ -118,7 +118,7 @@ const Hero = () => {
                             />
                             <p>Anthrax Sportswear</p>
                         </div>
-                        <div className='flex flex-col justify-end '>
+                        <div className='flex flex-col justify-end h-full'>
                             <Image
                                 className='m-auto'
                                 src={logo_accountor}

@@ -102,7 +102,37 @@ const Galleri = () => {
         </div> */}
 
         {/* Gallery  */}
-        <div className="grid grid-cols-2 grid-rows-1 gap-1.5 mx-2 md:grid-cols-7 auto-rows-auto ">
+        <div className="flex flex-wrap gap-2">
+          <Image
+            src={twopersonarmwrestling}
+            className=" col-span-1 h-[250px] w-[250px] rounded-sm md:col-span-1 lg:col-span-1  "
+            alt="To medlemmer som er i gang med å bryte håndbak under en trening"
+            onClick={handleClick}
+            index={6}
+          />
+          <Image
+            src={youngandoldarmwrestling}
+            className="h-[250px] w-[250px] col-span-1 rounded-sm md:col-span-1 "
+            alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"
+            onClick={handleClick}
+            index={7}
+          />
+          <Image
+            src={competitionwrestling}
+            className="h-[250px] w-[250px] col-span-1 rounded-sm md:col-span-1 "
+            alt="To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med"
+            onClick={handleClick}
+            index={8}
+          />
+          <Image
+            src={clubphoto}
+            className="h-[250px] w-[250px] col-span-1 rounded-sm md:col-span-1 "
+            alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
+            onClick={handleClick}
+            index={9}
+          />
+        </div>
+        {/* <div className="grid grid-cols-2 grid-rows-1 gap-1.5 mx-2 md:grid-cols-7 auto-rows-auto ">
           <Image
             src={clubmembers}
             className="rounded-sm col-span-2 md:col-span-7 lg:col-span-4  md:h-[425px] lg:h-[321px] "
@@ -178,7 +208,7 @@ const Galleri = () => {
             onClick={handleClick}
             index={9}
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Slideshow  */}

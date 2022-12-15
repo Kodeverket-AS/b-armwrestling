@@ -109,7 +109,7 @@ const Galleri = () => {
             alt="Glade medlemmer hos Bergen Armwrestling som poserer foran kamera"
             index={0}
             onClick={handleClick}
-          ></Image>
+          />
 
           <Image
             src={victory}
@@ -117,14 +117,14 @@ const Galleri = () => {
             alt="Jubel, deltakere som har vunnet medalje står på scenen med hendene i været"
             index={1}
             onClick={handleClick}
-          ></Image>
+          />
           <Image
             src={medals}
             className="rounded-sm h-full col-span-2  md:col-span-3 md:h-[334px] object-fit lg:col-span-2 lg:object-cover lg:h-[285px] "
             alt="Seks deltakere som viser medaljer etter en turnering, og hvor den ene deltakeren har seiersbeltet rundt nakken"
             onClick={handleClick}
             index={2}
-          ></Image>
+          />
 
           <Image
             src={training}
@@ -132,7 +132,7 @@ const Galleri = () => {
             alt="Medlemmer som er i full gang med å trene i øvingslokalet"
             onClick={handleClick}
             index={3}
-          ></Image>
+          />
 
           <Image
             src={flextraining}
@@ -140,7 +140,7 @@ const Galleri = () => {
             alt="To personer som bryter håndbak, mens andre medlemer viser muskler"
             onClick={handleClick}
             index={4}
-          ></Image>
+          />
 
           <Image
             src={trainingmedia}
@@ -148,7 +148,7 @@ const Galleri = () => {
             alt="NRK er på besøk for å lage reportasje, hvor to deltakere er ikledd den ofisielle t-skjorten til Norges Bryteforbund"
             onClick={handleClick}
             index={5}
-          ></Image>
+          />
 
           <Image
             src={twopersonarmwrestling}
@@ -156,28 +156,28 @@ const Galleri = () => {
             alt="To medlemmer som er i gang med å bryte håndbak under en trening"
             onClick={handleClick}
             index={6}
-          ></Image>
+          />
           <Image
             src={youngandoldarmwrestling}
             className="h-full col-span-1 rounded-sm md:grid-span-half"
             alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"
             onClick={handleClick}
             index={7}
-          ></Image>
+          />
           <Image
             src={competitionwrestling}
             className="h-full col-span-1 rounded-sm md:grid-span-half"
             alt="To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med"
             onClick={handleClick}
             index={8}
-          ></Image>
+          />
           <Image
             src={clubphoto}
             className="h-full col-span-1 rounded-sm md:grid-span-half"
             alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
             onClick={handleClick}
             index={9}
-          ></Image>
+          />
         </div>
       </div>
 

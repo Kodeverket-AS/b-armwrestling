@@ -102,7 +102,7 @@ const Galleri = () => {
         </div> */}
 
         {/* Gallery  */}
-        <div className="flex flex-wrap gap-2">
+        {/* <div className="flex flex-wrap gap-2">
           <Image
             src={twopersonarmwrestling}
             className=" col-span-1 h-[250px] w-[250px] rounded-sm md:col-span-1 lg:col-span-1  "
@@ -131,8 +131,8 @@ const Galleri = () => {
             onClick={handleClick}
             index={9}
           />
-        </div>
-        {/* <div className="grid grid-cols-2 grid-rows-1 gap-1.5 mx-2 md:grid-cols-7 auto-rows-auto ">
+        </div> */}
+        <div className="grid grid-cols-2 grid-rows-1 gap-1.5 mx-2 md:grid-cols-7 auto-rows-auto ">
           <Image
             src={clubmembers}
             className="rounded-sm col-span-2 md:col-span-7 lg:col-span-4  md:h-[425px] lg:h-[321px] "
@@ -208,7 +208,7 @@ const Galleri = () => {
             onClick={handleClick}
             index={9}
           />
-        </div> */}
+        </div>
       </div>
 
       {/* Slideshow  */}

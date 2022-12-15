@@ -102,36 +102,6 @@ const Galleri = () => {
         </div>
 
         {/* Gallery  */}
-        {/* <div className="flex flex-wrap gap-2">
-          <Image
-            src={twopersonarmwrestling}
-            className=" col-span-1 h-[250px] w-[250px] rounded-sm md:col-span-1 lg:col-span-1  "
-            alt="To medlemmer som er i gang med å bryte håndbak under en trening"
-            onClick={handleClick}
-            index={6}
-          />
-          <Image
-            src={youngandoldarmwrestling}
-            className="h-[250px] w-[250px] col-span-1 rounded-sm md:col-span-1 "
-            alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"
-            onClick={handleClick}
-            index={7}
-          />
-          <Image
-            src={competitionwrestling}
-            className="h-[250px] w-[250px] col-span-1 rounded-sm md:col-span-1 "
-            alt="To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med"
-            onClick={handleClick}
-            index={8}
-          />
-          <Image
-            src={clubphoto}
-            className="h-[250px] w-[250px] col-span-1 rounded-sm md:col-span-1 "
-            alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
-            onClick={handleClick}
-            index={9}
-          />
-        </div> */}
         <div className="grid grid-cols-2 grid-rows-1 gap-1.5 mx-2 md:grid-cols-7 auto-rows-auto ">
           <Image
             src={clubmembers}
@@ -140,7 +110,6 @@ const Galleri = () => {
             index={0}
             onClick={handleClick}
           />
-
           <Image
             src={victory}
             className="rounded-sm col-span-2 md:col-span-4 lg:col-span-3 md:h-[334px] lg:h-[321px] "
@@ -155,7 +124,6 @@ const Galleri = () => {
             onClick={handleClick}
             index={2}
           />
-
           <Image
             src={training}
             className="rounded-sm h-full col-span-2 md:col-span-7 md:h-[360px] lg:col-span-4 lg:object-cover lg:h-[285px]"
@@ -163,7 +131,6 @@ const Galleri = () => {
             onClick={handleClick}
             index={3}
           />
-
           <Image
             src={flextraining}
             className="rounded-sm h-full col-span-2 md:col-span-7 md:h-[360px] lg:col-span-4 lg:h-[280px] "
@@ -171,7 +138,6 @@ const Galleri = () => {
             onClick={handleClick}
             index={4}
           />
-
           <Image
             src={trainingmedia}
             className="h-full col-span-2 rounded-sm md:col-span-5 lg:col-span-3 "
@@ -179,54 +145,42 @@ const Galleri = () => {
             onClick={handleClick}
             index={5}
           />
-
+          {/* ONly visible on tablet  */}
           <Image
             src={twopersonarmwrestling}
-            className="h-full col-span-1 rounded-sm md:col-span-2 lg:col-span-1 "
+            className="hidden h-full col-span-1 rounded-sm md:block md:col-span-2 lg:hidden "
+            alt="To medlemmer som er i gang med å bryte håndbak under en trening"
+            onClick={handleClick}
+            index={6}
+          />{" "}
+        </div>
+
+        {/* 3 last images on md, last 4 on lg */}
+        <div className="grid grid-cols-2 gap-2 m-2 md:grid md:grid-cols-3 lg:grid-cols-4">
+          <Image
+            src={twopersonarmwrestling}
+            className="h-full col-span-1 rounded-sm md:hidden lg:block lg:col-span-1"
             alt="To medlemmer som er i gang med å bryte håndbak under en trening"
             onClick={handleClick}
             index={6}
           />
           <Image
             src={youngandoldarmwrestling}
-            className="h-full col-span-1 rounded-sm md:hidden lg:grid lg:col-span-2"
+            className="col-span-1 lg:col-span-1"
             alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"
             onClick={handleClick}
             index={7}
           />
           <Image
             src={competitionwrestling}
-            className="h-full col-span-1 rounded-sm md:hidden lg:block lg:col-span-2"
+            className="col-span-1 lg:col-span-1"
             alt="To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med"
             onClick={handleClick}
             index={8}
           />
           <Image
             src={clubphoto}
-            className="h-full col-span-1 rounded-sm md:hidden lg:block lg:col-span-2"
-            alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
-            onClick={handleClick}
-            index={9}
-          />
-        </div>
-        <div className="hidden gap-2 m-2 md:grid md:grid-cols-3 lg:hidden">
-          <Image
-            src={youngandoldarmwrestling}
-            className=""
-            alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"
-            onClick={handleClick}
-            index={7}
-          />
-          <Image
-            src={competitionwrestling}
-            className=""
-            alt="To kvinnelige deltakere som gjør seg klar til å bryte håndbak under en turnering, mens dommeren følger nøye med"
-            onClick={handleClick}
-            index={8}
-          />
-          <Image
-            src={clubphoto}
-            className="h-full"
+            className="h-full col-span-1 lg:col-span-1"
             alt="Medlemmer fra Bergen Armwrestling som poserer forran kamera inne på øvingslokalet"
             onClick={handleClick}
             index={9}

@@ -7,6 +7,7 @@ import { useTranslation } from "next-i18next"
 import { useRouter } from "next/router"
 
 import flag_norwegian from "../public/flag_norway.svg"
+import flag_english from "../public/flag_english.svg"
 
 const NavBar = () => {
   const { t } = useTranslation("common")
@@ -144,7 +145,7 @@ const NavBar = () => {
             {router.locale === "en" ? (
               <Image src={flag_norwegian} />
             ) : (
-              <Image src={flag_norwegian} />
+              <Image src={flag_english} />
             )}
           </button>
         </div>

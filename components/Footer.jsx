@@ -41,7 +41,10 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href='#' className='hover:underline'>
+                            <Link
+                                href='/bli-medlem'
+                                className='hover:underline'
+                            >
                                 {t("Button")}
                             </Link>
                         </li>

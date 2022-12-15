@@ -6,6 +6,9 @@ import { MdArrowDropDown } from "react-icons/md"
 import { useTranslation } from "next-i18next"
 import { useRouter } from "next/router"
 
+import flag_norwegian from "../public/flag_norway.svg"
+import flag_english from "../public/flag_english.svg"
+
 const NavBar = () => {
   const { t } = useTranslation("common")
 
@@ -129,6 +132,7 @@ const NavBar = () => {
         </div>
         <div className="text-center text-white ">
           <button
+            className="flex items-center justify-center"
             onClick={() => {
               if (router.locale == "en") {
                 router.push(`/no${router.route}`)
@@ -137,9 +141,12 @@ const NavBar = () => {
               }
             }}
           >
-            {router.locale === "no"
-              ? "Change to English"
-              : "Bytt til Norsk"}
+            {router.locale === "no" ? `Change to English` : "Bytt til Norsk"}
+            {router.locale === "en" ? (
+              <Image className="" src={flag_norwegian} width={45} />
+            ) : (
+              <Image className="" src={flag_english} width={45} />
+            )}
           </button>
         </div>
       </div>

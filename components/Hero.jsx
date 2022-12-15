@@ -74,67 +74,99 @@ const Hero = () => {
                     </h2>
                     <div className='grid grid-cols-1 content-around gap-y-12 mx-auto text-center justify-items-center md:grid-cols-3 md:w-[700] justify-center items-center '>
                         <div>
-                            <Image
-                                className='mx-auto'
-                                src={logo_antidoping}
-                                alt='Logoen til Antidoping Norge'
-                                width={75}
-                            />
-                            <p>Antidoping Norge</p>
+                            <Link
+                                href='https://www.antidoping.no/'
+                                target='_blank'
+                            >
+                                <Image
+                                    className='mx-auto'
+                                    src={logo_antidoping}
+                                    alt='Logoen til Antidoping Norge'
+                                    width={75}
+                                />
+                                <p>Antidoping Norge</p>
+                            </Link>
                         </div>
 
                         <div>
-                            <Image
-                                className='mx-auto'
-                                src={logo_nbf}
-                                alt='Logoe til Norges Bryteforbund'
-                                width={75}
-                            />
-                            <p>Norges bryteforbund</p>
+                            <Link
+                                href='https://bryting.no/brytegrener/handbak/'
+                                target='_blank'
+                            >
+                                <Image
+                                    className='mx-auto'
+                                    src={logo_nbf}
+                                    alt='Logoe til Norges Bryteforbund'
+                                    width={75}
+                                />
+                                <p>Norges bryteforbund</p>
+                            </Link>
                         </div>
                         <div className='flex flex-col justify-end h-full'>
-                            <Image
-                                className='m-auto'
-                                src={logo_trimtex}
-                                alt='Logoen til Trimtex Sport AS'
-                            />
-                            <p>Trimtex Sport AS</p>
+                            <Link
+                                href='https://trimtexstore.no/?has-landed=true'
+                                target='_blank'
+                            >
+                                <Image
+                                    className='m-auto'
+                                    src={logo_trimtex}
+                                    alt='Logoen til Trimtex Sport AS'
+                                />
+                                <p>Trimtex Sport AS</p>
+                            </Link>
                         </div>
                         <div className='flex flex-col justify-end h-full'>
-                            <Image
-                                className='m-auto'
-                                src={logo_deltaker_blue}
-                                width={175}
-                                alt='Logoen til deltager.no'
-                            />
-                            <p>Deltager.no</p>
+                            <Link
+                                href='https://www.deltager.no/deltagerforside.aspx'
+                                target='_blank'
+                            >
+                                <Image
+                                    className='m-auto'
+                                    src={logo_deltaker_blue}
+                                    width={175}
+                                    alt='Logoen til deltager.no'
+                                />
+                                <p className='mt-2 '>Deltager.no</p>
+                            </Link>
                         </div>
                         <div className='h-full'>
-                            <Image
-                                className='mx-auto invert'
-                                src={logo_anthrax}
-                                width={100}
-                                alt='Logoen til Anthrax Sportswear'
-                            />
-                            <p>Anthrax Sportswear</p>
+                            <Link
+                                href='https://www.anthraxmachines.com/'
+                                target='_blank'
+                            >
+                                <Image
+                                    className='mx-auto invert'
+                                    src={logo_anthrax}
+                                    width={100}
+                                    alt='Logoen til Anthrax Sportswear'
+                                />
+                                <p>Anthrax Sportswear</p>
+                            </Link>
                         </div>
                         <div className='flex flex-col justify-end h-full'>
-                            <Image
-                                className='m-auto'
-                                src={logo_accountor}
-                                width={175}
-                                alt='Logoen til Accountor'
-                            />
-                            <p>Accountor</p>
+                            <Link
+                                href='https://www.accountor.com/nb/norway?gclid=Cj0KCQiAqOucBhDrARIsAPCQL1ZtpiXJb5xJ5ffSV9zEHScOpgUGyDeYZv9dsRGF5Zh4vj509LWE5u4aAknZEALw_wcB'
+                                target='_blank'
+                            >
+                                <Image
+                                    className='m-auto'
+                                    src={logo_accountor}
+                                    width={175}
+                                    alt='Logoen til Accountor'
+                                />
+                                <p>Accountor</p>
+                            </Link>
                         </div>
                         <div className='md:col-span-3'>
-                            <Image
-                                className='mx-auto'
-                                src={logo_jobbjakt}
-                                alt='Logoen til Jobbjakt'
-                                width={95}
-                            />
-                            <p>Jobbjakt</p>
+                            <Link href='https://jobbjakt.no/' target='_blank'>
+                                <Image
+                                    className='mx-auto'
+                                    src={logo_jobbjakt}
+                                    alt='Logoen til Jobbjakt'
+                                    width={95}
+                                />
+                                <p>Jobbjakt</p>
+                            </Link>
                         </div>
                     </div>
                 </div>

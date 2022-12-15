@@ -76,7 +76,7 @@ const Galleri = () => {
       {/* Carousel and Gallery  */}
       <div className="items-center justify-center max-w-5xl mx-auto my-4 mb-12">
         {/* Carousel  */}
-        {/* <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
+        <div className="mb-4 sm:h-64  w-full md:h-[400px]  hidden md:block px-2 mx-auto">
           <Carousel slideInterval={5000} className="rounded-none">
             <Image
               src={clubmembers}
@@ -99,7 +99,7 @@ const Galleri = () => {
               height={400}
             />
           </Carousel>
-        </div> */}
+        </div>
 
         {/* Gallery  */}
         {/* <div className="flex flex-wrap gap-2">
@@ -209,10 +209,8 @@ const Galleri = () => {
             index={9}
           />
         </div>
-        <div
-        className="hidden gap-2 m-2 md:grid md:grid-cols-3 lg:hidden"
-        >
-        <Image
+        <div className="hidden gap-2 m-2 md:grid md:grid-cols-3 lg:hidden">
+          <Image
             src={youngandoldarmwrestling}
             className=""
             alt="En av de yngre deltakerene bryter håndbak med en eldre deltaker, mens to personer står å ser på"

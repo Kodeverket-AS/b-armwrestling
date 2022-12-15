@@ -1,7 +1,9 @@
 import '../styles/globals.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import { appWithTranslation } from 'next-i18next'
+
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -16,4 +18,4 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default appWithTranslation(MyApp);

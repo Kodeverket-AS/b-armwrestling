@@ -147,14 +147,14 @@ const NavBar = () => {
                 className="ml-1.5"
                 alt="Norwegian flag"
                 src={flag_norwegian}
-                width={40}
+                width={35}
               />
             ) : (
               <Image
                 className="ml-1.5"
                 alt={t("English flag")}
                 src={flag_english}
-                width={40}
+                width={35}
               />
             )}
           </button>

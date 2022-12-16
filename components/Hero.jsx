@@ -9,6 +9,7 @@ import logo_anthrax from "../public/logo_anthrax.png"
 import logo_deltaker_blue from "../public/logo_deltaker_blue.png"
 import logo_trimtex from "../images/index/TSA.svg"
 import logo_accountor from "../images/index/accountor.svg"
+import logo_grasrotandelen from "../images/diverseLinker/grasrotandelen.png"
 import Head from "next/head"
 import { useTranslation } from "next-i18next"
 
@@ -151,7 +152,7 @@ const Hero = () => {
                 <p>Accountor</p>
               </Link>
             </div>
-            <div className="md:col-span-3">
+            <div className="">
               <Link href="https://jobbjakt.no/" target="_blank">
                 <Image
                   className="mx-auto"
@@ -160,6 +161,17 @@ const Hero = () => {
                   width={95}
                 />
                 <p>Jobbjakt</p>
+              </Link>
+            </div>
+            <div className="">
+              <Link href="https://jobbjakt.no/" target="_blank">
+                <Image
+                  className="mx-auto"
+                  src={logo_grasrotandelen}
+                  alt="Logoen til Jobbjakt"
+                  width={120}
+                />
+                <p>Grasrotandelen</p>
               </Link>
             </div>
           </div>

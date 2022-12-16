@@ -143,9 +143,19 @@ const NavBar = () => {
           >
             {router.locale === "no" ? `Change to` : "Bytt til"}
             {router.locale === "en" ? (
-              <Image className="ml-1.5" src={flag_norwegian} width={40} />
+              <Image
+                className="ml-1.5"
+                alt="Norwegian flag"
+                src={flag_norwegian}
+                width={40}
+              />
             ) : (
-              <Image className="ml-1.5" src={flag_english} width={40} />
+              <Image
+                className="ml-1.5"
+                alt={t("English flag")}
+                src={flag_english}
+                width={40}
+              />
             )}
           </button>
         </div>

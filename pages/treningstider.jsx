@@ -66,10 +66,9 @@ const Treningstider = () => {
         </div>
 
         {/* block 2  */}
-        <div className="grid order-last grid-cols-1 my-4 md:my-4 md:order-none w-[90%] mx-auto ">
-          {/* className="mx-auto my-6 md:h-64 md:ml-0 md:max-w-lg md:w-[90%] md:mr-2"  */}
+
+        <div className="grid order-last grid-cols-1 my-4 md:my-4 md:order-none w-[90%] mx-auto  ">
           <iframe
-            // xl:w-ba-width-large
             className="mx-auto my-11 w-[100%] h-[270px] md:ml-0 md:max-w-lg md:mr-2"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-eLtEdtB-XioubLC_9yUcxUja3xYrukI&q=Gnisten_Aktivitetssenter,Bergen"
           />

@@ -96,11 +96,8 @@ const BliMedlem = () => {
             <br />
             <h2 className="font-bold">{t("Competition")}</h2>
             <br />
-            <p>{t("Athen")}</p>
-            <p>{t("Changes")}</p>
+            <p>{t("Competition info")}</p>
             <br />
-            <p>{t("Match")}</p>
-            <p>{t("Technique")}</p>
           </div>
         </div>
       </div>

@@ -47,10 +47,10 @@ const TermList = () => {
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 {t("Title")}
             </h1>
-            <p className='mb-10 text-lg text-center text-ba-color-gold'>
-                Til info, så minner vi på at terminliste for 2023
-                <br /> vil bli oppdatert så fort dette blir tilgjengelig på
-                Deltaker.no
+            <p className='w-3/4 mx-auto mb-10 text-lg text-center text-ba-color-gold'>
+                {t("Info newyear")}
+                <br />
+                {t("Info newyear pt2")}
             </p>
             {/* Events container  */}
 
@@ -72,7 +72,10 @@ const TermList = () => {
                                 color='gray'
                                 className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
                             >
-                                <Link href='#' target='_blank'>
+                                <Link
+                                    href='https://www.deltaker.no'
+                                    target='_blank'
+                                >
                                     {t("Read more")}
                                 </Link>
                                 <AiOutlineArrowRight className='w-3 h-3 ml-2' />
@@ -95,7 +98,10 @@ const TermList = () => {
                                 color='gray'
                                 className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
                             >
-                                <Link href='#' target='_blank'>
+                                <Link
+                                    href='https://www.deltaker.no'
+                                    target='_blank'
+                                >
                                     {t("Read more")}
                                 </Link>
                                 <AiOutlineArrowRight className='w-3 h-3 ml-2' />
@@ -118,7 +124,10 @@ const TermList = () => {
                                 color='gray'
                                 className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
                             >
-                                <Link href='#' target='_blank'>
+                                <Link
+                                    href='https://www.deltaker.no'
+                                    target='_blank'
+                                >
                                     {t("Read more")}
                                 </Link>
                                 <AiOutlineArrowRight className='w-3 h-3 ml-2' />
@@ -141,7 +150,10 @@ const TermList = () => {
                                 color='gray'
                                 className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
                             >
-                                <Link href='#' target='_blank'>
+                                <Link
+                                    href='https://www.deltaker.no'
+                                    target='_blank'
+                                >
                                     {t("Read more")}
                                 </Link>
                                 <AiOutlineArrowRight className='w-3 h-3 ml-2' />
@@ -164,7 +176,10 @@ const TermList = () => {
                                 color='gray'
                                 className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
                             >
-                                <Link href='#' target='_blank'>
+                                <Link
+                                    href='https://www.deltaker.no'
+                                    target='_blank'
+                                >
                                     {t("Read more")}
                                 </Link>
                                 <AiOutlineArrowRight className='w-3 h-3 ml-2' />
@@ -187,7 +202,10 @@ const TermList = () => {
                                 color='gray'
                                 className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
                             >
-                                <Link href='#' target='_blank'>
+                                <Link
+                                    href='https://www.deltaker.no'
+                                    target='_blank'
+                                >
                                     {t("Read more")}
                                 </Link>
                                 <AiOutlineArrowRight className='w-3 h-3 ml-2' />
@@ -210,7 +228,10 @@ const TermList = () => {
                                 color='gray'
                                 className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
                             >
-                                <Link href='#' target='_blank'>
+                                <Link
+                                    href='https://www.deltaker.no'
+                                    target='_blank'
+                                >
                                     {t("Read more")}
                                 </Link>
                                 <AiOutlineArrowRight className='w-3 h-3 ml-2' />

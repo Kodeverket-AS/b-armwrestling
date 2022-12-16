@@ -132,7 +132,7 @@ const NavBar = () => {
         </div>
         <div className="text-center text-white ">
           <button
-            className="flex items-center justify-center"
+            className="flex items-center justify-center mx-auto"
             onClick={() => {
               if (router.locale == "en") {
                 router.push(`/no${router.route}`)
@@ -141,11 +141,21 @@ const NavBar = () => {
               }
             }}
           >
-            {router.locale === "no" ? `Change to English` : "Bytt til Norsk"}
+            {router.locale === "no" ? `Change to` : "Bytt til"}
             {router.locale === "en" ? (
-              <Image className="" src={flag_norwegian} width={45} />
+              <Image
+                className="ml-1.5"
+                alt="Norwegian flag"
+                src={flag_norwegian}
+                width={35}
+              />
             ) : (
-              <Image className="" src={flag_english} width={45} />
+              <Image
+                className="ml-1.5"
+                alt={t("English flag")}
+                src={flag_english}
+                width={35}
+              />
             )}
           </button>
         </div>

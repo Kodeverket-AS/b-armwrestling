@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import Logo from "../images/logov2.png"
@@ -13,6 +13,13 @@ const NavBar = () => {
   const { t } = useTranslation("common")
 
   const router = useRouter()
+
+  useEffect(() => {
+    console.log("Logging new Router")
+    router.asPath = router.pathname
+    console.log(router)
+  }, [router])
+
   const [navbar, setNavbar] = useState(false)
   return (
     <nav className="w-full shadow bg-zinc-900">
@@ -130,14 +137,28 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
+
+        {/* Language Toggle  */}
         <div className="text-center text-white ">
+          <Link
+            className="text-3xl text-white"
+            href={
+              router.locale === "en" ? `${router.basePath}` : `${router.route}`
+            }
+            onClick={() => {
+              console.log(router)
+            }}
+          >
+            TESTING BUTTON
+          </Link>
           <button
             className="flex items-center justify-center mx-auto"
             onClick={() => {
+              // console.log(router)
               if (router.locale == "en") {
-                router.push(`/no${router.route}`)
+                router.push(`${router.pathname}`)
               } else {
-                router.push(`/en${router.route}`)
+                router.push(`/en${router.pathname}`)
               }
             }}
           >

@@ -164,7 +164,10 @@ const Hero = () => {
               </Link>
             </div>
             <div className="">
-              <Link href="https://jobbjakt.no/" target="_blank">
+              <Link
+                href="https://www.norsk-tipping.no/grasrotandelen"
+                target="_blank"
+              >
                 <Image
                   className="mx-auto"
                   src={logo_grasrotandelen}

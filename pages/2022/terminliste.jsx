@@ -47,7 +47,11 @@ const TermList = () => {
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
                 {t("Title")}
             </h1>
-
+            <p className='w-3/4 mx-auto mb-10 text-lg text-center text-ba-color-gold'>
+                {t("Info newyear")}
+                <br />
+                {t("Info newyear pt2")}
+            </p>
             {/* Events container  */}
 
             <div className='flex justify-center items-center mx-auto w-[80%] max-w-[650px]'>
@@ -69,7 +73,7 @@ const TermList = () => {
                                 className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
                             >
                                 <Link
-                                    href='https://www.deltager.no/event/404626#init'
+                                    href='https://www.deltaker.no'
                                     target='_blank'
                                 >
                                     {t("Read more")}
@@ -82,10 +86,10 @@ const TermList = () => {
                         <Timeline.Point icon={Ikon} />
                         <Timeline.Content>
                             <Timeline.Time className='text-base italic text-white'>
-                                {t("Vestland time")}
+                                {t("Romania time")}
                             </Timeline.Time>
                             <Timeline.Title className='font-bold text-ba-color-gold '>
-                                {t("Vestland")}
+                                {t("Romania")}
                             </Timeline.Title>
                             <Timeline.Body className='text-white'>
                                 {t("Info championship")}
@@ -108,39 +112,10 @@ const TermList = () => {
                         <Timeline.Point icon={Ikon} />
                         <Timeline.Content>
                             <Timeline.Time className='text-base italic text-white'>
-                                {t("Moldova time")}
-                            </Timeline.Time>
-                            <Timeline.Title className='font-bold line-through text-ba-color-gold '>
-                                {t("Moldova")}
-                            </Timeline.Title>
-                            <Timeline.Title className='font-bold text-ba-color-gold'>
-                                {t("Moldova pt2")}
-                            </Timeline.Title>
-                            <Timeline.Body className='text-white'>
-                                {t("Info championship")}
-                            </Timeline.Body>
-                            <Button
-                                color='gray'
-                                className='text-white bg-ba-color-gold transition duration-500 border-0 hover:bg-white hover:text-black hover:scale-105 md:h-full h-[2rem]'
-                            >
-                                <Link
-                                    href='https://www.deltager.no'
-                                    target='_blank'
-                                >
-                                    {t("Read more")}
-                                </Link>
-                                <AiOutlineArrowRight className='w-3 h-3 ml-2' />
-                            </Button>
-                        </Timeline.Content>
-                    </Timeline.Item>
-                    <Timeline.Item>
-                        <Timeline.Point icon={Ikon} />
-                        <Timeline.Content>
-                            <Timeline.Time className='text-base italic text-white'>
-                                {t("Nidarø HK time")}
+                                {t("Skien time")}
                             </Timeline.Time>
                             <Timeline.Title className='font-bold text-ba-color-gold '>
-                                {t("Nidarø")}
+                                {t("Skien")}
                             </Timeline.Title>
                             <Timeline.Body className='text-white'>
                                 {t("Info championship")}
@@ -163,10 +138,10 @@ const TermList = () => {
                         <Timeline.Point icon={Ikon} />
                         <Timeline.Content>
                             <Timeline.Time className='text-base italic text-white'>
-                                {t("Kazakhstan time")}
+                                {t("Sandefjord time")}
                             </Timeline.Time>
                             <Timeline.Title className='font-bold text-ba-color-gold '>
-                                {t("Kazakhstan")}
+                                {t("Sandefjord")}
                             </Timeline.Title>
                             <Timeline.Body className='text-white'>
                                 {t("Info championship")}
@@ -189,10 +164,10 @@ const TermList = () => {
                         <Timeline.Point icon={Ikon} />
                         <Timeline.Content>
                             <Timeline.Time className='text-base italic text-white'>
-                                {t("Lærdal time")}
+                                {t("Turkey time")}
                             </Timeline.Time>
                             <Timeline.Title className='font-bold text-ba-color-gold '>
-                                {t("Lærdal")}
+                                {t("Turkey")}
                             </Timeline.Title>
                             <Timeline.Body className='text-white'>
                                 {t("Info championship")}
@@ -215,10 +190,10 @@ const TermList = () => {
                         <Timeline.Point icon={Ikon} />
                         <Timeline.Content>
                             <Timeline.Time className='text-base italic text-white'>
-                                {t("Kr.sund time")}
+                                {t("Trondheim time")}
                             </Timeline.Time>
                             <Timeline.Title className='font-bold text-ba-color-gold '>
-                                {t("Kr.sund")}
+                                {t("Trondheim")}
                             </Timeline.Title>
                             <Timeline.Body className='text-white'>
                                 {t("Info championship")}

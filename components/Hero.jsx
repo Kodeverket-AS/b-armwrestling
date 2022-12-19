@@ -9,6 +9,7 @@ import logo_anthrax from "../public/logo_anthrax.png"
 import logo_deltaker_blue from "../public/logo_deltaker_blue.png"
 import logo_trimtex from "../images/index/TSA.svg"
 import logo_accountor from "../images/index/accountor.svg"
+import logo_grasrotandelen from "../images/diverseLinker/grasrotandelen.png"
 import Head from "next/head"
 import { useTranslation } from "next-i18next"
 
@@ -78,7 +79,7 @@ const Hero = () => {
                 <Image
                   className="mx-auto"
                   src={logo_antidoping}
-                  alt="Logoen til Antidoping Norge"
+                  alt="Antidoping Norge logo"
                   width={75}
                 />
                 <p>Antidoping Norge</p>
@@ -93,7 +94,7 @@ const Hero = () => {
                 <Image
                   className="mx-auto"
                   src={logo_nbf}
-                  alt="Logoe til Norges Bryteforbund"
+                  alt="Norges Bryteforbund logo"
                   width={75}
                 />
                 <p>Norges bryteforbund</p>
@@ -107,7 +108,7 @@ const Hero = () => {
                 <Image
                   className="m-auto"
                   src={logo_trimtex}
-                  alt="Logoen til Trimtex Sport AS"
+                  alt="Trimtex Sport AS logo"
                 />
                 <p>Trimtex Sport AS</p>
               </Link>
@@ -121,7 +122,7 @@ const Hero = () => {
                   className="m-auto"
                   src={logo_deltaker_blue}
                   width={175}
-                  alt="Logoen til deltager.no"
+                  alt="deltager.no logo"
                 />
                 <p className="mt-2 ">Deltager.no</p>
               </Link>
@@ -132,7 +133,7 @@ const Hero = () => {
                   className="mx-auto invert"
                   src={logo_anthrax}
                   width={100}
-                  alt="Logoen til Anthrax Sportswear"
+                  alt="Anthrax Sportswear logo"
                 />
                 <p>Anthrax Sportswear</p>
               </Link>
@@ -146,20 +147,34 @@ const Hero = () => {
                   className="m-auto"
                   src={logo_accountor}
                   width={175}
-                  alt="Logoen til Accountor"
+                  alt="Accountor logo"
                 />
                 <p>Accountor</p>
               </Link>
             </div>
-            <div className="md:col-span-3">
+            <div className="">
               <Link href="https://jobbjakt.no/" target="_blank">
                 <Image
                   className="mx-auto"
                   src={logo_jobbjakt}
-                  alt="Logoen til Jobbjakt"
+                  alt="Jobbjakt logo"
                   width={95}
                 />
                 <p>Jobbjakt</p>
+              </Link>
+            </div>
+            <div className="">
+              <Link
+                href="https://www.norsk-tipping.no/grasrotandelen/din-mottaker/825211012"
+                target="_blank"
+              >
+                <Image
+                  className="mx-auto"
+                  src={logo_grasrotandelen}
+                  alt="Grasrotandelen logo"
+                  width={120}
+                />
+                <p>Grasrotandelen</p>
               </Link>
             </div>
           </div>

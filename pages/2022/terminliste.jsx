@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
-import logo_wrestling from "../images/logo_wrestling.png";
+// import logo_wrestling from "../images/logo_wrestling.png";
 import { Timeline, Button } from "flowbite-react";
 
 import { BsFillCalendarCheckFill } from "react-icons/bs";

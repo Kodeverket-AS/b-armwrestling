@@ -55,7 +55,7 @@ const Footer = () => {
           </span>
           <p className="hidden text-gray-400 md:block"> &ensp;|&ensp;</p>
           <span className="block my-1.5 md:my-0 text-sm italic text-center text-gray-400">
-            "Utviklet i regnet av Kodeverket"
+            "Utviklet i regnet av Kodeverket Bergen"
           </span>
         </div>
       </div>

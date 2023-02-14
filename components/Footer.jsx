@@ -58,7 +58,14 @@ const Footer = () => {
                 <hr className='my-6 border-gray-700 sm:mx-auto lg:my-8' />
                 <div className='flex flex-col items-center justify-center mx-auto md:flex-row'>
                     <span className='block text-sm text-center text-gray-400 sm:text-center'>
-                        Utviklet i regnet av Kodeverket Bergen © 2022
+                        Utviklet i regnet av{" "}
+                        <a
+                            className=' hover:border-b'
+                            href='https://www.kodeverketbergen.no/'
+                            target='_blank'
+                        >
+                            Kodeverket Bergen © 2022
+                        </a>
                     </span>
                 </div>
             </div>

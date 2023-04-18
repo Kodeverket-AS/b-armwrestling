@@ -20,6 +20,8 @@ export async function getStaticProps({ locale }) {
   }
 }
 
+const MapsAPI = `https://www.google.com/maps/embed/v1/place?key=${process.env.DB_MAPS}&q=Gnisten_Aktivitetssenter,Bergen`
+
 const Treningstider = () => {
   const { t } = useTranslation("schedule")
 
@@ -70,7 +72,7 @@ const Treningstider = () => {
         <div className="grid order-last grid-cols-1 my-4 md:my-4 md:order-none w-[90%] mx-auto  ">
           <iframe
             className="mx-auto my-11 w-[100%] h-[270px] md:ml-0 md:max-w-lg md:mr-2"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-eLtEdtB-XioubLC_9yUcxUja3xYrukI&q=Gnisten_Aktivitetssenter,Bergen"
+            src={MapsAPI}
           />
         </div>
 

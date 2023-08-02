@@ -149,6 +149,21 @@ export default function VariousLinks() {
                         <p className='pb-6 mb-6 text-2xl text-center text-ba-color-gold'>
                             {t("Others")}
                         </p>
+                        <div className=' flex  justify-center text-2xl'>
+                            <Link
+                                className='flex flex-row items-center gap-5'
+                                href='https://bryting.no/finn/'
+                                target='_blank'
+                                title={t("NB link des")}
+                            >
+                                Norges Bryteforbund
+                                <Image
+                                    src={NBF}
+                                    alt={t("NB logo des")}
+                                    width={50}
+                                />
+                            </Link>
+                        </div>
                         {/* <div> */}
                         {/* <ul
                                 id='klub__list'

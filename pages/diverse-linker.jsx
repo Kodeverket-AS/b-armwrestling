@@ -15,36 +15,36 @@ import { BsInstagram } from "react-icons/bs";
 import { BsGlobe } from "react-icons/bs";
 import { BsDot } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        'common',
-        'hero',
-        'schedule',
-        'faq',
-        'links'
-      ])),
-      // Will be passed to the page component as props
-    },
-  }
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "hero",
+                "schedule",
+                "faq",
+                "links",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
 }
 
 export default function VariousLinks() {
-    const { t } = useTranslation('links')
+    const { t } = useTranslation("links");
     return (
         <>
             <Head>
-                <title>{t('Title')}</title>
+                <title>{t("Title")}</title>
                 <meta
                     name='description'
                     content='Her finner du linker til relevante sider om håndbak, håndbakregler og flere av landets håndbakklubber.'
                 />
             </Head>
             <h1 className='pt-8 mb-8 text-5xl text-center text-ba-color-gold'>
-                {t('Title')}
+                {t("Title")}
             </h1>
             <section className='mx-4'>
                 <div id='linksAndPics' className='text-white '>
@@ -58,12 +58,12 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://bryting.no/brytegrener/handbak/'
                                     target='_blank'
-                                    title={t('NB link des')}
+                                    title={t("NB link des")}
                                 >
                                     Norges Bryteforbund
                                     <Image
                                         src={NBF}
-                                        alt={t('NB logo des')}
+                                        alt={t("NB logo des")}
                                         width={50}
                                     />
                                 </Link>
@@ -71,12 +71,12 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between mt-4'
                                     href='https://www.antidoping.no/'
                                     target='_blank'
-                                    title={t('Antidoping link des')}
+                                    title={t("Antidoping link des")}
                                 >
                                     Antidoping Norge
                                     <Image
                                         src={rentil}
-                                        alt={t('Antidoping logo des')}
+                                        alt={t("Antidoping logo des")}
                                         width={50}
                                     />
                                 </Link>
@@ -84,12 +84,12 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between mt-4'
                                     href='https://www.deltager.no/deltagerforside.aspx'
                                     target='_blank'
-                                    title={t('Deltaker link des')}
+                                    title={t("Deltaker link des")}
                                 >
                                     Deltaker.no
                                     <Image
                                         src={deltakerlogo}
-                                        alt={t('Deltaker logo des')}
+                                        alt={t("Deltaker logo des")}
                                         width={50}
                                     />
                                 </Link>
@@ -102,13 +102,13 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.norsk-tipping.no/grasrotandelen/din-mottaker/825211012'
                                     target='_blank'
-                                    title={t('Grasrot link des')}
+                                    title={t("Grasrot link des")}
                                 >
-                                    {t('Grasrot')}
+                                    {t("Grasrot")}
                                     {/* <BiLink /> */}
                                     <Image
                                         src={Grasrot}
-                                        alt={t('Grasrot logo des')}
+                                        alt={t("Grasrot logo des")}
                                         width={50}
                                     />
                                 </Link>
@@ -116,13 +116,13 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.youtube.com/channel/UClhMrYai_XGlBW_mRPhfQJQ'
                                     target='_blank'
-                                    title={t('BryteTV link des')}
+                                    title={t("BryteTV link des")}
                                 >
-                                    {t('BryteTV')}
+                                    {t("BryteTV")}
                                     {/* <BiLink /> */}
                                     <Image
                                         src={NBF}
-                                        alt={t('NB logo des')}
+                                        alt={t("NB logo des")}
                                         width={50}
                                     />
                                 </Link>
@@ -130,14 +130,14 @@ export default function VariousLinks() {
                                     className='flex flex-row items-center justify-between gap-10 mt-4'
                                     href='https://www.youtube.com/@WORLDARMWRESTLINGFEDERATION/featured'
                                     target='_blank'
-                                    title={t('WAFTV link des')}
+                                    title={t("WAFTV link des")}
                                 >
                                     World Armwrestling Federation
-                                    <br /> {t('WAFTV')}
+                                    <br /> {t("WAFTV")}
                                     {/* <BiLink /> */}
                                     <Image
                                         src={WAF}
-                                        alt={t('WAF logo des')}
+                                        alt={t("WAF logo des")}
                                         width={50}
                                     />
                                 </Link>
@@ -147,10 +147,25 @@ export default function VariousLinks() {
 
                     <div className='py-12 mt-6 md:mx-4 '>
                         <p className='pb-6 mb-6 text-2xl text-center text-ba-color-gold'>
-                            {t('Others')}
+                            {t("Others")}
                         </p>
-                        <div>
-                            <ul
+                        <div className=' flex  justify-center text-2xl'>
+                            <Link
+                                className='flex flex-row items-center gap-5'
+                                href='https://bryting.no/finn/'
+                                target='_blank'
+                                title={t("NB link des")}
+                            >
+                                Norges Bryteforbund
+                                <Image
+                                    src={NBF}
+                                    alt={t("NB logo des")}
+                                    width={50}
+                                />
+                            </Link>
+                        </div>
+                        {/* <div> */}
+                        {/* <ul
                                 id='klub__list'
                                 className='md:flex md:flex-row md:justify-evenly  md:text-[18px]'
                             >
@@ -451,8 +466,8 @@ export default function VariousLinks() {
                                         Voss Armsport Klubb
                                     </li>
                                 </div>
-                            </ul>
-                        </div>
+                            </ul> */}
+                        {/* </div> */}
                     </div>
                 </div>
             </section>

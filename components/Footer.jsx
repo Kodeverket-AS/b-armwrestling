@@ -64,7 +64,7 @@ const Footer = () => {
                             href='https://www.kodeverketbergen.no/'
                             target='_blank'
                         >
-                            Kodeverket Bergen © 2022
+                            Kodeverket Bergen © {new Date().getFullYear()}
                         </a>
                     </span>
                 </div>

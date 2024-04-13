@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import HeroIMG3 from "../images/index/hero-img3.jpg";
 import HeroNew from "../images/index/newHero_img.jpg";
+import HeroNM from "../images/index/heroNM.png";
 import logo_jobbjakt from "../public/JobbJakt.png";
 import logo_antidoping from "../public/logo_antidoping.png";
 import logo_nbf from "../public/logo_nbf.svg";
@@ -30,9 +31,9 @@ const Hero = () => {
                 <div>
                     <div>
                         <Image
-                            className='w-full '
-                            src={HeroNew}
-                            width={800}
+                            className='w-full mt-4 '
+                            src={HeroNM}
+                            width={1000}
                             alt={t("Hero image")}
                             priority
                         />

@@ -3,7 +3,7 @@ import Image from "next/image"
 import Head from "next/head"
 import { useTranslation } from "next-i18next"
 import inngang_narrow from "../public/inngang_narrow.png"
-import kart from "../public/ginsten.png"
+
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
@@ -70,13 +70,7 @@ const Treningstider = () => {
 
         {/* block 2  */}
 
-        <div className="grid order-last grid-cols-1 my-4 md:my-4 md:order-none w-[90%] mx-auto  ">
-           <Image
-              src={kart}
-              className="rounded-sm max-h-[500px]"
-              alt={t("map")}
-            />
-        </div>
+      
 
         {/* block 3 */}
         {/* className="mx-auto max-w-[800px] w-[90%] mb-4  justify-center items-center" */}

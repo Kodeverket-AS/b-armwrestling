@@ -3,6 +3,7 @@ import Image from "next/image"
 import Head from "next/head"
 import { useTranslation } from "next-i18next"
 import inngang_narrow from "../public/inngang_narrow.png"
+import kart from "../public/ginsten.png"
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
@@ -70,10 +71,11 @@ const Treningstider = () => {
         {/* block 2  */}
 
         <div className="grid order-last grid-cols-1 my-4 md:my-4 md:order-none w-[90%] mx-auto  ">
-          <iframe
-            className="mx-auto my-11 w-[100%] h-[270px] md:ml-0 md:max-w-lg md:mr-2"
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_DB_MAPS}&q=Gnisten_Aktivitetssenter,Bergen`}
-          />
+           <Image
+              src={kart}
+              className="rounded-sm max-h-[500px]"
+              alt={t("map")}
+            />
         </div>
 
         {/* block 3 */}
